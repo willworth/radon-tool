@@ -265,8 +265,8 @@ export default function App() {
           <section className="card emptyState">
             <h2>Selecciona un municipio</h2>
             <p>
-              La interfaz ya está preparada para un JSON completo en tiempo de build. Por ahora solo hay un
-              conjunto mínimo de ejemplo, claramente marcado como provisional.
+              La interfaz ya usa un extracto oficial del Apéndice B del CTE DB-HS6. Aun así, tómalo como una
+              orientación municipal inicial, no como una estimación de vivienda concreta.
             </p>
           </section>
         )}

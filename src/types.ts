@@ -1,12 +1,12 @@
 export type RadonZone = 'I' | 'II' | 'not_classified'
 
 export type MunicipalityRecord = {
-  ineCode: string
+  ineCode?: string
   municipality: string
   province: string
   autonomousCommunity: string
   zone: RadonZone
-  sourceStatus: 'placeholder'
+  sourceStatus?: 'placeholder' | 'official'
   notes?: string
 }
 

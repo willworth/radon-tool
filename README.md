@@ -14,17 +14,25 @@ This repository is the first credible public-facing scaffold for a municipality 
 
 ## Current status
 
-This version is intentionally incomplete and uses a **tiny placeholder dataset** stored at build time.
+This version now uses an extracted **official municipality classification** from CTE DB-HS6 Appendix B, bundled at build time.
 
-It is wired so the real municipality JSON can replace the placeholder later without changing the UI shape.
+Current source files:
 
-### Placeholder data warning
+- `data-source/DBHS.pdf`
+- `scripts/extract-official-radon-data.py`
+- `src/data/municipalities.official.json`
 
-The current data file is:
+The app shape remains static and backend-free, but the dataset is no longer a three-row placeholder.
 
-- `src/data/municipalities.placeholder.json`
+### Current caveat
 
-It contains only three clearly-marked example municipalities and must **not** be treated as a real reference dataset.
+The extraction path is reproducible, but still deserves one more validation pass before any public launch or policy-grade claim.
+
+In particular, the next cleanup should:
+
+- validate municipality counts against an independent official list if one becomes available
+- attach stable INE municipality identifiers
+- spot-check provinces at page boundaries
 
 ## Proposed stack
 
@@ -59,21 +67,29 @@ Current municipality record shape:
 }
 ```
 
-## Replacing the placeholder dataset
+## Data extraction workflow
 
-When the official municipality dataset is ready, replace the placeholder source with a real JSON file matching the same schema.
+To rebuild the official dataset from source:
 
-Likely source path for the first real import:
+```bash
+python3 -m venv .venv
+.venv/bin/pip install pypdf
+.venv/bin/python scripts/extract-official-radon-data.py
+```
+
+This reads the official DB-HS6 PDF and writes:
 
 - `src/data/municipalities.official.json`
 
-Then update `src/data/municipalities.ts` if needed.
-
 ## Intended official sources
 
-Placeholder only for now. Real v1 should be based on published official material, likely including:
+Current extraction is based on published official material:
 
 - CTE DB-HS6 Appendix B municipality classification
+- Official consolidated DB HS PDF from codigotecnico.org
+
+Planned enrichment sources:
+
 - CSN published radon zone material
 - INE municipality identifiers for stable matching
 
@@ -86,14 +102,14 @@ Placeholder only for now. Real v1 should be based on published official material
 
 ## Limitations
 
-This scaffold does **not** yet include:
+This tool still does **not** yet include:
 
-- official nationwide municipality data
 - address lookup
 - Cadastre integration
 - map visualisation
 - testing provider directory
 - validated mitigation cost tables
+- independent reconciliation against INE municipality codes
 
 ## Project structure
 
@@ -110,10 +126,10 @@ src/
 
 ## Next work suggested
 
-1. Replace placeholder data with official municipality JSON.
+1. Validate extracted municipality counts and edge cases province by province.
 2. Add stronger search normalization for accents and province disambiguation.
-3. Refine bilingual copy with reviewed public-health wording.
-4. Add fuller testing, interpretation, and mitigation guidance sections.
+3. Attach INE codes and stable matching metadata.
+4. Refine bilingual copy with reviewed public-health wording.
 5. Prepare static deployment target and domain/subdomain decision.
 
 ## License
