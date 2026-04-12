@@ -1,0 +1,29 @@
+[
+  {
+    "ineCode": "15030",
+    "municipality": "Arteixo",
+    "province": "A Coruña",
+    "autonomousCommunity": "Galicia",
+    "zone": "II",
+    "sourceStatus": "placeholder",
+    "notes": "Placeholder example only. Replace with official municipality dataset before public launch."
+  },
+  {
+    "ineCode": "28079",
+    "municipality": "Madrid",
+    "province": "Madrid",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "zone": "I",
+    "sourceStatus": "placeholder",
+    "notes": "Placeholder example only. Replace with official municipality dataset before public launch."
+  },
+  {
+    "ineCode": "41091",
+    "municipality": "Sevilla",
+    "province": "Sevilla",
+    "autonomousCommunity": "Andalucía",
+    "zone": "not_classified",
+    "sourceStatus": "placeholder",
+    "notes": "Placeholder example only. Replace with official municipality dataset before public launch."
+  }
+]
