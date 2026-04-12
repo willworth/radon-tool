@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  background: #eef3f7;
 }
 
 button,
@@ -88,12 +89,22 @@ select {
   border-radius: 12px;
   border: 1px solid #bfd0df;
   background: #fcfdff;
+  min-height: 48px;
+}
+
+input:focus,
+select:focus,
+.resultButton:focus {
+  outline: 3px solid rgba(70, 122, 184, 0.22);
+  outline-offset: 2px;
 }
 
 .results {
   margin-top: 12px;
   display: grid;
   gap: 8px;
+  max-height: 320px;
+  overflow: auto;
 }
 
 .resultButton {
@@ -103,6 +114,12 @@ select {
   border: 1px solid #d7e2ec;
   background: #f9fbfd;
   cursor: pointer;
+  min-height: 56px;
+}
+
+.resultButton-active {
+  border-color: #77a7d8;
+  background: #eef5fc;
 }
 
 .resultButton span,
@@ -166,22 +183,46 @@ select {
   background: #f3f7fb;
 }
 
+.selectedMeta {
+  margin: 6px 0 0;
+  color: #486178;
+}
+
 .emptyState {
   text-align: center;
 }
 
 @media (max-width: 640px) {
   .page {
-    padding: 20px 12px 40px;
+    padding: 16px 10px 32px;
+  }
+
+  .shell {
+    gap: 14px;
   }
 
   .card,
   .hero {
-    padding: 18px;
+    padding: 16px;
     border-radius: 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.15;
+  }
+
+  .dual,
+  .infoGrid,
+  .grid {
+    grid-template-columns: 1fr;
   }
 
   .resultHeader {
     flex-direction: column;
+  }
+
+  .badge {
+    width: fit-content;
   }
 }

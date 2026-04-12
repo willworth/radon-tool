@@ -107,6 +107,15 @@ function formatOption(m: MunicipalityRecord) {
   return `${m.municipality}, ${m.province}`
 }
 
+function normalizeSearchValue(value: string) {
+  return value
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim()
+}
+
 export default function App() {
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState<MunicipalityRecord | null>(null)
@@ -115,12 +124,25 @@ export default function App() {
   const [age, setAge] = useState<BuildingAge>('unknown')
 
   const matches = useMemo(() => {
-    const trimmed = query.trim().toLowerCase()
-    if (!trimmed) return municipalities.slice(0, 3)
+    const trimmed = normalizeSearchValue(query)
+    if (!trimmed) return municipalities.slice(0, 8)
 
     return municipalities
-      .filter((m) => formatOption(m).toLowerCase().includes(trimmed))
+      .map((m) => ({
+        record: m,
+        haystack: normalizeSearchValue(
+          `${m.municipality} ${m.province} ${m.autonomousCommunity}`,
+        ),
+      }))
+      .filter(({ haystack }) => haystack.includes(trimmed))
+      .sort((a, b) => {
+        const aStarts = normalizeSearchValue(a.record.municipality).startsWith(trimmed)
+        const bStarts = normalizeSearchValue(b.record.municipality).startsWith(trimmed)
+        if (aStarts !== bStarts) return aStarts ? -1 : 1
+        return a.record.municipality.localeCompare(b.record.municipality, 'es')
+      })
       .slice(0, 8)
+      .map(({ record }) => record)
   }, [query])
 
   const result = selected ? zoneCopy[selected.zone] : null
@@ -134,8 +156,8 @@ export default function App() {
           <h1>Consulta preliminar de radón por municipio</h1>
           <p className="lede">
             Herramienta estática para una primera orientación pública. Busca tu municipio, revisa la zona
-            regulatoria y añade un poco de contexto sobre la vivienda. English guidance appears alongside the
-            Spanish copy.
+            regulatoria y añade un poco de contexto sobre la vivienda. Está pensada para funcionar bien desde
+            móvil, sin florituras. English guidance appears alongside the Spanish copy.
           </p>
           <div className="notice warning">
             <strong>Estado del dato / Data status:</strong> {municipalityDataStatus.message}
@@ -148,18 +170,22 @@ export default function App() {
             id="municipality-search"
             type="text"
             placeholder="Ej. Arteixo, Madrid, Sevilla"
+            autoComplete="off"
+            autoCapitalize="words"
+            autoCorrect="off"
+            spellCheck={false}
             value={query}
             onChange={(event) => {
               setQuery(event.target.value)
               setSelected(null)
             }}
           />
-          <div className="results">
+          <div className="results" role="listbox" aria-label="Municipality matches">
             {matches.map((match) => (
               <button
                 key={match.ineCode}
                 type="button"
-                className="resultButton"
+                className={`resultButton ${selected?.ineCode === match.ineCode ? 'resultButton-active' : ''}`}
                 onClick={() => {
                   setSelected(match)
                   setQuery(formatOption(match))
@@ -212,6 +238,7 @@ export default function App() {
                 <h2>
                   {selected.municipality}, {selected.province}
                 </h2>
+                <p className="selectedMeta">{selected.autonomousCommunity}</p>
               </div>
               <div className={`badge badge-${selected.zone}`}>{result.titleEs}</div>
             </div>

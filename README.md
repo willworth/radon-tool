@@ -7,7 +7,7 @@ Early public-information scaffold for a standalone radon lookup app focused on S
 This repository is the first credible public-facing scaffold for a municipality lookup tool that helps users:
 
 - search a Spanish municipality with autocomplete
-- see a municipality-level radon classification placeholder (`Zone I`, `Zone II`, or `not classified`)
+- see a municipality-level radon classification (`Zone I`, `Zone II`, or `not classified`)
 - read plain-language guidance in Spanish, with English alongside it
 - add a small amount of housing context (house vs flat, floor level, rough building age)
 - understand the tool's limits before any public launch
@@ -15,6 +15,8 @@ This repository is the first credible public-facing scaffold for a municipality 
 ## Current status
 
 This version now uses an extracted **official municipality classification** from CTE DB-HS6 Appendix B, bundled at build time.
+
+The UI is intentionally simple and should work comfortably on mobile as well as desktop, with no backend dependency.
 
 Current source files:
 
@@ -31,8 +33,9 @@ The extraction path is reproducible, but still deserves one more validation pass
 In particular, the next cleanup should:
 
 - validate municipality counts against an independent official list if one becomes available
-- attach stable INE municipality identifiers
+- finish stable INE municipality identifier reconciliation
 - spot-check provinces at page boundaries
+- fix remaining truncated or boundary-contaminated names from the PDF extraction path
 
 ## Proposed stack
 
@@ -58,12 +61,12 @@ Current municipality record shape:
 
 ```json
 {
-  "ineCode": "15030",
+  "ineCode": "15005",
   "municipality": "Arteixo",
-  "province": "A Coruña",
+  "province": "La Coruña / A Coruña",
   "autonomousCommunity": "Galicia",
   "zone": "II",
-  "sourceStatus": "placeholder"
+  "sourceStatus": "official"
 }
 ```
 
@@ -75,11 +78,19 @@ To rebuild the official dataset from source:
 python3 -m venv .venv
 .venv/bin/pip install pypdf
 .venv/bin/python scripts/extract-official-radon-data.py
+node scripts/reconcile-ine-codes.mjs
 ```
 
-This reads the official DB-HS6 PDF and writes:
+This currently uses:
+
+- the official DB-HS6 PDF as the radon classification source
+- INE municipality-coded API output as a reconciliation aid for `ineCode`
+
+It writes:
 
 - `src/data/municipalities.official.json`
+- `data-source/ine-municipios-55200.json`
+- `data-source/ine-reconciliation-report.json`
 
 ## Intended official sources
 
@@ -109,14 +120,21 @@ This tool still does **not** yet include:
 - map visualisation
 - testing provider directory
 - validated mitigation cost tables
-- independent reconciliation against INE municipality codes
+- complete validated reconciliation against INE municipality codes
 
 ## Project structure
 
 ```text
+data-source/
+  DBHS.pdf
+  ine-municipios-55200.json
+  ine-reconciliation-report.json
+scripts/
+  extract-official-radon-data.py
+  reconcile-ine-codes.mjs
 src/
   data/
-    municipalities.placeholder.json
+    municipalities.official.json
     municipalities.ts
   App.tsx
   main.tsx
@@ -127,8 +145,8 @@ src/
 ## Next work suggested
 
 1. Validate extracted municipality counts and edge cases province by province.
-2. Add stronger search normalization for accents and province disambiguation.
-3. Attach INE codes and stable matching metadata.
+2. Fix remaining truncated / cross-boundary municipality names in the extractor output.
+3. Finish INE-code reconciliation and quantify coverage cleanly.
 4. Refine bilingual copy with reviewed public-health wording.
 5. Prepare static deployment target and domain/subdomain decision.
 
