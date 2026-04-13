@@ -1,0 +1,10 @@
+[
+  { "autonomousCommunity": "Andalucía", "province": "Huelva" },
+  { "autonomousCommunity": "Andalucía", "province": "Sevilla" },
+  { "autonomousCommunity": "Aragón", "province": "Huesca" },
+  { "autonomousCommunity": "Castilla y León", "province": "Palencia" },
+  { "autonomousCommunity": "Castilla y León", "province": "Salamanca" },
+  { "autonomousCommunity": "Cataluña", "province": "Tarragona" },
+  { "autonomousCommunity": "Comunidad Valenciana", "province": "Castellón / Castelló" },
+  { "autonomousCommunity": "País Vasco", "province": "Vizcaya / Bizkaia" }
+]

@@ -1,25 +1,10 @@
-import officialMunicipalities from './municipalities.official.json'
-import type { MunicipalityRecord, RadonZone } from '../types'
+import searchBaseMunicipalities from './municipalities.search-base.json'
+import type { MunicipalityRecord } from '../types'
 
-type RawOfficialMunicipality = Omit<MunicipalityRecord, 'zone' | 'ineCode' | 'sourceStatus'> & {
-  zone: '1' | '2'
-}
-
-function normalizeZone(zone: RawOfficialMunicipality['zone']): RadonZone {
-  return zone === '1' ? 'I' : 'II'
-}
-
-export const municipalities: MunicipalityRecord[] = (officialMunicipalities as RawOfficialMunicipality[]).map(
-  (record, index) => ({
-    ...record,
-    zone: normalizeZone(record.zone),
-    ineCode: `official-${index}`,
-    sourceStatus: 'official',
-  }),
-)
+export const municipalities: MunicipalityRecord[] = searchBaseMunicipalities as MunicipalityRecord[]
 
 export const municipalityDataStatus = {
   source: 'official',
   message:
-    'Clasificación oficial extraída de CTE DB-HS6 Apéndice B (municipios Zona I y Zona II). Pendiente de enriquecer con códigos INE y una validación extra de bordes antes de publicar como referencia definitiva.',
+    'Base municipal completa construida sobre datos INE, con clasificación CTE DB-HS6 Apéndice B superpuesta cuando existe. La capa de clasificación sigue pendiente de validación adicional antes de presentarla como referencia definitiva.',
 } as const

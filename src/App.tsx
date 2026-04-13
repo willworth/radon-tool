@@ -107,6 +107,12 @@ function formatOption(m: MunicipalityRecord) {
   return `${m.municipality}, ${m.province}`
 }
 
+function resultBadgeLabel(zone: RadonZone) {
+  if (zone === 'II') return 'Zona II'
+  if (zone === 'I') return 'Zona I'
+  return 'No clasificado'
+}
+
 function normalizeSearchValue(value: string) {
   return value
     .normalize('NFD')
@@ -147,6 +153,7 @@ export default function App() {
 
   const result = selected ? zoneCopy[selected.zone] : null
   const context = selected ? scoreContext(selected.zone, housingType, floor, age) : null
+  const hasQuery = query.trim().length > 0
 
   return (
     <div className="page">
@@ -155,9 +162,9 @@ export default function App() {
           <p className="eyebrow">España · Spain</p>
           <h1>Consulta preliminar de radón por municipio</h1>
           <p className="lede">
-            Herramienta estática para una primera orientación pública. Busca tu municipio, revisa la zona
-            regulatoria y añade un poco de contexto sobre la vivienda. Está pensada para funcionar bien desde
-            móvil, sin florituras. English guidance appears alongside the Spanish copy.
+            Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II o no clasificado en el
+            Apéndice B, y añade un poco de contexto sobre la vivienda. Está pensada para ser útil antes que
+            vistosa. English guidance is present, but Spanish is primary.
           </p>
           <div className="notice warning">
             <strong>Estado del dato / Data status:</strong> {municipalityDataStatus.message}
@@ -169,7 +176,7 @@ export default function App() {
           <input
             id="municipality-search"
             type="text"
-            placeholder="Ej. Arteixo, Madrid, Sevilla"
+            placeholder="Ej. Yecla, Arteixo, Madrid, Sevilla"
             autoComplete="off"
             autoCapitalize="words"
             autoCorrect="off"
@@ -193,10 +200,19 @@ export default function App() {
               >
                 <span>{match.municipality}</span>
                 <small>
-                  {match.province} · {match.autonomousCommunity}
+                  {match.province} · {match.autonomousCommunity} · {resultBadgeLabel(match.zone)}
                 </small>
               </button>
             ))}
+            {hasQuery && matches.length === 0 ? (
+              <div className="noResults">
+                <strong>No encuentro ese municipio.</strong>
+                <p>
+                  Prueba con el nombre oficial, con o sin acentos, o añade la provincia. / Try the official
+                  municipality name, with or without accents, or add the province.
+                </p>
+              </div>
+            ) : null}
           </div>
         </section>
 
@@ -283,6 +299,9 @@ export default function App() {
             </div>
 
             <div className="notice">
+              <strong>Metodología / Method:</strong> búsqueda municipal sobre base completa de municipios de
+              España, con superposición de la clasificación del Apéndice B del CTE DB-HS6 cuando está disponible.
+              <br />
               <strong>Disclaimer:</strong> Esta herramienta no estima el nivel real de tu vivienda. Solo una
               medición con detector puede confirmarlo. This tool is not an address-level or building-level risk
               calculator.
@@ -290,10 +309,10 @@ export default function App() {
           </section>
         ) : (
           <section className="card emptyState">
-            <h2>Selecciona un municipio</h2>
+            <h2>Busca tu municipio</h2>
             <p>
-              La interfaz ya usa un extracto oficial del Apéndice B del CTE DB-HS6. Aun así, tómalo como una
-              orientación municipal inicial, no como una estimación de vivienda concreta.
+              Puedes buscar cualquier municipio de España. El resultado te dirá si aparece como Zona I, Zona II
+              o no clasificado en el Apéndice B del CTE DB-HS6.
             </p>
           </section>
         )}

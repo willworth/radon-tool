@@ -70,6 +70,11 @@ select {
   color: #27415b;
 }
 
+.notice strong {
+  display: inline-block;
+  margin-right: 4px;
+}
+
 .warning {
   background: #fff4db;
   color: #6d4d00;
@@ -127,6 +132,15 @@ select:focus,
   display: block;
 }
 
+.resultButton span {
+  font-weight: 600;
+}
+
+.resultButton small {
+  margin-top: 4px;
+  color: #486178;
+}
+
 .resultButton:hover {
   background: #f0f5fa;
 }
@@ -181,6 +195,18 @@ select:focus,
   padding: 16px;
   border-radius: 16px;
   background: #f3f7fb;
+}
+
+.noResults {
+  padding: 14px 16px;
+  border: 1px dashed #bfd0df;
+  border-radius: 14px;
+  background: #fbfdff;
+  color: #35506a;
+}
+
+.noResults p {
+  margin: 8px 0 0;
 }
 
 .selectedMeta {
