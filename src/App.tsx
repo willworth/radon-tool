@@ -1,6 +1,13 @@
 import { useMemo, useState } from 'react'
-import { municipalities, municipalityDataStatus } from './data/municipalities'
-import type { BuildingAge, FloorLevel, HousingType, MunicipalityRecord, RadonZone } from './types'
+import { municipalities, municipalityDataStatus, municipalityDataSummary } from './data/municipalities'
+import type {
+  BuildingAge,
+  FloorLevel,
+  HousingType,
+  MunicipalityRecord,
+  MunicipalitySourceStatus,
+  RadonZone,
+} from './types'
 
 const zoneCopy: Record<
   RadonZone,
@@ -67,6 +74,35 @@ const zoneCopy: Record<
       'Direct measurement remains the only way to know the real level.',
     ],
   },
+}
+
+const pendingValidationCopy = {
+  titleEs: 'Clasificación pendiente de validación',
+  titleEn: 'Classification pending validation',
+  descriptionEs:
+    'Este municipio está en una provincia cuyo bloque del Apéndice B se retiró temporalmente de la superposición por problemas de extracción o reconciliación. Este resultado no significa “riesgo bajo” ni “no clasificado” con seguridad.',
+  descriptionEn:
+    'This municipality sits in a province whose Appendix B block was temporarily removed from the overlay because of extraction or reconciliation problems. This result does not safely mean “low risk” or “not classified”.',
+  nextStepsEs: [
+    'Trata este caso como dato pendiente, no como tranquilidad confirmada.',
+    'Si la vivienda está en contacto con el terreno o hay preocupación razonable, medir sigue siendo una decisión válida.',
+    'Antes de compartir públicamente este caso como referencia, conviene revisar la provincia en la fuente oficial.',
+  ],
+  nextStepsEn: [
+    'Treat this as pending data, not as confirmed reassurance.',
+    'If the home is in contact with the ground or there is reasonable concern, testing can still be sensible.',
+    'Before relying on this publicly, the province should be rechecked against the official source.',
+  ],
+} as const
+
+function isClassificationPending(record: MunicipalityRecord) {
+  return record.sourceStatus === 'pending_validation'
+}
+
+function sourceStatusLabel(sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
+  if (sourceStatus === 'pending_validation') return 'Pendiente de validación'
+  if (sourceStatus === 'manual_override') return zone === 'not_classified' ? 'No clasificado (ajuste manual)' : 'Ajuste manual'
+  return resultBadgeLabel(zone ?? 'not_classified')
 }
 
 function scoreContext(zone: RadonZone, housingType: HousingType, floor: FloorLevel, age: BuildingAge) {
@@ -151,8 +187,14 @@ export default function App() {
       .map(({ record }) => record)
   }, [query])
 
-  const result = selected ? zoneCopy[selected.zone] : null
-  const context = selected ? scoreContext(selected.zone, housingType, floor, age) : null
+  const selectedHasPendingClassification = selected ? isClassificationPending(selected) : false
+  const result = selected
+    ? selectedHasPendingClassification
+      ? pendingValidationCopy
+      : zoneCopy[selected.zone]
+    : null
+  const context =
+    selected && !selectedHasPendingClassification ? scoreContext(selected.zone, housingType, floor, age) : null
   const hasQuery = query.trim().length > 0
 
   return (
@@ -200,7 +242,7 @@ export default function App() {
               >
                 <span>{match.municipality}</span>
                 <small>
-                  {match.province} · {match.autonomousCommunity} · {resultBadgeLabel(match.zone)}
+                  {match.province} · {match.autonomousCommunity} · {sourceStatusLabel(match.sourceStatus, match.zone)}
                 </small>
               </button>
             ))}
@@ -246,7 +288,7 @@ export default function App() {
           </div>
         </section>
 
-        {selected && result && context ? (
+        {selected && result ? (
           <section className="card resultCard">
             <div className="resultHeader">
               <div>
@@ -256,7 +298,9 @@ export default function App() {
                 </h2>
                 <p className="selectedMeta">{selected.autonomousCommunity}</p>
               </div>
-              <div className={`badge badge-${selected.zone}`}>{result.titleEs}</div>
+              <div className={`badge ${selectedHasPendingClassification ? 'badge-pending' : `badge-${selected.zone}`}`}>
+                {selectedHasPendingClassification ? 'Pendiente' : result.titleEs}
+              </div>
             </div>
 
             <div className="dual">
@@ -270,14 +314,22 @@ export default function App() {
               </div>
             </div>
 
-            <div className="contextBand">
-              <strong>
-                {context.bandEs} / {context.bandEn}
-              </strong>
-              <p>
-                {context.detailEs} {context.detailEn}
-              </p>
-            </div>
+            {context ? (
+              <div className="contextBand">
+                <strong>
+                  {context.bandEs} / {context.bandEn}
+                </strong>
+                <p>
+                  {context.detailEs} {context.detailEn}
+                </p>
+              </div>
+            ) : (
+              <div className="notice warning">
+                <strong>Interpretación / Interpretation:</strong> En provincias marcadas como pendientes no
+                mostramos una prioridad resumida basada en zona porque la capa de clasificación sigue en revisión.
+                Your housing context still matters, but the municipal overlay is not reliable enough here yet.
+              </div>
+            )}
 
             <div className="dual">
               <div>
@@ -302,6 +354,12 @@ export default function App() {
               <strong>Metodología / Method:</strong> búsqueda municipal sobre base completa de municipios de
               España, con superposición de la clasificación del Apéndice B del CTE DB-HS6 cuando está disponible.
               <br />
+              <strong>Cobertura actual / Current coverage:</strong>{' '}
+              {municipalityDataSummary.total.toLocaleString('es-ES')} municipios en la base de búsqueda;{' '}
+              {municipalityDataSummary.classified.toLocaleString('es-ES')} con clasificación mostrada;{' '}
+              {municipalityDataSummary.notClassified.toLocaleString('es-ES')} no clasificados y{' '}
+              {municipalityDataSummary.pendingValidation.toLocaleString('es-ES')} pendientes de validación.
+              <br />
               <strong>Disclaimer:</strong> Esta herramienta no estima el nivel real de tu vivienda. Solo una
               medición con detector puede confirmarlo. This tool is not an address-level or building-level risk
               calculator.
@@ -312,7 +370,8 @@ export default function App() {
             <h2>Busca tu municipio</h2>
             <p>
               Puedes buscar cualquier municipio de España. El resultado te dirá si aparece como Zona I, Zona II
-              o no clasificado en el Apéndice B del CTE DB-HS6.
+              o no clasificado en el Apéndice B del CTE DB-HS6. En algunas provincias la clasificación aparece
+              como pendiente de validación porque el bloque oficial todavía necesita limpieza adicional.
             </p>
           </section>
         )}
@@ -339,6 +398,16 @@ export default function App() {
             <p>
               No hay búsqueda por dirección, integración catastral ni mapa detallado todavía. / There is no
               address lookup, cadastral integration, or detailed map yet.
+            </p>
+          </article>
+          <article>
+            <h2>Metodología y límites / Method and limits</h2>
+            <p>
+              La búsqueda cubre toda la base municipal del INE y aplica la clasificación del Apéndice B cuando el
+              bloque provincial parece fiable. Los resultados pueden quedar como clasificados, no clasificados o
+              pendientes de validación. / Search covers the full INE municipality base and applies Appendix B
+              classification where the provincial block appears trustworthy. Results can currently appear as
+              classified, not classified, or pending validation.
             </p>
           </article>
         </section>

@@ -103,13 +103,13 @@ function municipalityVariants(name) {
     for (const part of name.split(' / ')) variants.add(part.trim())
   }
 
-  const articleMatch = name.match(/^(El|La|Los|Las)\s+(.+)$/u)
+  const articleMatch = name.match(/^(el|la|los|las)\s+(.+)$/iu)
   if (articleMatch) {
     variants.add(`${articleMatch[2]}, ${articleMatch[1]}`)
     variants.add(articleMatch[2])
   }
 
-  const commaArticleMatch = name.match(/^(.+),\s+(El|La|Los|Las)$/u)
+  const commaArticleMatch = name.match(/^(.+),\s+(el|la|los|las)$/iu)
   if (commaArticleMatch) {
     variants.add(`${commaArticleMatch[2]} ${commaArticleMatch[1]}`)
     variants.add(commaArticleMatch[1])

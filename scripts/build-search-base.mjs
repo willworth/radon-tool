@@ -90,24 +90,48 @@ const filteredAppendix = appendix.filter(
   (row) => !excludedProvinceKeys.has(`${row.autonomousCommunity}|${row.province}`),
 )
 
+const overlayByIneCode = new Map()
 const overlay = new Map()
 for (const row of filteredAppendix) {
+  const zone = row.zone === '1' ? 'I' : row.zone === '2' ? 'II' : 'not_classified'
+  if (row.ineCode) {
+    overlayByIneCode.set(row.ineCode, zone)
+  }
   const key = `${normalize(row.municipality)}|${normalize(row.province)}`
-  overlay.set(key, row.zone === '1' ? 'I' : row.zone === '2' ? 'II' : 'not_classified')
+  overlay.set(key, zone)
 }
 
 const base = ine
   .filter((row) => provinceToCcaa[row.province])
   .map((row) => {
     const key = `${normalize(row.municipality)}|${normalize(row.province)}`
-    const zone = manualOverlay.get(key) ?? overlay.get(key) ?? 'not_classified'
+    const autonomousCommunity = provinceToCcaa[row.province]
+    const provinceKey = `${autonomousCommunity}|${row.province}`
+    const hasManualOverride = manualOverlay.has(key)
+    const overlayZone = overlayByIneCode.get(row.code) ?? overlay.get(key)
+    const isPendingValidation = excludedProvinceKeys.has(provinceKey)
+
+    const zone = isPendingValidation
+      ? 'not_classified'
+      : hasManualOverride
+        ? manualOverlay.get(key)
+        : overlayZone ?? 'not_classified'
+
+    const sourceStatus = isPendingValidation
+      ? 'pending_validation'
+      : hasManualOverride
+        ? 'manual_override'
+        : overlayZone
+          ? 'appendix_overlay'
+          : 'not_classified'
+
     return {
       ineCode: row.code,
       municipality: row.municipality,
       province: row.province,
-      autonomousCommunity: provinceToCcaa[row.province],
+      autonomousCommunity,
       zone,
-      sourceStatus: zone === 'not_classified' ? 'official' : 'official',
+      sourceStatus,
     }
   })
 

@@ -14,7 +14,7 @@ OUT_PATH = ROOT / 'src' / 'data' / 'municipalities.official.json'
 START_PAGE = 146
 END_PAGE = 180
 MIN_Y = 60
-MAX_Y = 590
+MAX_Y = 700
 
 CCAA_X = 106.46
 PROVINCE_X = 191.21
@@ -22,6 +22,13 @@ ZONE1_X = 283.37
 ZONE2_X = 396.79
 X_TOL = 12
 Y_PREC = 2
+
+COLUMN_RANGES = {
+    'ccaa': (94, 150),
+    'province': (179, 230),
+    'zone1': (271, 350),
+    'zone2': (384, 455),
+}
 
 SKIP_VALUES = {
     'Documento Básico HS Salubridad',
@@ -59,6 +66,10 @@ class Collector:
 
 
 def bucket_for_x(x: float) -> str | None:
+    for key, (min_x, max_x) in COLUMN_RANGES.items():
+        if min_x <= x <= max_x:
+            return key
+
     targets = {
         'ccaa': CCAA_X,
         'province': PROVINCE_X,

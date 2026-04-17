@@ -1,4 +1,10 @@
 export type RadonZone = 'I' | 'II' | 'not_classified'
+export type MunicipalitySourceStatus =
+  | 'placeholder'
+  | 'appendix_overlay'
+  | 'not_classified'
+  | 'pending_validation'
+  | 'manual_override'
 
 export type MunicipalityRecord = {
   ineCode?: string
@@ -6,7 +12,7 @@ export type MunicipalityRecord = {
   province: string
   autonomousCommunity: string
   zone: RadonZone
-  sourceStatus?: 'placeholder' | 'official'
+  sourceStatus?: MunicipalitySourceStatus
   notes?: string
 }
 

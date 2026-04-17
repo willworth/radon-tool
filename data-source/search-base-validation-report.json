@@ -1,0 +1,542 @@
+{
+  "generatedAt": "2026-04-16T10:43:59.498Z",
+  "summary": {
+    "totalMunicipalities": 8131,
+    "byZone": {
+      "I": 1637,
+      "II": 1089,
+      "not_classified": 5405
+    },
+    "bySourceStatus": {
+      "not_classified": 4032,
+      "appendix_overlay": 2726,
+      "pending_validation": 1372,
+      "manual_override": 1
+    },
+    "manualOverrideCount": 1,
+    "pendingValidationCount": 1372
+  },
+  "excludedProvinces": [
+    {
+      "autonomousCommunity": "Andalucía",
+      "province": "Huelva",
+      "pendingValidationMunicipalities": 80
+    },
+    {
+      "autonomousCommunity": "Andalucía",
+      "province": "Sevilla",
+      "pendingValidationMunicipalities": 106
+    },
+    {
+      "autonomousCommunity": "Aragón",
+      "province": "Huesca",
+      "pendingValidationMunicipalities": 202
+    },
+    {
+      "autonomousCommunity": "Castilla y León",
+      "province": "Palencia",
+      "pendingValidationMunicipalities": 191
+    },
+    {
+      "autonomousCommunity": "Castilla y León",
+      "province": "Salamanca",
+      "pendingValidationMunicipalities": 362
+    },
+    {
+      "autonomousCommunity": "Cataluña",
+      "province": "Tarragona",
+      "pendingValidationMunicipalities": 184
+    },
+    {
+      "autonomousCommunity": "Comunidad Valenciana",
+      "province": "Castellón / Castelló",
+      "pendingValidationMunicipalities": 135
+    },
+    {
+      "autonomousCommunity": "País Vasco",
+      "province": "Vizcaya / Bizkaia",
+      "pendingValidationMunicipalities": 112
+    }
+  ],
+  "suspiciousProvinces": [
+    {
+      "province": "Valencia / València",
+      "autonomousCommunity": "Comunidad Valenciana",
+      "totalMunicipalities": 266,
+      "classifiedMunicipalities": 5,
+      "notClassifiedMunicipalities": 261,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    }
+  ],
+  "provinceStats": [
+    {
+      "province": "Álava / Araba",
+      "autonomousCommunity": "País Vasco",
+      "totalMunicipalities": 51,
+      "classifiedMunicipalities": 7,
+      "notClassifiedMunicipalities": 44,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Albacete",
+      "autonomousCommunity": "Castilla-La Mancha",
+      "totalMunicipalities": 87,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 87,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Alicante / Alacant",
+      "autonomousCommunity": "Comunidad Valenciana",
+      "totalMunicipalities": 141,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 141,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Almería",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 103,
+      "classifiedMunicipalities": 43,
+      "notClassifiedMunicipalities": 60,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Asturias",
+      "autonomousCommunity": "Principado de Asturias",
+      "totalMunicipalities": 78,
+      "classifiedMunicipalities": 49,
+      "notClassifiedMunicipalities": 29,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Ávila",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 248,
+      "classifiedMunicipalities": 215,
+      "notClassifiedMunicipalities": 33,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Badajoz",
+      "autonomousCommunity": "Extremadura",
+      "totalMunicipalities": 165,
+      "classifiedMunicipalities": 130,
+      "notClassifiedMunicipalities": 35,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Barcelona",
+      "autonomousCommunity": "Cataluña",
+      "totalMunicipalities": 311,
+      "classifiedMunicipalities": 148,
+      "notClassifiedMunicipalities": 163,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Burgos",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 371,
+      "classifiedMunicipalities": 91,
+      "notClassifiedMunicipalities": 280,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Cáceres",
+      "autonomousCommunity": "Extremadura",
+      "totalMunicipalities": 223,
+      "classifiedMunicipalities": 190,
+      "notClassifiedMunicipalities": 33,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Cádiz",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 45,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 45,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Cantabria",
+      "autonomousCommunity": "Cantabria",
+      "totalMunicipalities": 102,
+      "classifiedMunicipalities": 51,
+      "notClassifiedMunicipalities": 51,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Castellón / Castelló",
+      "autonomousCommunity": "Comunidad Valenciana",
+      "totalMunicipalities": 135,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 135,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Ceuta",
+      "autonomousCommunity": "Ciudad Autónoma de Ceuta",
+      "totalMunicipalities": 1,
+      "classifiedMunicipalities": 1,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Ciudad Real",
+      "autonomousCommunity": "Castilla-La Mancha",
+      "totalMunicipalities": 102,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 102,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Córdoba",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 77,
+      "classifiedMunicipalities": 32,
+      "notClassifiedMunicipalities": 45,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Cuenca",
+      "autonomousCommunity": "Castilla-La Mancha",
+      "totalMunicipalities": 238,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 238,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Gerona / Girona",
+      "autonomousCommunity": "Cataluña",
+      "totalMunicipalities": 221,
+      "classifiedMunicipalities": 165,
+      "notClassifiedMunicipalities": 56,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Granada",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 174,
+      "classifiedMunicipalities": 44,
+      "notClassifiedMunicipalities": 130,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Guadalajara",
+      "autonomousCommunity": "Castilla-La Mancha",
+      "totalMunicipalities": 288,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 288,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Guipúzcoa / Gipuzkoa",
+      "autonomousCommunity": "País Vasco",
+      "totalMunicipalities": 88,
+      "classifiedMunicipalities": 61,
+      "notClassifiedMunicipalities": 27,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Huelva",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 80,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 80,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Huesca",
+      "autonomousCommunity": "Aragón",
+      "totalMunicipalities": 202,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 202,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Islas Baleares / Illes Balears",
+      "autonomousCommunity": "Islas Baleares",
+      "totalMunicipalities": 67,
+      "classifiedMunicipalities": 23,
+      "notClassifiedMunicipalities": 44,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Jaén",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 97,
+      "classifiedMunicipalities": 24,
+      "notClassifiedMunicipalities": 73,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "La Coruña / A Coruña",
+      "autonomousCommunity": "Galicia",
+      "totalMunicipalities": 93,
+      "classifiedMunicipalities": 74,
+      "notClassifiedMunicipalities": 19,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "La Rioja",
+      "autonomousCommunity": "La Rioja",
+      "totalMunicipalities": 174,
+      "classifiedMunicipalities": 61,
+      "notClassifiedMunicipalities": 113,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Las Palmas",
+      "autonomousCommunity": "Canarias",
+      "totalMunicipalities": 34,
+      "classifiedMunicipalities": 21,
+      "notClassifiedMunicipalities": 13,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "León",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 211,
+      "classifiedMunicipalities": 107,
+      "notClassifiedMunicipalities": 104,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Lérida / Lleida",
+      "autonomousCommunity": "Cataluña",
+      "totalMunicipalities": 231,
+      "classifiedMunicipalities": 99,
+      "notClassifiedMunicipalities": 132,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Lugo",
+      "autonomousCommunity": "Galicia",
+      "totalMunicipalities": 67,
+      "classifiedMunicipalities": 56,
+      "notClassifiedMunicipalities": 11,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Madrid",
+      "autonomousCommunity": "Comunidad de Madrid",
+      "totalMunicipalities": 179,
+      "classifiedMunicipalities": 126,
+      "notClassifiedMunicipalities": 53,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Málaga",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 103,
+      "classifiedMunicipalities": 21,
+      "notClassifiedMunicipalities": 82,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Melilla",
+      "autonomousCommunity": "Ciudad Autónoma de Melilla",
+      "totalMunicipalities": 1,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 1,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Murcia",
+      "autonomousCommunity": "Murcia",
+      "totalMunicipalities": 45,
+      "classifiedMunicipalities": 3,
+      "notClassifiedMunicipalities": 42,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 1
+    },
+    {
+      "province": "Navarra",
+      "autonomousCommunity": "Comunidad Foral de Navarra",
+      "totalMunicipalities": 272,
+      "classifiedMunicipalities": 68,
+      "notClassifiedMunicipalities": 204,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Orense / Ourense",
+      "autonomousCommunity": "Galicia",
+      "totalMunicipalities": 92,
+      "classifiedMunicipalities": 67,
+      "notClassifiedMunicipalities": 25,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Palencia",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 191,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 191,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Pontevedra",
+      "autonomousCommunity": "Galicia",
+      "totalMunicipalities": 61,
+      "classifiedMunicipalities": 42,
+      "notClassifiedMunicipalities": 19,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Salamanca",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 362,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 362,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Santa Cruz de Tenerife",
+      "autonomousCommunity": "Canarias",
+      "totalMunicipalities": 54,
+      "classifiedMunicipalities": 20,
+      "notClassifiedMunicipalities": 34,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Segovia",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 209,
+      "classifiedMunicipalities": 145,
+      "notClassifiedMunicipalities": 64,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Sevilla",
+      "autonomousCommunity": "Andalucía",
+      "totalMunicipalities": 106,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 106,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Soria",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 183,
+      "classifiedMunicipalities": 63,
+      "notClassifiedMunicipalities": 120,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Tarragona",
+      "autonomousCommunity": "Cataluña",
+      "totalMunicipalities": 184,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 184,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Teruel",
+      "autonomousCommunity": "Aragón",
+      "totalMunicipalities": 236,
+      "classifiedMunicipalities": 81,
+      "notClassifiedMunicipalities": 155,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Toledo",
+      "autonomousCommunity": "Castilla-La Mancha",
+      "totalMunicipalities": 204,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 204,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Valencia / València",
+      "autonomousCommunity": "Comunidad Valenciana",
+      "totalMunicipalities": 266,
+      "classifiedMunicipalities": 5,
+      "notClassifiedMunicipalities": 261,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Valladolid",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 225,
+      "classifiedMunicipalities": 93,
+      "notClassifiedMunicipalities": 132,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Vizcaya / Bizkaia",
+      "autonomousCommunity": "País Vasco",
+      "totalMunicipalities": 112,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 112,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Zamora",
+      "autonomousCommunity": "Castilla y León",
+      "totalMunicipalities": 248,
+      "classifiedMunicipalities": 200,
+      "notClassifiedMunicipalities": 48,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    },
+    {
+      "province": "Zaragoza",
+      "autonomousCommunity": "Aragón",
+      "totalMunicipalities": 293,
+      "classifiedMunicipalities": 100,
+      "notClassifiedMunicipalities": 193,
+      "pendingValidationMunicipalities": 0,
+      "manualOverrideMunicipalities": 0
+    }
+  ]
+}
