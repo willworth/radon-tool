@@ -599,6 +599,20 @@ export default function App() {
             </p>
           </article>
         </section>
+
+        <footer className="siteFooter">
+          <p>
+            {tcopy(
+              language,
+              'Un proyecto de Will Worth. Más contexto y proyectos en ',
+              'A project by Will Worth. More context and projects at ',
+            )}
+            <a href="https://willworth.dev" target="_blank" rel="noreferrer">
+              willworth.dev
+            </a>
+            .
+          </p>
+        </footer>
       </main>
     </div>
   )

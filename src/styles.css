@@ -518,6 +518,28 @@ select:focus,
   padding: 14px 16px;
 }
 
+.siteFooter {
+  padding: 4px 6px 0;
+  text-align: center;
+  color: var(--text-soft);
+}
+
+.siteFooter p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.siteFooter a {
+  color: #1d5265;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.siteFooter a:hover,
+.siteFooter a:focus {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .page {
     padding: 14px 10px 32px;
