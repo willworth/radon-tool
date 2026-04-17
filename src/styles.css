@@ -1,10 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
+
 :root {
   color-scheme: light;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #102033;
-  background: #eef3f7;
+  color: #16303b;
+  background:
+    radial-gradient(circle at top left, rgba(255, 214, 153, 0.28), transparent 28%),
+    linear-gradient(180deg, #eef3ef 0%, #e8eef0 45%, #edf2f4 100%);
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --surface-soft: #f5f1e9;
+  --border: rgba(47, 78, 91, 0.12);
+  --text-soft: #5b7180;
+  --shadow: 0 22px 60px rgba(18, 40, 48, 0.08);
+  --zone-i: #d6eadf;
+  --zone-i-text: #215940;
+  --zone-ii: #f7d4cb;
+  --zone-ii-text: #8f3021;
+  --pending: #f4dd9d;
+  --pending-text: #6f5310;
 }
 
 * {
@@ -13,7 +29,8 @@
 
 body {
   margin: 0;
-  background: #eef3f7;
+  background: var(--background, #edf2f4);
+  overflow-x: hidden;
 }
 
 button,
@@ -24,23 +41,24 @@ select {
 
 .page {
   min-height: 100vh;
-  padding: 32px 16px 56px;
+  padding: 40px 16px 64px;
 }
 
 .shell {
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 
 .card,
 .hero {
-  background: #ffffff;
-  border: 1px solid #d7e2ec;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(16, 32, 51, 0.05);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: var(--shadow);
 }
 
 .hero h1,
@@ -50,24 +68,275 @@ select {
   margin-top: 0;
 }
 
+.hero h1,
+.card h2,
+.card h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.languageToggle {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border);
+}
+
+.languageButton {
+  border: 0;
+  background: transparent;
+  color: var(--text-soft);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.languageButton-active {
+  background: #18333c;
+  color: #fffdf8;
+}
+
+.heroLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 245, 238, 0.92)),
+    var(--surface);
+}
+
 .eyebrow {
   margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.78rem;
-  color: #486178;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #6b7f7d;
+}
+
+.hero h1 {
+  max-width: 14ch;
+  margin-bottom: 14px;
+  font-size: clamp(2.2rem, 4.6vw, 4rem);
+  line-height: 0.96;
 }
 
 .lede {
+  max-width: 62ch;
+  font-size: 1.02rem;
+  color: #304f5e;
+}
+
+.heroGuidance {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.journeyStrip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.journeyBlock {
+  display: grid;
+  gap: 14px;
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+
+.journeyIntro {
   max-width: 70ch;
+}
+
+.journeyIntro h2 {
+  margin-bottom: 8px;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.02;
+}
+
+.journeyIntro p:last-child {
+  margin-bottom: 0;
+}
+
+.journeyStep {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(64, 92, 102, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(246, 248, 244, 0.8));
+}
+
+.journeyStep p {
+  margin: 4px 0 0;
+  font-size: 0.92rem;
+}
+
+.journeyNumber {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #18333c;
+  color: #fffdf8;
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.heroGuidanceItem,
+.statCard,
+.legendItem,
+.emptySteps article {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 18px;
+}
+
+.heroGuidanceItem {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+}
+
+.heroGuidanceItem strong,
+.statCard strong,
+.emptySteps strong {
+  font-size: 0.96rem;
+}
+
+.heroGuidanceItem span,
+.statCard span,
+.legendItem span,
+.emptySteps span,
+.sectionIntro p,
+.selectedMeta,
+.resultButton small,
+.noResults,
+.notice,
+.card p {
+  color: var(--text-soft);
+}
+
+.heroPanel {
+  background: rgba(19, 43, 52, 0.95);
+  color: #f7f8f5;
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.panelEyebrow {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #a7bbb5;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.statCard {
+  display: grid;
+  gap: 2px;
+  padding: 14px;
+  background: rgba(245, 247, 244, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.statCard strong {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fffef7;
+}
+
+.statCard span {
+  color: #bfd0ca;
+  font-size: 0.82rem;
+}
+
+.statCard-alert {
+  background: rgba(232, 180, 52, 0.12);
+}
+
+.legendList {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.legendItem {
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.legendSwatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  margin-top: 3px;
+}
+
+.legendSwatch-i {
+  background: var(--zone-i);
+}
+
+.legendSwatch-neutral {
+  background: #c8d2d8;
+}
+
+.legendSwatch-pending {
+  background: var(--pending);
+}
+
+.sectionIntro {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.sectionIntro h2 {
+  margin-bottom: 0;
+}
+
+.sectionIntro p {
+  max-width: 44ch;
+  margin-bottom: 0;
 }
 
 .notice {
   margin-top: 16px;
-  padding: 14px 16px;
-  border-radius: 14px;
-  background: #f3f7fb;
-  color: #27415b;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(108, 130, 136, 0.16);
+  background: rgba(241, 246, 248, 0.84);
 }
 
 .notice strong {
@@ -76,8 +345,8 @@ select {
 }
 
 .warning {
-  background: #fff4db;
-  color: #6d4d00;
+  background: rgba(255, 238, 194, 0.86);
+  color: var(--pending-text);
 }
 
 .searchCard label,
@@ -90,11 +359,11 @@ select {
 input,
 select {
   width: 100%;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #bfd0df;
-  background: #fcfdff;
-  min-height: 48px;
+  padding: 13px 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(96, 120, 128, 0.18);
+  background: rgba(255, 255, 255, 0.96);
+  min-height: 52px;
 }
 
 input:focus,
@@ -107,24 +376,25 @@ select:focus,
 .results {
   margin-top: 12px;
   display: grid;
-  gap: 8px;
-  max-height: 320px;
+  gap: 10px;
+  max-height: 360px;
   overflow: auto;
 }
 
 .resultButton {
   text-align: left;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid #d7e2ec;
-  background: #f9fbfd;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(96, 120, 128, 0.16);
+  background: linear-gradient(180deg, #fffdf9 0%, #f7fafb 100%);
   cursor: pointer;
-  min-height: 56px;
+  min-height: 62px;
 }
 
 .resultButton-active {
-  border-color: #77a7d8;
-  background: #eef5fc;
+  border-color: rgba(80, 124, 120, 0.35);
+  background: linear-gradient(180deg, #eef6f0 0%, #f5faf7 100%);
+  box-shadow: 0 10px 24px rgba(39, 86, 70, 0.08);
 }
 
 .resultButton span,
@@ -134,15 +404,16 @@ select:focus,
 
 .resultButton span {
   font-weight: 600;
+  color: #18303b;
 }
 
 .resultButton small {
   margin-top: 4px;
-  color: #486178;
+  font-size: 0.82rem;
 }
 
 .resultButton:hover {
-  background: #f0f5fa;
+  background: linear-gradient(180deg, #f4f8f4 0%, #f5fafb 100%);
 }
 
 .grid,
@@ -170,39 +441,51 @@ select:focus,
 
 .badge {
   border-radius: 999px;
-  padding: 10px 14px;
+  padding: 10px 15px;
   font-weight: 700;
   white-space: nowrap;
 }
 
 .badge-I {
-  background: #d9ecff;
-  color: #0f4e8c;
+  background: var(--zone-i);
+  color: var(--zone-i-text);
 }
 
 .badge-II {
-  background: #ffdede;
-  color: #9c1f1f;
+  background: var(--zone-ii);
+  color: var(--zone-ii-text);
 }
 
 .badge-not_classified {
-  background: #e9edf2;
-  color: #445466;
+  background: #dfe6ea;
+  color: #4d5f6c;
+}
+
+.badge-pending {
+  background: var(--pending);
+  color: var(--pending-text);
 }
 
 .contextBand {
   margin: 8px 0 20px;
-  padding: 16px;
-  border-radius: 16px;
-  background: #f3f7fb;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(229, 239, 236, 0.9), rgba(242, 247, 248, 0.86));
+  border: 1px solid rgba(78, 117, 104, 0.14);
+}
+
+.resultSideNote {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(245, 241, 233, 0.68);
+  border: 1px solid rgba(134, 126, 103, 0.16);
 }
 
 .noResults {
-  padding: 14px 16px;
-  border: 1px dashed #bfd0df;
-  border-radius: 14px;
-  background: #fbfdff;
-  color: #35506a;
+  padding: 16px 18px;
+  border: 1px dashed rgba(96, 120, 128, 0.24);
+  border-radius: 18px;
+  background: rgba(251, 252, 255, 0.88);
 }
 
 .noResults p {
@@ -216,11 +499,28 @@ select:focus,
 
 .emptyState {
   text-align: center;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 243, 235, 0.88)),
+    var(--surface);
+}
+
+.emptySteps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.emptySteps article {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
 }
 
 @media (max-width: 640px) {
   .page {
-    padding: 16px 10px 32px;
+    padding: 14px 10px 32px;
   }
 
   .shell {
@@ -229,19 +529,41 @@ select:focus,
 
   .card,
   .hero {
-    padding: 16px;
-    border-radius: 16px;
+    padding: 18px;
+    border-radius: 22px;
   }
 
   .hero h1 {
-    font-size: 1.7rem;
-    line-height: 1.15;
+    max-width: none;
+    font-size: 2rem;
+    line-height: 0.98;
+  }
+
+  .heroLayout,
+  .heroGuidance,
+  .journeyStrip,
+  .emptySteps,
+  .sectionIntro {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .languageToggle {
+    margin-bottom: 16px;
+  }
+
+  .sectionIntro {
+    align-items: start;
   }
 
   .dual,
   .infoGrid,
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .statGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .resultHeader {
