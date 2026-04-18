@@ -102,7 +102,7 @@ select {
   color: #fffdf8;
 }
 
-.heroLayout {
+.heroTop {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
   gap: 24px;
@@ -115,6 +115,11 @@ select {
     var(--surface);
 }
 
+.introBlock {
+  max-width: 76ch;
+  margin-bottom: 22px;
+}
+
 .eyebrow {
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -125,7 +130,7 @@ select {
 }
 
 .hero h1 {
-  max-width: 14ch;
+  max-width: 12ch;
   margin-bottom: 14px;
   font-size: clamp(2.2rem, 4.6vw, 4rem);
   line-height: 0.96;
@@ -137,11 +142,18 @@ select {
   color: #304f5e;
 }
 
+.introSupporting {
+  max-width: 62ch;
+  margin-top: 10px;
+  font-size: 0.98rem;
+  color: var(--text-soft);
+}
+
 .heroGuidance {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .journeyStrip {
@@ -153,8 +165,13 @@ select {
 .journeyBlock {
   display: grid;
   gap: 14px;
-  margin-top: 4px;
   margin-bottom: 22px;
+}
+
+.journeyCard {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(246, 248, 244, 0.88)),
+    var(--surface);
 }
 
 .journeyIntro {
@@ -337,6 +354,10 @@ select {
   border-radius: 18px;
   border: 1px solid rgba(108, 130, 136, 0.16);
   background: rgba(241, 246, 248, 0.84);
+}
+
+.heroNotice {
+  margin-top: 18px;
 }
 
 .notice strong {
@@ -561,7 +582,7 @@ select:focus,
     line-height: 0.98;
   }
 
-  .heroLayout,
+  .heroTop,
   .heroGuidance,
   .journeyStrip,
   .emptySteps,

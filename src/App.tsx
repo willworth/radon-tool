@@ -229,84 +229,34 @@ export default function App() {
               EN
             </button>
           </div>
-          <section className="journeyBlock" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
-            <div className="journeyIntro">
-              <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
-              <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
-              <p>
-                {tcopy(
-                  language,
-                  'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
-                  'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
-                )}
-              </p>
-            </div>
-            <div className="journeyStrip">
-              <article className="journeyStep">
-                <span className="journeyNumber">1</span>
-                <div>
-                  <strong>{tcopy(language, 'Busca tu municipio', 'Search your municipality')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Encuentra tu municipio en segundos, con o sin acentos.',
-                      'Find your municipality in seconds, with or without accents.',
-                    )}
-                  </p>
-                </div>
-              </article>
-              <article className="journeyStep">
-                <span className="journeyNumber">2</span>
-                <div>
-                  <strong>{tcopy(language, 'Entiende la señal', 'Understand the signal')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Mira si aparece como Zona I, Zona II, no clasificado o pendiente de validación.',
-                      'See whether it appears as Zone I, Zone II, not classified, or pending validation.',
-                    )}
-                  </p>
-                </div>
-              </article>
-              <article className="journeyStep">
-                <span className="journeyNumber">3</span>
-                <div>
-                  <strong>{tcopy(language, 'Decide qué hacer', 'Decide what to do')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Usa el resultado para decidir si medir, pedir más información o hablar con tu ayuntamiento o comunidad.',
-                      'Use the result to decide whether to test, ask for more information, or contact your town hall or building community.',
-                    )}
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <div className="heroLayout">
-            <div>
+          <div className="heroTop">
+            <div className="introBlock">
               <p className="eyebrow">{tcopy(language, 'España', 'Spain')}</p>
               <h1>{tcopy(language, 'Consulta preliminar de radón por municipio', 'Preliminary radon lookup by municipality')}</h1>
               <p className="lede">
                 {tcopy(
                   language,
-                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II o no clasificado en el Apéndice B, y añade un poco de contexto sobre la vivienda. Está pensada para ser útil, explícita y prudente.',
-                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, or not classified in Appendix B, and add a little housing context. The tool is designed to be useful, explicit, and cautious.',
+                  'El radón es un gas radiactivo natural que puede acumularse en viviendas y otros espacios interiores. Esta herramienta te ayuda a entender si tu municipio aparece en la clasificación oficial actual y si merece la pena investigar más o plantearte una medición.',
+                  'Radon is a naturally occurring radioactive gas that can build up in homes and other indoor spaces. This tool helps you understand whether your municipality appears in the current official classification and whether it is worth investigating further or considering a measurement.',
                 )}
               </p>
+              <p className="introSupporting">
+                {tcopy(
+                  language,
+                  'No sustituye una medición directa ni pretende dar certeza sobre una vivienda concreta. Su función es orientarte rápido y con honestidad para que sepas si conviene dar el siguiente paso.',
+                  'It does not replace a direct measurement and it does not claim certainty for any specific property. Its job is to orient you quickly and honestly so you can decide whether to take the next step.',
+                )}
+              </p>
+
               <div className="heroGuidance">
                 <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Búsqueda completa', 'Full search base')}</strong>
-                  <span>{tcopy(language, 'Base INE completa, no solo municipios clasificados.', 'Full INE base, not only classified municipalities.')}</span>
+                  <strong>{tcopy(language, 'Qué hace', 'What it does')}</strong>
+                  <span>{tcopy(language, 'Te orienta a nivel municipal para saber si conviene medir o pedir más información.', 'It gives you a municipality-level signal to help decide whether to test or ask for more information.')}</span>
                 </div>
                 <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Lectura honesta', 'Honest reading')}</strong>
-                  <span>{tcopy(language, 'Si un bloque provincial no es fiable, se marca como pendiente de validación.', 'If a provincial block is not reliable, it is marked as pending validation.')}</span>
+                  <strong>{tcopy(language, 'Qué no hace', 'What it does not do')}</strong>
+                  <span>{tcopy(language, 'No estima el nivel real de una vivienda concreta ni sustituye un detector.', 'It does not estimate the true level in a specific property and it does not replace a detector.')}</span>
                 </div>
-              </div>
-              <div className="notice warning">
-                <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
-                {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
               </div>
             </div>
 
@@ -346,6 +296,65 @@ export default function App() {
                 </div>
               </div>
             </aside>
+          </div>
+          <div className="notice warning heroNotice">
+            <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
+            {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
+          </div>
+        </section>
+
+        <section className="card journeyCard" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
+          <div className="journeyIntro">
+            <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
+            <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
+            <p>
+              {tcopy(
+                language,
+                'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
+                'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
+              )}
+            </p>
+          </div>
+          <div className="journeyStrip">
+            <article className="journeyStep">
+              <span className="journeyNumber">1</span>
+              <div>
+                <strong>{tcopy(language, 'Busca tu municipio', 'Search your municipality')}</strong>
+                <p>
+                  {tcopy(
+                    language,
+                    'Encuentra tu municipio en segundos, con o sin acentos.',
+                    'Find your municipality in seconds, with or without accents.',
+                  )}
+                </p>
+              </div>
+            </article>
+            <article className="journeyStep">
+              <span className="journeyNumber">2</span>
+              <div>
+                <strong>{tcopy(language, 'Entiende la señal', 'Understand the signal')}</strong>
+                <p>
+                  {tcopy(
+                    language,
+                    'Mira si aparece como Zona I, Zona II, no clasificado o pendiente de validación.',
+                    'See whether it appears as Zone I, Zone II, not classified, or pending validation.',
+                  )}
+                </p>
+              </div>
+            </article>
+            <article className="journeyStep">
+              <span className="journeyNumber">3</span>
+              <div>
+                <strong>{tcopy(language, 'Decide qué hacer', 'Decide what to do')}</strong>
+                <p>
+                  {tcopy(
+                    language,
+                    'Usa el resultado para decidir si medir, pedir más información o hablar con tu ayuntamiento o comunidad.',
+                    'Use the result to decide whether to test, ask for more information, or contact your town hall or building community.',
+                  )}
+                </p>
+              </div>
+            </article>
           </div>
         </section>
 
