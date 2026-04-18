@@ -156,6 +156,17 @@ select {
   margin-top: 18px;
 }
 
+.heroMethodLink {
+  margin: 14px 0 0;
+}
+
+.heroMethodLink a {
+  color: #18333c;
+  font-weight: 700;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
 .journeyStrip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

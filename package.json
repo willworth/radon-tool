@@ -8,7 +8,11 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "data:build-search-base": "node scripts/build-search-base.mjs",
-    "data:validate": "node scripts/validate-search-base.mjs"
+    "data:validate": "node scripts/validate-search-base.mjs",
+    "infra:deploy:preview": "npm --prefix infrastructure run cdk -- deploy RadonToolPreviewStack --require-approval never",
+    "infra:deploy:prod": "npm --prefix infrastructure run cdk -- deploy RadonToolProdStack --require-approval never",
+    "deploy:preview": "node scripts/deploy-site.mjs --env preview --cdk-deploy",
+    "deploy:prod": "node scripts/deploy-site.mjs --env prod --cdk-deploy"
   },
   "dependencies": {
     "react": "^19.1.1",

@@ -114,6 +114,48 @@ npm run data:build-search-base
 npm run data:validate
 ```
 
+## Deployment
+
+This repo now includes a standalone AWS static-site deployment path in `infrastructure/`.
+
+Production target:
+
+- `https://radon.willworth.es`
+
+Deployment pattern:
+
+- private S3 bucket for the built static assets
+- CloudFront distribution in front of the bucket
+- ACM certificate in `us-east-1`
+- Route53 alias record in the `willworth.es` hosted zone
+
+Useful commands:
+
+```bash
+# install infra dependencies once
+cd infrastructure && npm install
+
+# deploy or update production infrastructure + upload current build
+cd ..
+npm run deploy:prod
+
+# optional preview stack without custom domain
+npm run deploy:preview
+```
+
+The deploy script will:
+
+- deploy the relevant CDK stack
+- build the Vite app into `dist/`
+- sync `dist/` to the provisioned S3 bucket
+- invalidate the CloudFront distribution
+
+Key files:
+
+- `scripts/deploy-site.mjs`
+- `infrastructure/bin/infrastructure.ts`
+- `infrastructure/lib/static-site-stack.ts`
+
 ## Data model
 
 Current municipality record shape:

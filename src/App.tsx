@@ -258,6 +258,11 @@ export default function App() {
                   <span>{tcopy(language, 'No estima el nivel real de una vivienda concreta ni sustituye un detector.', 'It does not estimate the true level in a specific property and it does not replace a detector.')}</span>
                 </div>
               </div>
+              <p className="heroMethodLink">
+                <a href="#metodologia">
+                  {tcopy(language, 'Ver metodología y límites actuales', 'See current method and limitations')}
+                </a>
+              </p>
             </div>
 
             <aside className="heroPanel">
@@ -297,7 +302,7 @@ export default function App() {
               </div>
             </aside>
           </div>
-          <div className="notice warning heroNotice">
+          <div className="notice warning heroNotice" id="metodologia">
             <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
             {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
           </div>
@@ -611,13 +616,13 @@ export default function App() {
 
         <footer className="siteFooter">
           <p>
-            {tcopy(
-              language,
-              'Un proyecto de Will Worth. Más contexto y proyectos en ',
-              'A project by Will Worth. More context and projects at ',
-            )}
-            <a href="https://willworth.dev" target="_blank" rel="noreferrer">
-              willworth.dev
+            {language === 'es' ? 'Un proyecto de Will Worth. Más contexto y proyectos en ' : 'A project by Will Worth. More context and projects at '}
+            <a
+              href={language === 'es' ? 'https://willworth.es' : 'https://willworth.dev'}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {language === 'es' ? 'willworth.es' : 'willworth.dev'}
             </a>
             .
           </p>
