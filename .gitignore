@@ -1,5 +1,6 @@
 node_modules/
 dist/
+infrastructure/cdk.out/
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
