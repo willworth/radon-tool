@@ -145,6 +145,23 @@ function formatOption(m: MunicipalityRecord) {
   return `${m.municipality}, ${m.province}`
 }
 
+function searchRank(record: MunicipalityRecord, query: string) {
+  const municipality = normalizeSearchValue(record.municipality)
+  const province = normalizeSearchValue(record.province)
+  const community = normalizeSearchValue(record.autonomousCommunity)
+  const option = normalizeSearchValue(formatOption(record))
+
+  if (municipality === query || option === query) return 0
+  if (municipality.startsWith(query)) return 1
+  if (province === query) return municipality === query ? 0 : 2
+  if (province.startsWith(query)) return 3
+  if (community === query) return 4
+  if (municipality.includes(query)) return 5
+  if (province.includes(query)) return 6
+  if (community.includes(query)) return 7
+  return 8
+}
+
 function resultBadgeLabel(zone: RadonZone) {
   if (zone === 'II') return 'Zona II'
   if (zone === 'I') return 'Zona I'
@@ -185,15 +202,25 @@ export default function App() {
       }))
       .filter(({ haystack }) => haystack.includes(trimmed))
       .sort((a, b) => {
-        const aStarts = normalizeSearchValue(a.record.municipality).startsWith(trimmed)
-        const bStarts = normalizeSearchValue(b.record.municipality).startsWith(trimmed)
-        if (aStarts !== bStarts) return aStarts ? -1 : 1
+        const rankDifference = searchRank(a.record, trimmed) - searchRank(b.record, trimmed)
+        if (rankDifference !== 0) return rankDifference
+
+        const zonePriority = { II: 0, I: 1, not_classified: 2 } satisfies Record<RadonZone, number>
+        const zoneDifference = zonePriority[a.record.zone] - zonePriority[b.record.zone]
+        if (zoneDifference !== 0) return zoneDifference
+
         return a.record.municipality.localeCompare(b.record.municipality, 'es')
       })
       .slice(0, 8)
       .map(({ record }) => record)
   }, [query])
 
+  const normalizedQuery = normalizeSearchValue(query)
+  const provinceMatchNotice =
+    normalizedQuery &&
+    !selected &&
+    matches.length > 0 &&
+    matches.every((match) => normalizeSearchValue(match.province).includes(normalizedQuery))
   const selectedHasPendingClassification = selected ? isClassificationPending(selected) : false
   const result = selected
     ? selectedHasPendingClassification
@@ -229,40 +256,85 @@ export default function App() {
               EN
             </button>
           </div>
-          <div className="heroTop">
-            <div className="introBlock">
+          <section className="journeyBlock" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
+            <div className="journeyIntro">
+              <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
+              <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
+              <p>
+                {tcopy(
+                  language,
+                  'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
+                  'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
+                )}
+              </p>
+            </div>
+            <div className="journeyStrip">
+              <article className="journeyStep">
+                <span className="journeyNumber">1</span>
+                <div>
+                  <strong>{tcopy(language, 'Busca tu municipio', 'Search your municipality')}</strong>
+                  <p>
+                    {tcopy(
+                      language,
+                      'Encuentra tu municipio en segundos, con o sin acentos.',
+                      'Find your municipality in seconds, with or without accents.',
+                    )}
+                  </p>
+                </div>
+              </article>
+              <article className="journeyStep">
+                <span className="journeyNumber">2</span>
+                <div>
+                  <strong>{tcopy(language, 'Entiende la señal', 'Understand the signal')}</strong>
+                  <p>
+                    {tcopy(
+                      language,
+                      'Mira si aparece como Zona I, Zona II, no clasificado o pendiente de validación.',
+                      'See whether it appears as Zone I, Zone II, not classified, or pending validation.',
+                    )}
+                  </p>
+                </div>
+              </article>
+              <article className="journeyStep">
+                <span className="journeyNumber">3</span>
+                <div>
+                  <strong>{tcopy(language, 'Decide qué hacer', 'Decide what to do')}</strong>
+                  <p>
+                    {tcopy(
+                      language,
+                      'Usa el resultado para decidir si medir, pedir más información o hablar con tu ayuntamiento o comunidad.',
+                      'Use the result to decide whether to test, ask for more information, or contact your town hall or building community.',
+                    )}
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <div className="heroLayout">
+            <div>
               <p className="eyebrow">{tcopy(language, 'España', 'Spain')}</p>
               <h1>{tcopy(language, 'Consulta preliminar de radón por municipio', 'Preliminary radon lookup by municipality')}</h1>
               <p className="lede">
                 {tcopy(
                   language,
-                  'El radón es un gas radiactivo natural que puede acumularse en viviendas y otros espacios interiores. Esta herramienta te ayuda a entender si tu municipio aparece en la clasificación oficial actual y si merece la pena investigar más o plantearte una medición.',
-                  'Radon is a naturally occurring radioactive gas that can build up in homes and other indoor spaces. This tool helps you understand whether your municipality appears in the current official classification and whether it is worth investigating further or considering a measurement.',
+                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II o no clasificado en el Apéndice B, y añade un poco de contexto sobre la vivienda. Está pensada para ser útil, explícita y prudente.',
+                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, or not classified in Appendix B, and add a little housing context. The tool is designed to be useful, explicit, and cautious.',
                 )}
               </p>
-              <p className="introSupporting">
-                {tcopy(
-                  language,
-                  'No sustituye una medición directa ni pretende dar certeza sobre una vivienda concreta. Su función es orientarte rápido y con honestidad para que sepas si conviene dar el siguiente paso.',
-                  'It does not replace a direct measurement and it does not claim certainty for any specific property. Its job is to orient you quickly and honestly so you can decide whether to take the next step.',
-                )}
-              </p>
-
               <div className="heroGuidance">
                 <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Qué hace', 'What it does')}</strong>
-                  <span>{tcopy(language, 'Te orienta a nivel municipal para saber si conviene medir o pedir más información.', 'It gives you a municipality-level signal to help decide whether to test or ask for more information.')}</span>
+                  <strong>{tcopy(language, 'Búsqueda completa', 'Full search base')}</strong>
+                  <span>{tcopy(language, 'Base INE completa, no solo municipios clasificados.', 'Full INE base, not only classified municipalities.')}</span>
                 </div>
                 <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Qué no hace', 'What it does not do')}</strong>
-                  <span>{tcopy(language, 'No estima el nivel real de una vivienda concreta ni sustituye un detector.', 'It does not estimate the true level in a specific property and it does not replace a detector.')}</span>
+                  <strong>{tcopy(language, 'Lectura honesta', 'Honest reading')}</strong>
+                  <span>{tcopy(language, 'Si un bloque provincial no es fiable, se marca como pendiente de validación.', 'If a provincial block is not reliable, it is marked as pending validation.')}</span>
                 </div>
               </div>
-              <p className="heroMethodLink">
-                <a href="#metodologia">
-                  {tcopy(language, 'Ver metodología y límites actuales', 'See current method and limitations')}
-                </a>
-              </p>
+              <div className="notice warning">
+                <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
+                {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
+              </div>
             </div>
 
             <aside className="heroPanel">
@@ -302,65 +374,6 @@ export default function App() {
               </div>
             </aside>
           </div>
-          <div className="notice warning heroNotice" id="metodologia">
-            <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
-            {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
-          </div>
-        </section>
-
-        <section className="card journeyCard" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
-          <div className="journeyIntro">
-            <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
-            <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
-            <p>
-              {tcopy(
-                language,
-                'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
-                'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
-              )}
-            </p>
-          </div>
-          <div className="journeyStrip">
-            <article className="journeyStep">
-              <span className="journeyNumber">1</span>
-              <div>
-                <strong>{tcopy(language, 'Busca tu municipio', 'Search your municipality')}</strong>
-                <p>
-                  {tcopy(
-                    language,
-                    'Encuentra tu municipio en segundos, con o sin acentos.',
-                    'Find your municipality in seconds, with or without accents.',
-                  )}
-                </p>
-              </div>
-            </article>
-            <article className="journeyStep">
-              <span className="journeyNumber">2</span>
-              <div>
-                <strong>{tcopy(language, 'Entiende la señal', 'Understand the signal')}</strong>
-                <p>
-                  {tcopy(
-                    language,
-                    'Mira si aparece como Zona I, Zona II, no clasificado o pendiente de validación.',
-                    'See whether it appears as Zone I, Zone II, not classified, or pending validation.',
-                  )}
-                </p>
-              </div>
-            </article>
-            <article className="journeyStep">
-              <span className="journeyNumber">3</span>
-              <div>
-                <strong>{tcopy(language, 'Decide qué hacer', 'Decide what to do')}</strong>
-                <p>
-                  {tcopy(
-                    language,
-                    'Usa el resultado para decidir si medir, pedir más información o hablar con tu ayuntamiento o comunidad.',
-                    'Use the result to decide whether to test, ask for more information, or contact your town hall or building community.',
-                  )}
-                </p>
-              </div>
-            </article>
-          </div>
         </section>
 
         <section className="card searchCard">
@@ -392,6 +405,15 @@ export default function App() {
               setSelected(null)
             }}
           />
+          {provinceMatchNotice ? (
+            <p className="searchHint">
+              {tcopy(
+                language,
+                'Estás viendo coincidencias de una provincia. Elige el municipio concreto para ver la clasificación; si una provincia está pendiente, no lo leas como riesgo bajo.',
+                'You are seeing province-level matches. Choose the specific municipality to see its classification; if a province is pending, do not read that as low risk.',
+              )}
+            </p>
+          ) : null}
           <div className="results" role="listbox" aria-label="Municipality matches">
             {matches.map((match) => (
               <button
@@ -614,15 +636,94 @@ export default function App() {
           </article>
         </section>
 
+        <section className="card disclosureCard" aria-labelledby="disclosure-heading">
+          <div className="sectionIntro">
+            <div>
+              <p className="eyebrow">{tcopy(language, 'Antes de usar el resultado', 'Before using the result')}</p>
+              <h2 id="disclosure-heading">{tcopy(language, 'Fuentes, estado y cautelas', 'Sources, status, and cautions')}</h2>
+            </div>
+            <p>
+              {tcopy(
+                language,
+                'Esta herramienta está pensada como una orientación preliminar y transparente, no como una certificación sanitaria, técnica o inmobiliaria.',
+                'This tool is intended as a transparent preliminary guide, not as a health, technical, or property certification.',
+              )}
+            </p>
+          </div>
+          <div className="disclosureGrid">
+            <article>
+              <h3>{tcopy(language, 'Fuente principal', 'Primary source')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'La clasificación procede del Apéndice B del CTE DB-HS6. La base de búsqueda usa municipios del INE para que también puedas encontrar lugares que no aparecen en la capa clasificada.',
+                  'Classification comes from CTE DB-HS6 Appendix B. The search base uses INE municipalities so you can also find places that do not appear in the classified layer.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, '“No clasificado” no es “sin radón”', '“Not classified” does not mean “no radon”')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Un municipio no clasificado solo significa que esta capa no lo marca como Zona I o II. La geología local, el edificio y la ventilación pueden cambiar la exposición real.',
+                  'A not-classified municipality only means this layer does not mark it as Zone I or II. Local geology, the building, and ventilation can change real exposure.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Pendiente de validación', 'Pending validation')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Si una provincia está pendiente, su bloque se ha retenido deliberadamente por dudas de extracción o reconciliación. Es una señal de cautela, no una lectura tranquilizadora.',
+                  'If a province is pending, its block has deliberately been withheld because of extraction or reconciliation concerns. It is a caution signal, not a reassuring result.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'La medición decide', 'Measurement decides')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'La única forma de conocer el nivel de radón interior de una vivienda concreta es medir con un detector adecuado durante un periodo representativo.',
+                  'The only way to know the indoor radon level of a specific home is to measure it with a suitable detector over a representative period.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Estado del prototipo', 'Prototype status')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Última revisión de datos: mayo de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review: May 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Correcciones', 'Corrections')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Si encuentras un municipio mal emparejado, un texto confuso o una fuente más actual, escríbeme. Prefiero corregir el límite de confianza antes que aparentar certeza.',
+                  'If you find a mismatched municipality, unclear wording, or a newer source, tell me. I would rather correct the confidence boundary than pretend certainty.',
+                )}{' '}
+                <a href="mailto:willworthdev@gmail.com">willworthdev@gmail.com</a>
+              </p>
+            </article>
+          </div>
+        </section>
+
         <footer className="siteFooter">
           <p>
-            {language === 'es' ? 'Un proyecto de Will Worth. Más contexto y proyectos en ' : 'A project by Will Worth. More context and projects at '}
-            <a
-              href={language === 'es' ? 'https://willworth.es' : 'https://willworth.dev'}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {language === 'es' ? 'willworth.es' : 'willworth.dev'}
+            {tcopy(
+              language,
+              'Un proyecto de Will Worth. Más contexto y proyectos en ',
+              'A project by Will Worth. More context and projects at ',
+            )}
+            <a href="https://willworth.dev" target="_blank" rel="noreferrer">
+              willworth.dev
             </a>
             .
           </p>
