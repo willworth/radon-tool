@@ -101,10 +101,14 @@ function isClassificationPending(record: MunicipalityRecord) {
   return record.sourceStatus === 'pending_validation'
 }
 
-function sourceStatusLabel(sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
-  if (sourceStatus === 'pending_validation') return 'Pendiente de validación'
-  if (sourceStatus === 'manual_override') return zone === 'not_classified' ? 'No clasificado (ajuste manual)' : 'Ajuste manual'
-  return resultBadgeLabel(zone ?? 'not_classified')
+function sourceStatusLabel(language: Language, sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
+  if (sourceStatus === 'pending_validation') return tcopy(language, 'Pendiente de validación', 'Pending validation')
+  if (sourceStatus === 'manual_override') {
+    return zone === 'not_classified'
+      ? tcopy(language, 'No clasificado (ajuste manual)', 'Not classified (manual adjustment)')
+      : tcopy(language, 'Ajuste manual', 'Manual adjustment')
+  }
+  return resultBadgeLabel(language, zone ?? 'not_classified')
 }
 
 function scoreContext(zone: RadonZone, housingType: HousingType, floor: FloorLevel, age: BuildingAge) {
@@ -162,10 +166,10 @@ function searchRank(record: MunicipalityRecord, query: string) {
   return 8
 }
 
-function resultBadgeLabel(zone: RadonZone) {
-  if (zone === 'II') return 'Zona II'
-  if (zone === 'I') return 'Zona I'
-  return 'No clasificado'
+function resultBadgeLabel(language: Language, zone: RadonZone) {
+  if (zone === 'II') return tcopy(language, 'Zona II', 'Zone II')
+  if (zone === 'I') return tcopy(language, 'Zona I', 'Zone I')
+  return tcopy(language, 'No clasificado', 'Not classified')
 }
 
 function normalizeSearchValue(value: string) {
@@ -179,6 +183,10 @@ function normalizeSearchValue(value: string) {
 
 function tcopy(language: Language, es: string, en: string) {
   return language === 'es' ? es : en
+}
+
+function formatCount(language: Language, value: number) {
+  return value.toLocaleString(language === 'es' ? 'es-ES' : 'en-US')
 }
 
 export default function App() {
@@ -341,19 +349,19 @@ export default function App() {
               <p className="panelEyebrow">{tcopy(language, 'Cobertura actual', 'Current coverage')}</p>
               <div className="statGrid">
                 <article className="statCard">
-                  <strong>{municipalityDataSummary.total.toLocaleString('es-ES')}</strong>
+                  <strong>{formatCount(language, municipalityDataSummary.total)}</strong>
                   <span>{tcopy(language, 'municipios en búsqueda', 'municipalities searchable')}</span>
                 </article>
                 <article className="statCard">
-                  <strong>{municipalityDataSummary.classified.toLocaleString('es-ES')}</strong>
+                  <strong>{formatCount(language, municipalityDataSummary.classified)}</strong>
                   <span>{tcopy(language, 'con clasificación visible', 'with visible classification')}</span>
                 </article>
                 <article className="statCard">
-                  <strong>{municipalityDataSummary.notClassified.toLocaleString('es-ES')}</strong>
+                  <strong>{formatCount(language, municipalityDataSummary.notClassified)}</strong>
                   <span>{tcopy(language, 'sin clasificación mostrada', 'with no shown classification')}</span>
                 </article>
                 <article className="statCard statCard-alert">
-                  <strong>{municipalityDataSummary.pendingValidation.toLocaleString('es-ES')}</strong>
+                  <strong>{formatCount(language, municipalityDataSummary.pendingValidation)}</strong>
                   <span>{tcopy(language, 'pendientes de validación', 'pending validation')}</span>
                 </article>
               </div>
@@ -427,7 +435,7 @@ export default function App() {
               >
                 <span>{match.municipality}</span>
                 <small>
-                  {match.province} · {match.autonomousCommunity} · {sourceStatusLabel(match.sourceStatus, match.zone)}
+                  {match.province} · {match.autonomousCommunity} · {sourceStatusLabel(language, match.sourceStatus, match.zone)}
                 </small>
               </button>
             ))}
@@ -552,10 +560,23 @@ export default function App() {
               )}
               <br />
               <strong>{tcopy(language, 'Cobertura actual:', 'Current coverage:')}</strong>{' '}
-              {municipalityDataSummary.total.toLocaleString('es-ES')} municipios en la base de búsqueda;{' '}
-              {municipalityDataSummary.classified.toLocaleString('es-ES')} con clasificación mostrada;{' '}
-              {municipalityDataSummary.notClassified.toLocaleString('es-ES')} no clasificados y{' '}
-              {municipalityDataSummary.pendingValidation.toLocaleString('es-ES')} pendientes de validación.
+              {tcopy(
+                language,
+                `${formatCount(language, municipalityDataSummary.total)} municipios en la base de búsqueda; ${formatCount(
+                  language,
+                  municipalityDataSummary.classified,
+                )} con clasificación mostrada; ${formatCount(language, municipalityDataSummary.notClassified)} no clasificados y ${formatCount(
+                  language,
+                  municipalityDataSummary.pendingValidation,
+                )} pendientes de validación.`,
+                `${formatCount(language, municipalityDataSummary.total)} municipalities in the search base; ${formatCount(
+                  language,
+                  municipalityDataSummary.classified,
+                )} with shown classification; ${formatCount(language, municipalityDataSummary.notClassified)} not classified and ${formatCount(
+                  language,
+                  municipalityDataSummary.pendingValidation,
+                )} pending validation.`,
+              )}
               <br />
               <strong>{tcopy(language, 'Aviso:', 'Disclaimer:')}</strong>{' '}
               {tcopy(
