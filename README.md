@@ -41,9 +41,27 @@ That means each municipality currently falls into one of these product states:
 
 `pending validation` is important. It means the municipality sits in a province whose Appendix B extraction block is currently withheld because it is not trusted enough yet. It should not silently read as an ordinary reassuring negative.
 
+### Current product posture
+
+The app is intentionally framed as a public-information prototype, not as a health, property, legal, or technical certification.
+
+The current UI should make three boundaries visible to users:
+
+- municipality results are preliminary orientation, not an address/building diagnosis
+- `not classified` does **not** mean `no radon`
+- `pending validation` means the province block is being withheld because the extraction/reconciliation confidence is not yet good enough
+
+The latest trust/search patch adds:
+
+- improved search ranking for municipality, province, and autonomous-community matches
+- a province-level search hint so broad province matches do not read as a municipality result
+- a bilingual `Sources, status, and cautions` section
+- direct wording that measurement is the only way to know indoor radon for a specific home
+- a visible corrections contact
+
 ### Current caveat
 
-The extraction path is reproducible, but still deserves one more validation pass before any public launch or policy-grade claim.
+The extraction path is reproducible, but still deserves more validation before any definitive public or policy-grade claim.
 
 In particular, the next cleanup should:
 
@@ -51,6 +69,7 @@ In particular, the next cleanup should:
 - finish stable INE municipality identifier reconciliation
 - spot-check provinces at page boundaries
 - fix remaining truncated or boundary-contaminated names from the PDF extraction path
+- recover withheld province blocks one at a time, rather than by broad parser rewrite
 
 ### Current data picture
 

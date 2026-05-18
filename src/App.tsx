@@ -101,10 +101,48 @@ function isClassificationPending(record: MunicipalityRecord) {
   return record.sourceStatus === 'pending_validation'
 }
 
-function sourceStatusLabel(sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
-  if (sourceStatus === 'pending_validation') return 'Pendiente de validación'
-  if (sourceStatus === 'manual_override') return zone === 'not_classified' ? 'No clasificado (ajuste manual)' : 'Ajuste manual'
-  return resultBadgeLabel(zone ?? 'not_classified')
+function zoneStatusLabel(language: Language, zone: RadonZone) {
+  if (zone === 'II') return tcopy(language, 'Zona II', 'Zone II')
+  if (zone === 'I') return tcopy(language, 'Zona I', 'Zone I')
+  return tcopy(language, 'No clasificado', 'Not classified')
+}
+
+function sourceStatusLabel(language: Language, sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
+  if (sourceStatus === 'pending_validation') return tcopy(language, 'Pendiente de validación', 'Pending validation')
+  if (sourceStatus === 'manual_override') {
+    return zone === 'not_classified'
+      ? tcopy(language, 'No clasificado (ajuste manual)', 'Not classified (manual adjustment)')
+      : tcopy(language, 'Ajuste manual', 'Manual adjustment')
+  }
+  return zoneStatusLabel(language, zone ?? 'not_classified')
+}
+
+function quickReadingCopy(zone: RadonZone, pending: boolean) {
+  if (pending) {
+    return {
+      es: 'El bloque provincial no se muestra todavía porque la reconciliación no es suficientemente fiable. Si necesitas decidir algo práctico, consulta la fuente oficial o mide.',
+      en: 'The provincial block is not shown yet because reconciliation is not reliable enough. If you need to make a practical decision, check the official source or test directly.',
+    }
+  }
+
+  if (zone === 'II') {
+    return {
+      es: 'Señal municipal alta: no diagnostica tu vivienda, pero sí justifica priorizar una medición si hay contacto con el terreno o vivienda antigua.',
+      en: 'High municipal signal: it does not diagnose your home, but it does justify prioritising a measurement if there is ground contact or older construction.',
+    }
+  }
+
+  if (zone === 'I') {
+    return {
+      es: 'Señal municipal apreciable: úsala como motivo para preguntar o medir, especialmente en plantas bajas, sótanos o casas unifamiliares.',
+      en: 'Meaningful municipal signal: use it as a reason to ask or test, especially in ground floors, basements, or detached houses.',
+    }
+  }
+
+  return {
+    es: 'No aparece como zona prioritaria en esta capa. Eso baja la prioridad, pero no demuestra que una vivienda concreta esté libre de radón.',
+    en: 'It does not appear as a priority area in this layer. That lowers priority, but it does not prove a specific home is free of radon.',
+  }
 }
 
 function scoreContext(zone: RadonZone, housingType: HousingType, floor: FloorLevel, age: BuildingAge) {
@@ -145,10 +183,21 @@ function formatOption(m: MunicipalityRecord) {
   return `${m.municipality}, ${m.province}`
 }
 
-function resultBadgeLabel(zone: RadonZone) {
-  if (zone === 'II') return 'Zona II'
-  if (zone === 'I') return 'Zona I'
-  return 'No clasificado'
+function searchRank(record: MunicipalityRecord, query: string) {
+  const municipality = normalizeSearchValue(record.municipality)
+  const province = normalizeSearchValue(record.province)
+  const community = normalizeSearchValue(record.autonomousCommunity)
+  const option = normalizeSearchValue(formatOption(record))
+
+  if (municipality === query || option === query) return 0
+  if (municipality.startsWith(query)) return 1
+  if (province === query) return municipality === query ? 0 : 2
+  if (province.startsWith(query)) return 3
+  if (community === query) return 4
+  if (municipality.includes(query)) return 5
+  if (province.includes(query)) return 6
+  if (community.includes(query)) return 7
+  return 8
 }
 
 function normalizeSearchValue(value: string) {
@@ -162,6 +211,10 @@ function normalizeSearchValue(value: string) {
 
 function tcopy(language: Language, es: string, en: string) {
   return language === 'es' ? es : en
+}
+
+function formatCount(language: Language, value: number) {
+  return value.toLocaleString(language === 'es' ? 'es-ES' : 'en-US')
 }
 
 export default function App() {
@@ -185,15 +238,25 @@ export default function App() {
       }))
       .filter(({ haystack }) => haystack.includes(trimmed))
       .sort((a, b) => {
-        const aStarts = normalizeSearchValue(a.record.municipality).startsWith(trimmed)
-        const bStarts = normalizeSearchValue(b.record.municipality).startsWith(trimmed)
-        if (aStarts !== bStarts) return aStarts ? -1 : 1
+        const rankDifference = searchRank(a.record, trimmed) - searchRank(b.record, trimmed)
+        if (rankDifference !== 0) return rankDifference
+
+        const zonePriority = { II: 0, I: 1, not_classified: 2 } satisfies Record<RadonZone, number>
+        const zoneDifference = zonePriority[a.record.zone] - zonePriority[b.record.zone]
+        if (zoneDifference !== 0) return zoneDifference
+
         return a.record.municipality.localeCompare(b.record.municipality, 'es')
       })
       .slice(0, 8)
       .map(({ record }) => record)
   }, [query])
 
+  const normalizedQuery = normalizeSearchValue(query)
+  const provinceMatchNotice =
+    normalizedQuery &&
+    !selected &&
+    matches.length > 0 &&
+    matches.every((match) => normalizeSearchValue(match.province).includes(normalizedQuery))
   const selectedHasPendingClassification = selected ? isClassificationPending(selected) : false
   const result = selected
     ? selectedHasPendingClassification
@@ -208,12 +271,13 @@ export default function App() {
     : selected
       ? tcopy(language, zoneCopy[selected.zone].titleEs, zoneCopy[selected.zone].titleEn)
       : ''
+  const quickReading = selected ? quickReadingCopy(selected.zone, selectedHasPendingClassification) : null
 
   return (
     <div className="page">
       <main className="shell">
         <section className="hero">
-          <div className="languageToggle" aria-label="Language selector">
+          <div className="languageToggle" aria-label={tcopy(language, 'Selector de idioma', 'Language selector')}>
             <button
               type="button"
               className={`languageButton ${language === 'es' ? 'languageButton-active' : ''}`}
@@ -229,17 +293,74 @@ export default function App() {
               EN
             </button>
           </div>
+          <div className="heroLayout">
+            <div>
+              <p className="eyebrow">{tcopy(language, 'España', 'Spain')}</p>
+              <h1>{tcopy(language, 'Consulta preliminar de radón por municipio', 'Preliminary radon lookup by municipality')}</h1>
+              <p className="lede">
+                {tcopy(
+                  language,
+                  'Busca cualquier municipio de España y revisa si aparece como Zona I, Zona II, no clasificado o pendiente de validación en la capa actual. Sirve para orientarte a nivel municipal sobre si conviene medir o pedir más información.',
+                  'Search any municipality in Spain and see whether it appears as Zone I, Zone II, not classified, or pending validation in the current layer. It gives municipal-level orientation on whether testing or asking for more information makes sense.',
+                )}
+              </p>
+              <div className="heroGuidance">
+                <div className="heroGuidanceItem">
+                  <strong>{tcopy(language, 'Búsqueda completa', 'Full search base')}</strong>
+                  <span>{tcopy(language, 'Base INE completa, no solo municipios clasificados.', 'Full INE base, not only classified municipalities.')}</span>
+                </div>
+                <div className="heroGuidanceItem">
+                  <strong>{tcopy(language, 'Marcamos lo dudoso', 'Uncertain data is marked')}</strong>
+                  <span>{tcopy(language, 'Si un bloque provincial no es fiable, se marca como pendiente de validación.', 'If a provincial block is not reliable, it is marked as pending validation.')}</span>
+                </div>
+              </div>
+              <div className="notice warning">
+                <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
+                {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
+              </div>
+            </div>
+
+            <aside className="heroPanel">
+              <p className="panelEyebrow">{tcopy(language, 'Cobertura actual', 'Current coverage')}</p>
+              <div className="statGrid">
+                <article className="statCard">
+                  <strong>{formatCount(language, municipalityDataSummary.total)}</strong>
+                  <span>{tcopy(language, 'municipios en búsqueda', 'municipalities searchable')}</span>
+                </article>
+                <article className="statCard">
+                  <strong>{formatCount(language, municipalityDataSummary.classified)}</strong>
+                  <span>{tcopy(language, 'con clasificación visible', 'with visible classification')}</span>
+                </article>
+                <article className="statCard">
+                  <strong>{formatCount(language, municipalityDataSummary.notClassified)}</strong>
+                  <span>{tcopy(language, 'sin clasificación mostrada', 'with no shown classification')}</span>
+                </article>
+                <article className="statCard statCard-alert">
+                  <strong>{formatCount(language, municipalityDataSummary.pendingValidation)}</strong>
+                  <span>{tcopy(language, 'pendientes de validación', 'pending validation')}</span>
+                </article>
+              </div>
+
+              <div className="legendList">
+                <div className="legendItem">
+                  <span className="legendSwatch legendSwatch-i" />
+                  <span>{tcopy(language, 'Zona I o II: aparece en la superposición actual.', 'Zone I or II: appears in the current overlay.')}</span>
+                </div>
+                <div className="legendItem">
+                  <span className="legendSwatch legendSwatch-neutral" />
+                  <span>{tcopy(language, 'No clasificado: no figura en el Apéndice B retenido.', 'Not classified: does not appear in the retained Appendix B layer.')}</span>
+                </div>
+                <div className="legendItem">
+                  <span className="legendSwatch legendSwatch-pending" />
+                  <span>{tcopy(language, 'Pendiente: la provincia sigue en revisión y no debe leerse como tranquilidad.', 'Pending: the province is still under review and should not be read as reassurance.')}</span>
+                </div>
+              </div>
+            </aside>
+          </div>
           <section className="journeyBlock" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
             <div className="journeyIntro">
               <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
               <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
-              <p>
-                {tcopy(
-                  language,
-                  'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
-                  'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
-                )}
-              </p>
             </div>
             <div className="journeyStrip">
               <article className="journeyStep">
@@ -283,70 +404,6 @@ export default function App() {
               </article>
             </div>
           </section>
-          <div className="heroLayout">
-            <div>
-              <p className="eyebrow">{tcopy(language, 'España', 'Spain')}</p>
-              <h1>{tcopy(language, 'Consulta preliminar de radón por municipio', 'Preliminary radon lookup by municipality')}</h1>
-              <p className="lede">
-                {tcopy(
-                  language,
-                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II o no clasificado en el Apéndice B, y añade un poco de contexto sobre la vivienda. Está pensada para ser útil, explícita y prudente.',
-                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, or not classified in Appendix B, and add a little housing context. The tool is designed to be useful, explicit, and cautious.',
-                )}
-              </p>
-              <div className="heroGuidance">
-                <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Búsqueda completa', 'Full search base')}</strong>
-                  <span>{tcopy(language, 'Base INE completa, no solo municipios clasificados.', 'Full INE base, not only classified municipalities.')}</span>
-                </div>
-                <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Lectura honesta', 'Honest reading')}</strong>
-                  <span>{tcopy(language, 'Si un bloque provincial no es fiable, se marca como pendiente de validación.', 'If a provincial block is not reliable, it is marked as pending validation.')}</span>
-                </div>
-              </div>
-              <div className="notice warning">
-                <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
-                {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
-              </div>
-            </div>
-
-            <aside className="heroPanel">
-              <p className="panelEyebrow">{tcopy(language, 'Cobertura actual', 'Current coverage')}</p>
-              <div className="statGrid">
-                <article className="statCard">
-                  <strong>{municipalityDataSummary.total.toLocaleString('es-ES')}</strong>
-                  <span>{tcopy(language, 'municipios en búsqueda', 'municipalities searchable')}</span>
-                </article>
-                <article className="statCard">
-                  <strong>{municipalityDataSummary.classified.toLocaleString('es-ES')}</strong>
-                  <span>{tcopy(language, 'con clasificación visible', 'with visible classification')}</span>
-                </article>
-                <article className="statCard">
-                  <strong>{municipalityDataSummary.notClassified.toLocaleString('es-ES')}</strong>
-                  <span>{tcopy(language, 'sin clasificación mostrada', 'with no shown classification')}</span>
-                </article>
-                <article className="statCard statCard-alert">
-                  <strong>{municipalityDataSummary.pendingValidation.toLocaleString('es-ES')}</strong>
-                  <span>{tcopy(language, 'pendientes de validación', 'pending validation')}</span>
-                </article>
-              </div>
-
-              <div className="legendList">
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-i" />
-                  <span>{tcopy(language, 'Zona I o II: aparece en la superposición actual.', 'Zone I or II: appears in the current overlay.')}</span>
-                </div>
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-neutral" />
-                  <span>{tcopy(language, 'No clasificado: no figura en el Apéndice B retenido.', 'Not classified: does not appear in the retained Appendix B layer.')}</span>
-                </div>
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-pending" />
-                  <span>{tcopy(language, 'Pendiente: la provincia sigue en revisión y no debe leerse como tranquilidad.', 'Pending: the province is still under review and should not be read as reassurance.')}</span>
-                </div>
-              </div>
-            </aside>
-          </div>
         </section>
 
         <section className="card searchCard">
@@ -378,7 +435,16 @@ export default function App() {
               setSelected(null)
             }}
           />
-          <div className="results" role="listbox" aria-label="Municipality matches">
+          {provinceMatchNotice ? (
+            <p className="searchHint">
+              {tcopy(
+                language,
+                'Estás viendo coincidencias de una provincia. Elige el municipio concreto para ver la clasificación; si una provincia está pendiente, no lo leas como riesgo bajo.',
+                'You are seeing province-level matches. Choose the specific municipality to see its classification; if a province is pending, do not read that as low risk.',
+              )}
+            </p>
+          ) : null}
+          <div className="results" role="listbox" aria-label={tcopy(language, 'Coincidencias de municipios', 'Municipality matches')}>
             {matches.map((match) => (
               <button
                 key={match.ineCode}
@@ -391,7 +457,7 @@ export default function App() {
               >
                 <span>{match.municipality}</span>
                 <small>
-                  {match.province} · {match.autonomousCommunity} · {sourceStatusLabel(match.sourceStatus, match.zone)}
+                  {match.province} · {match.autonomousCommunity} · {sourceStatusLabel(language, match.sourceStatus, match.zone)}
                 </small>
               </button>
             ))}
@@ -407,42 +473,6 @@ export default function App() {
                 </p>
               </div>
             ) : null}
-          </div>
-        </section>
-
-        <section className="card contextCard">
-          <div className="sectionIntro">
-            <div>
-              <p className="eyebrow">{tcopy(language, 'Paso 2', 'Step 2')}</p>
-              <h2>{tcopy(language, 'Contexto de vivienda', 'Housing context')}</h2>
-            </div>
-            <p>{tcopy(language, 'Sirve para priorizar si medir pronto tiene sentido práctico. No sustituye una medición real.', 'This helps prioritise whether testing soon is practically worthwhile. It does not replace a real measurement.')}</p>
-          </div>
-          <div className="grid">
-            <label>
-              {tcopy(language, 'Tipo', 'Type')}
-              <select value={housingType} onChange={(e) => setHousingType(e.target.value as HousingType)}>
-                <option value="house">{tcopy(language, 'Casa', 'House')}</option>
-                <option value="flat">{tcopy(language, 'Piso', 'Flat')}</option>
-              </select>
-            </label>
-            <label>
-              {tcopy(language, 'Planta', 'Floor')}
-              <select value={floor} onChange={(e) => setFloor(e.target.value as FloorLevel)}>
-                <option value="basement_ground">{tcopy(language, 'Sótano o baja', 'Basement or ground')}</option>
-                <option value="first">{tcopy(language, 'Primera planta', 'First floor')}</option>
-                <option value="second_or_higher">{tcopy(language, 'Segunda o superior', 'Second floor or higher')}</option>
-              </select>
-            </label>
-            <label>
-              {tcopy(language, 'Antigüedad aproximada', 'Rough age')}
-              <select value={age} onChange={(e) => setAge(e.target.value as BuildingAge)}>
-                <option value="pre_2006">{tcopy(language, 'Antes de 2006', 'Before 2006')}</option>
-                <option value="2006_2019">2006–2019</option>
-                <option value="2020_plus">{tcopy(language, '2020+ (posible protección CTE)', '2020+ (possible code protection)')}</option>
-                <option value="unknown">{tcopy(language, 'No lo sé', 'Unknown')}</option>
-              </select>
-            </label>
           </div>
         </section>
 
@@ -468,35 +498,9 @@ export default function App() {
               </div>
               <div className="resultSideNote">
                 <h3>{tcopy(language, 'Lectura rápida', 'Quick reading')}</h3>
-                <p>
-                  {tcopy(
-                    language,
-                    'La clasificación municipal orienta dónde priorizar una medición, pero no sustituye una prueba en la vivienda.',
-                    'Municipality classification helps prioritise where to test, but it does not replace a direct home measurement.',
-                  )}
-                </p>
+                <p>{quickReading ? tcopy(language, quickReading.es, quickReading.en) : ''}</p>
               </div>
             </div>
-
-            {context ? (
-              <div className="contextBand">
-                <strong>
-                  {tcopy(language, context.bandEs, context.bandEn)}
-                </strong>
-                <p>
-                  {tcopy(language, context.detailEs, context.detailEn)}
-                </p>
-              </div>
-            ) : (
-              <div className="notice warning">
-                <strong>{tcopy(language, 'Interpretación:', 'Interpretation:')}</strong>{' '}
-                {tcopy(
-                  language,
-                  'En provincias marcadas como pendientes no mostramos una prioridad resumida basada en zona porque la capa de clasificación sigue en revisión. El contexto de vivienda sigue importando, pero la capa municipal no es lo bastante fiable todavía.',
-                  'In provinces marked as pending we do not show a zone-based priority summary because the classification layer is still under review. Housing context still matters, but the municipal overlay is not reliable enough yet.',
-                )}
-              </div>
-            )}
 
             <div>
               <h3>{tcopy(language, 'Siguientes pasos', 'Next steps')}</h3>
@@ -507,6 +511,59 @@ export default function App() {
               </ul>
             </div>
 
+            <details className="contextDisclosure">
+              <summary>{tcopy(language, 'Afinar con contexto de vivienda', 'Refine with housing context')}</summary>
+              <p>
+                {tcopy(
+                  language,
+                  'Opcional: estos datos ajustan la prioridad práctica para medir. No convierten el resultado en un diagnóstico de la vivienda.',
+                  'Optional: these details adjust the practical priority for testing. They do not turn the result into a diagnosis of the home.',
+                )}
+              </p>
+              <div className="grid">
+                <label>
+                  {tcopy(language, 'Tipo', 'Type')}
+                  <select value={housingType} onChange={(e) => setHousingType(e.target.value as HousingType)}>
+                    <option value="house">{tcopy(language, 'Casa', 'House')}</option>
+                    <option value="flat">{tcopy(language, 'Piso', 'Flat')}</option>
+                  </select>
+                </label>
+                <label>
+                  {tcopy(language, 'Planta', 'Floor')}
+                  <select value={floor} onChange={(e) => setFloor(e.target.value as FloorLevel)}>
+                    <option value="basement_ground">{tcopy(language, 'Sótano o baja', 'Basement or ground')}</option>
+                    <option value="first">{tcopy(language, 'Primera planta', 'First floor')}</option>
+                    <option value="second_or_higher">{tcopy(language, 'Segunda o superior', 'Second floor or higher')}</option>
+                  </select>
+                </label>
+                <label>
+                  {tcopy(language, 'Antigüedad aproximada', 'Rough age')}
+                  <select value={age} onChange={(e) => setAge(e.target.value as BuildingAge)}>
+                    <option value="pre_2006">{tcopy(language, 'Antes de 2006', 'Before 2006')}</option>
+                    <option value="2006_2019">2006–2019</option>
+                    <option value="2020_plus">{tcopy(language, '2020+ (posible protección CTE)', '2020+ (possible code protection)')}</option>
+                    <option value="unknown">{tcopy(language, 'No lo sé', 'Unknown')}</option>
+                  </select>
+                </label>
+              </div>
+
+              {context ? (
+                <div className="contextBand">
+                  <strong>{tcopy(language, context.bandEs, context.bandEn)}</strong>
+                  <p>{tcopy(language, context.detailEs, context.detailEn)}</p>
+                </div>
+              ) : (
+                <div className="notice warning">
+                  <strong>{tcopy(language, 'Interpretación:', 'Interpretation:')}</strong>{' '}
+                  {tcopy(
+                    language,
+                    'En provincias marcadas como pendientes no mostramos una prioridad resumida basada en zona porque la capa de clasificación sigue en revisión.',
+                    'In provinces marked as pending we do not show a zone-based priority summary because the classification layer is still under review.',
+                  )}
+                </div>
+              )}
+            </details>
+
             <div className="notice">
               <strong>{tcopy(language, 'Metodología:', 'Method:')}</strong>{' '}
               {tcopy(
@@ -516,10 +573,11 @@ export default function App() {
               )}
               <br />
               <strong>{tcopy(language, 'Cobertura actual:', 'Current coverage:')}</strong>{' '}
-              {municipalityDataSummary.total.toLocaleString('es-ES')} municipios en la base de búsqueda;{' '}
-              {municipalityDataSummary.classified.toLocaleString('es-ES')} con clasificación mostrada;{' '}
-              {municipalityDataSummary.notClassified.toLocaleString('es-ES')} no clasificados y{' '}
-              {municipalityDataSummary.pendingValidation.toLocaleString('es-ES')} pendientes de validación.
+              {tcopy(
+                language,
+                `${formatCount(language, municipalityDataSummary.total)} municipios en la base de búsqueda; ${formatCount(language, municipalityDataSummary.classified)} con clasificación mostrada; ${formatCount(language, municipalityDataSummary.notClassified)} no clasificados y ${formatCount(language, municipalityDataSummary.pendingValidation)} pendientes de validación.`,
+                `${formatCount(language, municipalityDataSummary.total)} municipalities in the search base; ${formatCount(language, municipalityDataSummary.classified)} with visible classification; ${formatCount(language, municipalityDataSummary.notClassified)} not classified and ${formatCount(language, municipalityDataSummary.pendingValidation)} pending validation.`,
+              )}
               <br />
               <strong>{tcopy(language, 'Aviso:', 'Disclaimer:')}</strong>{' '}
               {tcopy(
@@ -529,33 +587,7 @@ export default function App() {
               )}
             </div>
           </section>
-        ) : (
-          <section className="card emptyState">
-            <p className="eyebrow">{tcopy(language, 'Qué hará la herramienta', 'What the tool does')}</p>
-            <h2>{tcopy(language, 'Empieza por un municipio', 'Start with a municipality')}</h2>
-            <p>
-              {tcopy(
-                language,
-                'Puedes buscar cualquier municipio de España. Después verás si aparece como Zona I, Zona II, no clasificado o pendiente de validación en la capa actual del Apéndice B.',
-                'You can search any municipality in Spain. Then you will see whether it appears as Zone I, Zone II, not classified, or pending validation in the current Appendix B layer.',
-              )}
-            </p>
-            <div className="emptySteps">
-              <article>
-                <strong>{tcopy(language, '1. Buscar', '1. Search')}</strong>
-                <span>{tcopy(language, 'Municipio, provincia o ambas cosas.', 'Municipality, province, or both.')}</span>
-              </article>
-              <article>
-                <strong>{tcopy(language, '2. Contextualizar', '2. Add context')}</strong>
-                <span>{tcopy(language, 'Tipo de vivienda, planta y antigüedad aproximada.', 'Housing type, floor, and rough age.')}</span>
-              </article>
-              <article>
-                <strong>{tcopy(language, '3. Interpretar con cautela', '3. Read cautiously')}</strong>
-                <span>{tcopy(language, 'La herramienta orienta; el detector confirma.', 'The tool guides; the detector confirms.')}</span>
-              </article>
-            </div>
-          </section>
-        )}
+        ) : null}
 
         <section className="card infoGrid">
           <article>
@@ -579,12 +611,12 @@ export default function App() {
             </p>
           </article>
           <article>
-            <h2>{tcopy(language, 'Qué falta en v1', 'What is missing in v1')}</h2>
+            <h2>{tcopy(language, 'Lo que aún no hace', 'What it does not do')}</h2>
             <p>
               {tcopy(
                 language,
-                'No hay búsqueda por dirección, integración catastral ni mapa detallado todavía.',
-                'There is no address lookup, cadastral integration, or detailed map yet.',
+                'No ofrece búsqueda por dirección, integración catastral, mapa detallado ni certificado para compraventa, alquiler o reforma.',
+                'It does not offer address lookup, cadastral integration, a detailed map, or a certificate for buying, renting, or renovation.',
               )}
             </p>
           </article>
@@ -598,6 +630,85 @@ export default function App() {
               )}
             </p>
           </article>
+        </section>
+
+        <section className="card disclosureCard" aria-labelledby="disclosure-heading">
+          <div className="sectionIntro">
+            <div>
+              <p className="eyebrow">{tcopy(language, 'Antes de usar el resultado', 'Before using the result')}</p>
+              <h2 id="disclosure-heading">{tcopy(language, 'Fuentes, estado y cautelas', 'Sources, status, and cautions')}</h2>
+            </div>
+            <p>
+              {tcopy(
+                language,
+                'Esta herramienta está pensada como una orientación preliminar y transparente, no como una certificación sanitaria, técnica o inmobiliaria.',
+                'This tool is intended as a transparent preliminary guide, not as a health, technical, or property certification.',
+              )}
+            </p>
+          </div>
+          <div className="disclosureGrid">
+            <article>
+              <h3>{tcopy(language, 'Fuente principal', 'Primary source')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'La clasificación procede del Apéndice B del CTE DB-HS6. La base de búsqueda usa municipios del INE para que también puedas encontrar lugares que no aparecen en la capa clasificada.',
+                  'Classification comes from CTE DB-HS6 Appendix B. The search base uses INE municipalities so you can also find places that do not appear in the classified layer.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, '“No clasificado” no es “sin radón”', '“Not classified” does not mean “no radon”')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Un municipio no clasificado solo significa que esta capa no lo marca como Zona I o II. La geología local, el edificio y la ventilación pueden cambiar la exposición real.',
+                  'A not-classified municipality only means this layer does not mark it as Zone I or II. Local geology, the building, and ventilation can change real exposure.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Pendiente de validación', 'Pending validation')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Si una provincia está pendiente, su bloque se ha retenido deliberadamente por dudas de extracción o reconciliación. Es una señal de cautela, no una lectura tranquilizadora.',
+                  'If a province is pending, its block has deliberately been withheld because of extraction or reconciliation concerns. It is a caution signal, not a reassuring result.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'La medición decide', 'Measurement decides')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'La única forma de conocer el nivel de radón interior de una vivienda concreta es medir con un detector adecuado durante un periodo representativo.',
+                  'The only way to know the indoor radon level of a specific home is to measure it with a suitable detector over a representative period.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Estado del prototipo', 'Prototype status')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Última revisión de datos: mayo de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review: May 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Correcciones', 'Corrections')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Si encuentras un municipio mal emparejado, un texto confuso o una fuente más actual, escríbeme. Prefiero corregir el límite de confianza antes que aparentar certeza.',
+                  'If you find a mismatched municipality, unclear wording, or a newer source, tell me. I would rather correct the confidence boundary than pretend certainty.',
+                )}{' '}
+                <a href="mailto:willworthdev@gmail.com">willworthdev@gmail.com</a>
+              </p>
+            </article>
+          </div>
         </section>
 
         <footer className="siteFooter">
