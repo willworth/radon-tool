@@ -677,8 +677,24 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'La clasificación procede del Apéndice B del CTE DB-HS6. La base de búsqueda usa municipios del INE para que también puedas encontrar lugares que no aparecen en la capa clasificada.',
-                  'Classification comes from CTE DB-HS6 Appendix B. The search base uses INE municipalities so you can also find places that do not appear in the classified layer.',
+                  'La clasificación procede del Apéndice B del ',
+                  'Classification comes from Appendix B of ',
+                )}
+                <a
+                  href="https://www.codigotecnico.org/DocumentosCTE/Salubridad.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  CTE DB-HS6
+                </a>
+                {tcopy(language, '. La base de búsqueda usa municipios del ', '. The search base uses municipalities from ')}
+                <a href="https://www.ine.es/dynt3/inebase/es/index.htm?padre=525" target="_blank" rel="noreferrer">
+                  INE
+                </a>
+                {tcopy(
+                  language,
+                  ' para que también puedas encontrar lugares que no aparecen en la capa clasificada.',
+                  ' so you can also find places that do not appear in the classified layer.',
                 )}
               </p>
             </article>
@@ -701,6 +717,13 @@ export default function App() {
                   'If a province is pending, its block has deliberately been withheld because of extraction or reconciliation concerns. It is a caution signal, not a reassuring result.',
                 )}
               </p>
+              <p>
+                {tcopy(
+                  language,
+                  'Provincias actualmente retenidas: Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló y Vizcaya / Bizkaia.',
+                  'Currently withheld provinces: Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló, and Vizcaya / Bizkaia.',
+                )}
+              </p>
             </article>
             <article>
               <h3>{tcopy(language, 'La medición decide', 'Measurement decides')}</h3>
@@ -717,9 +740,42 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Última revisión de datos: mayo de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
-                  'Last data review: May 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+                  'Última revisión de datos: mayo de 2026. Próxima revisión planificada: noviembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review: May 2026. Next planned review: November 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
+              </p>
+              <p>
+                {tcopy(
+                  language,
+                  'Si lees esto mucho después de esas fechas, los datos pueden estar desactualizados. No prometo mantenimiento indefinido. En su lugar, publico la receta: ',
+                  'If you are reading this well after those dates, the data may be out of date. I do not promise indefinite upkeep. Instead, I publish the recipe: ',
+                )}
+                <a
+                  href="https://github.com/willworth/radon-tool/blob/master/MAINTENANCE.md"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {tcopy(language, 'cómo verificar y actualizar el dato', 'how to verify and refresh the data')}
+                </a>
+                {tcopy(
+                  language,
+                  ' tú mismo o con la ayuda de tu agente. La confianza está en el procedimiento, no en que yo siga aquí.',
+                  ' yourself or with your agent. The trust is in the procedure, not in me still being around.',
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{tcopy(language, 'Construido con asistencia de IA', 'Built with AI assistance')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Esta herramienta se construyó de forma colaborativa con asistentes de IA: extracción del Apéndice B, reconciliación con la base de municipios del INE, interfaz y copia bilingüe. Las decisiones sobre qué se retiene, qué se publica y cómo se redactan los avisos son humanas y deliberadas. El código y la canalización de datos son inspeccionables: ',
+                  'This tool was built collaboratively with AI assistants: Appendix B extraction, reconciliation against the INE municipality base, interface, and bilingual copy. The decisions about what is withheld, what is published, and how the cautions are worded are human and deliberate. The code and data pipeline are inspectable: ',
+                )}
+                <a href="https://github.com/willworth/radon-tool" target="_blank" rel="noreferrer">
+                  github.com/willworth/radon-tool
+                </a>
+                .
               </p>
             </article>
             <article>
