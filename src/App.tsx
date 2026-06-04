@@ -149,18 +149,43 @@ function formatOption(m: MunicipalityRecord) {
   return `${m.municipality}, ${m.province}`
 }
 
+function municipalitySearchVariants(municipality: string) {
+  const normalized = normalizeSearchValue(municipality)
+  const variants = new Set([normalized])
+  const articleSuffix = municipality.match(/^(.+),\s*(el|la|los|las|l['’])$/i)
+
+  if (articleSuffix) {
+    variants.add(normalizeSearchValue(`${articleSuffix[2]} ${articleSuffix[1]}`))
+  }
+
+  return [...variants]
+}
+
+function municipalityMatches(record: MunicipalityRecord, predicate: (value: string) => boolean) {
+  return municipalitySearchVariants(record.municipality).some(predicate)
+}
+
+function searchableText(record: MunicipalityRecord) {
+  return normalizeSearchValue(
+    [
+      ...municipalitySearchVariants(record.municipality),
+      record.province,
+      record.autonomousCommunity,
+    ].join(' '),
+  )
+}
+
 function searchRank(record: MunicipalityRecord, query: string) {
-  const municipality = normalizeSearchValue(record.municipality)
   const province = normalizeSearchValue(record.province)
   const community = normalizeSearchValue(record.autonomousCommunity)
   const option = normalizeSearchValue(formatOption(record))
 
-  if (municipality === query || option === query) return 0
-  if (municipality.startsWith(query)) return 1
-  if (province === query) return municipality === query ? 0 : 2
-  if (province.startsWith(query)) return 3
-  if (community === query) return 4
-  if (municipality.includes(query)) return 5
+  if (municipalityMatches(record, (municipality) => municipality === query) || option === query) return 0
+  if (province === query) return 1
+  if (province.startsWith(query)) return 2
+  if (community === query) return 3
+  if (municipalityMatches(record, (municipality) => municipality.startsWith(query))) return 4
+  if (municipalityMatches(record, (municipality) => municipality.includes(query))) return 5
   if (province.includes(query)) return 6
   if (community.includes(query)) return 7
   return 8
@@ -204,9 +229,7 @@ export default function App() {
     return municipalities
       .map((m) => ({
         record: m,
-        haystack: normalizeSearchValue(
-          `${m.municipality} ${m.province} ${m.autonomousCommunity}`,
-        ),
+        haystack: searchableText(m),
       }))
       .filter(({ haystack }) => haystack.includes(trimmed))
       .sort((a, b) => {
