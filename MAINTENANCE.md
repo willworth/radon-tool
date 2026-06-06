@@ -81,7 +81,9 @@ Open `data-source/search-base-validation-report.json`. The fields that matter:
 - **Total municipalities** — should be approximately 8,100. A figure materially below 8,000 is a red flag for a broken INE load.
 - **Zone counts** — `Zone I`, `Zone II`, `not classified`, `pending_validation`. A sudden swing in any of these — especially a drop in `pending_validation` paired with a jump in `not classified` — should be inspected, not shipped.
 - **Withheld provinces** — currently Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló, Vizcaya / Bizkaia. If any of these now has confident extraction, you can promote it (see step 6). Do not promote a province silently if its counts look anomalous.
-- **Low-coverage review candidates** — currently includes Valencia / València. If a province appears here, investigate before publishing.
+- **Extraction diagnostics** — the Appendix B PDF extraction may contain rows that do not reconcile cleanly to INE, including likely province-context contamination from PDF page boundaries. This is not automatically a public-data failure if the rows are withheld or fail to join, but it must be visible in the report.
+- **Public search-base diagnostics** — these are release-blocking if non-zero: active overlay INE-code mismatches, duplicate active overlay codes, or likely municipality/province mismatches in the final searchable dataset.
+- **Low-coverage review candidates** — if a province appears here, investigate before publishing. Valencia / València is currently a reviewed low-coverage exception: the source PDF page lists only Chera, el Puig de Santa Maria, Gilet, Puçol, and Sagunto/Sagunt for Valencia. That review lives in `src/data/appendixB.reviewed-low-coverage-provinces.json`.
 
 ### 6. Promote a province out of `pending_validation` (optional, careful)
 
@@ -92,6 +94,7 @@ A province is currently withheld if the Appendix B extraction for its page block
 3. Confirm zone counts are plausible relative to the published Appendix B totals for that province.
 4. Remove the province from the withheld list in `scripts/build-search-base.mjs` (search for the withheld-province array).
 5. Re-run steps 4 and 5 above. The validation report should show that province moved from `pending_validation` to a mix of Zone I / Zone II / not_classified.
+6. Confirm `publicSearchBaseDiagnostics` remains clean. If any active overlay mismatch appears, do not ship; either fix the extraction/reconciliation or keep the province withheld.
 
 If any of those checks feels uncertain, leave the province withheld. Honest absence is the design intent.
 

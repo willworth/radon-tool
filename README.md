@@ -218,6 +218,11 @@ That generates `data-source/search-base-validation-report.json`, which currently
 - total municipality counts
 - zone counts
 - `sourceStatus` counts
+- Appendix B extraction diagnostics, including unmatched rows and likely province-context mismatches
+- public search-base leak checks, including active overlay INE-code mismatches, duplicate active overlay codes, and likely municipality/province mismatches in the data users can search
+- reviewed low-coverage provinces, such as Valencia / València, where low Appendix B coverage has been checked against the source PDF
+
+The distinction matters: the PDF extraction can contain withheld or unreconciled bad rows without those rows reaching the public lookup. Treat a dirty extraction diagnostic as a reason to inspect the source, and a dirty public search-base diagnostic as a release blocker.
 - withheld provinces and how many municipalities they affect
 - low-coverage province review candidates
 

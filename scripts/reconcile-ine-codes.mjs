@@ -123,6 +123,10 @@ function provinceVariants(name) {
   return [...new Set(extra.map(normalize))]
 }
 
+function formatOfficialRow(row) {
+  return `${row.autonomousCommunity} | ${row.province} | ${row.municipality}`
+}
+
 async function loadIneMunicipios() {
   try {
     const cached = JSON.parse(await fs.readFile(ineCachePath, 'utf8'))
@@ -171,7 +175,13 @@ async function main() {
   const ineMunicipios = await loadIneMunicipios()
 
   const ineByProvAndName = new Map()
+  const ineProvincesByName = new Map()
   for (const item of ineMunicipios) {
+    for (const m of municipalityVariants(item.municipality)) {
+      if (!ineProvincesByName.has(m)) ineProvincesByName.set(m, new Set())
+      ineProvincesByName.get(m).add(item.province)
+    }
+
     for (const p of provinceVariants(item.province)) {
       for (const m of municipalityVariants(item.municipality)) {
         ineByProvAndName.set(`${m}|${p}`, item.code)
@@ -182,6 +192,9 @@ async function main() {
   let matched = 0
   let unmatched = 0
   const unmatchedRows = []
+  const unmatchedRowsFull = []
+  const likelyProvinceMismatches = []
+  const likelyProvinceMismatchCounts = new Map()
 
   const reconciled = official.map((row) => {
     const provinceKeys = provinceVariants(row.province)
@@ -207,7 +220,32 @@ async function main() {
     if (ineCode) matched += 1
     else {
       unmatched += 1
-      unmatchedRows.push(`${row.autonomousCommunity} | ${row.province} | ${row.municipality}`)
+      const formatted = formatOfficialRow(row)
+      unmatchedRows.push(formatted)
+      unmatchedRowsFull.push(formatted)
+
+      const possibleIneProvinces = [
+        ...new Set(
+          muniKeys.flatMap((municipalityKey) => [...(ineProvincesByName.get(municipalityKey) ?? [])]),
+        ),
+      ].sort((a, b) => a.localeCompare(b, 'es'))
+
+      if (
+        possibleIneProvinces.length > 0 &&
+        !possibleIneProvinces.some((province) => provinceVariants(province).some((variant) => provinceKeys.includes(variant)))
+      ) {
+        likelyProvinceMismatches.push({
+          autonomousCommunity: row.autonomousCommunity,
+          extractedProvince: row.province,
+          municipality: row.municipality,
+          possibleIneProvinces,
+          zone: row.zone,
+        })
+        likelyProvinceMismatchCounts.set(
+          row.province,
+          (likelyProvinceMismatchCounts.get(row.province) ?? 0) + 1,
+        )
+      }
     }
 
     return {
@@ -219,11 +257,27 @@ async function main() {
   await fs.writeFile(outPath, JSON.stringify(reconciled, null, 2) + '\n', 'utf8')
   await fs.writeFile(
     path.join(root, 'data-source/ine-reconciliation-report.json'),
-    JSON.stringify({ matched, unmatched, unmatchedRows: unmatchedRows.slice(0, 200) }, null, 2) + '\n',
+    JSON.stringify(
+      {
+        matched,
+        unmatched,
+        total: reconciled.length,
+        unmatchedRows: unmatchedRows.slice(0, 200),
+        unmatchedRowsFull,
+        likelyProvinceMismatchCount: likelyProvinceMismatches.length,
+        likelyProvinceMismatchCountsByExtractedProvince: Object.fromEntries(
+          [...likelyProvinceMismatchCounts.entries()].sort((a, b) => b[1] - a[1]),
+        ),
+        likelyProvinceMismatches,
+      },
+      null,
+      2,
+    ) + '\n',
     'utf8',
   )
 
   console.log(JSON.stringify({ matched, unmatched, total: reconciled.length }, null, 2))
+  console.log(`likely province mismatches: ${likelyProvinceMismatches.length}`)
   if (unmatchedRows.length) {
     console.log('sample unmatched:', unmatchedRows.slice(0, 20))
   }

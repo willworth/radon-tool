@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T10:01:55.599Z",
+  "generatedAt": "2026-06-06T08:53:32.999Z",
   "summary": {
     "totalMunicipalities": 8131,
     "byZone": {
@@ -15,6 +15,29 @@
     },
     "manualOverrideCount": 1,
     "pendingValidationCount": 1372
+  },
+  "extractionDiagnostics": {
+    "officialAppendixRows": 3678,
+    "officialRowsWithIneCode": 2886,
+    "officialRowsWithoutIneCode": 792,
+    "reconciliationMatchedRows": 2886,
+    "reconciliationUnmatchedRows": 792,
+    "likelyProvinceMismatchCount": 715,
+    "likelyProvinceMismatchCountsByExtractedProvince": {
+      "Palencia": 329,
+      "Zamora": 297,
+      "Sevilla": 53,
+      "Granada": 35,
+      "Madrid": 1
+    }
+  },
+  "publicSearchBaseDiagnostics": {
+    "activeOverlayCodeMismatchCount": 0,
+    "activeOverlayCodeMismatches": [],
+    "activeOverlayDuplicateCodeCount": 0,
+    "activeOverlayDuplicateCodes": [],
+    "likelyProvinceMismatchCount": 0,
+    "likelyProvinceMismatchesInSearchBase": []
   },
   "excludedProvinces": [
     {
@@ -58,7 +81,7 @@
       "pendingValidationMunicipalities": 112
     }
   ],
-  "suspiciousProvinces": [
+  "reviewedLowCoverageProvinces": [
     {
       "province": "Valencia / València",
       "autonomousCommunity": "Comunidad Valenciana",
@@ -66,9 +89,26 @@
       "classifiedMunicipalities": 5,
       "notClassifiedMunicipalities": 261,
       "pendingValidationMunicipalities": 0,
-      "manualOverrideMunicipalities": 0
+      "manualOverrideMunicipalities": 0,
+      "review": {
+        "autonomousCommunity": "Comunidad Valenciana",
+        "province": "Valencia / València",
+        "reviewedAt": "2026-06-06",
+        "source": "data-source/DBHS.pdf",
+        "sourcePage": 171,
+        "classificationRowsFound": 5,
+        "classifiedMunicipalities": [
+          "Chera",
+          "el Puig de Santa Maria",
+          "Gilet",
+          "Puçol",
+          "Sagunto/Sagunt"
+        ],
+        "note": "Low Appendix B coverage was checked directly against the DB-HS6 PDF text on page 171. No likely province-mismatch rows point into or out of Valencia in the INE reconciliation diagnostics."
+      }
     }
   ],
+  "suspiciousProvinces": [],
   "provinceStats": [
     {
       "province": "Álava / Araba",

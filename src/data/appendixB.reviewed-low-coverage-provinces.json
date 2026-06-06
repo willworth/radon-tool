@@ -1,0 +1,18 @@
+[
+  {
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Valencia / València",
+    "reviewedAt": "2026-06-06",
+    "source": "data-source/DBHS.pdf",
+    "sourcePage": 171,
+    "classificationRowsFound": 5,
+    "classifiedMunicipalities": [
+      "Chera",
+      "el Puig de Santa Maria",
+      "Gilet",
+      "Puçol",
+      "Sagunto/Sagunt"
+    ],
+    "note": "Low Appendix B coverage was checked directly against the DB-HS6 PDF text on page 171. No likely province-mismatch rows point into or out of Valencia in the INE reconciliation diagnostics."
+  }
+]
