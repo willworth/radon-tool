@@ -348,8 +348,8 @@ export default function App() {
               <p className="lede">
                 {tcopy(
                   language,
-                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II o no clasificado en el Apéndice B, y añade un poco de contexto sobre la vivienda. Está pensada para ser útil, explícita y prudente.',
-                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, or not classified in Appendix B, and add a little housing context. The tool is designed to be useful, explicit, and cautious.',
+                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II, no clasificado o pendiente de validación, y añade un poco de contexto sobre la vivienda. Está pensada para orientar, no para certificar.',
+                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, not classified, or pending validation, and add a little housing context. It is designed to orient, not to certify.',
                 )}
               </p>
               <div className="heroGuidance">
@@ -578,8 +578,8 @@ export default function App() {
               <strong>{tcopy(language, 'Metodología:', 'Method:')}</strong>{' '}
               {tcopy(
                 language,
-                'búsqueda municipal sobre base completa de municipios de España, con superposición de la clasificación del Apéndice B del CTE DB-HS6 cuando está disponible.',
-                'municipality search over the full Spain municipality base, with the CTE DB-HS6 Appendix B classification overlaid when available.',
+                'búsqueda municipal sobre base completa de municipios de España, con superposición de la clasificación del Apéndice B del CTE DB-HS6 solo cuando el emparejamiento con INE no presenta señales de conflicto.',
+                'municipality search over the full Spain municipality base, with the CTE DB-HS6 Appendix B classification overlaid only when the INE matching does not show conflict signals.',
               )}
               <br />
               <strong>{tcopy(language, 'Cobertura actual:', 'Current coverage:')}</strong>{' '}
@@ -604,8 +604,8 @@ export default function App() {
               <strong>{tcopy(language, 'Aviso:', 'Disclaimer:')}</strong>{' '}
               {tcopy(
                 language,
-                'Esta herramienta no estima el nivel real de tu vivienda. Solo una medición con detector puede confirmarlo.',
-                'This tool does not estimate the real level in your home. Only a detector measurement can confirm it.',
+                'Esta herramienta no estima el nivel real de tu vivienda, no sustituye una medición y no debe usarse como certificación inmobiliaria, sanitaria o legal.',
+                'This tool does not estimate the real level in your home, does not replace measurement, and should not be used as a property, health, or legal certification.',
               )}
             </div>
           </section>
@@ -689,8 +689,8 @@ export default function App() {
             <p>
               {tcopy(
                 language,
-                'Esta herramienta está pensada como una orientación preliminar y transparente, no como una certificación sanitaria, técnica o inmobiliaria.',
-                'This tool is intended as a transparent preliminary guide, not as a health, technical, or property certification.',
+                'Esta herramienta está pensada como una orientación preliminar y transparente. Cuando el dato no es lo bastante fiable, debe decirlo antes de parecer útil.',
+                'This tool is intended as a transparent preliminary guide. When the data is not reliable enough, it should say so before trying to look useful.',
               )}
             </p>
           </div>
@@ -716,8 +716,8 @@ export default function App() {
                 </a>
                 {tcopy(
                   language,
-                  ' para que también puedas encontrar lugares que no aparecen en la capa clasificada.',
-                  ' so you can also find places that do not appear in the classified layer.',
+                  ' para que también puedas encontrar lugares que no aparecen en la capa clasificada. El resultado no es un mapa de concentración interior ni una predicción por dirección.',
+                  ' so you can also find places that do not appear in the classified layer. The result is not an indoor concentration map or an address-level prediction.',
                 )}
               </p>
             </article>
@@ -749,6 +749,23 @@ export default function App() {
               </p>
             </article>
             <article>
+              <h3>{tcopy(language, 'Control de calidad', 'Quality controls')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'La extracción del PDF oficial puede producir filas dudosas. Por eso la validación distingue entre problemas de extracción y datos que llegan a la búsqueda pública. En esta versión no se publican clasificaciones activas con conflicto de código INE, código duplicado o provincia probable incorrecta.',
+                  'The official PDF extraction can produce doubtful rows. The validation therefore separates extraction problems from data that reaches the public search. This version publishes no active classifications with an INE-code conflict, duplicate code, or likely wrong province.',
+                )}
+              </p>
+              <p>
+                {tcopy(
+                  language,
+                  'Los bloques provinciales que no superan ese umbral quedan como pendientes de validación. Valencia / València aparece con cobertura baja, pero fue revisada contra la página 171 del PDF DB-HS6 y se mantiene como excepción documentada.',
+                  'Provincial blocks that do not pass that threshold remain pending validation. Valencia / València has low coverage, but it was checked against page 171 of the DB-HS6 PDF and is kept as a documented exception.',
+                )}
+              </p>
+            </article>
+            <article>
               <h3>{tcopy(language, 'La medición decide', 'Measurement decides')}</h3>
               <p>
                 {tcopy(
@@ -763,8 +780,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Última revisión de datos: mayo de 2026. Próxima revisión planificada: noviembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
-                  'Last data review: May 2026. Next planned review: November 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+                  'Última revisión de datos y validación: junio de 2026. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review and validation: June 2026. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
               </p>
               <p>
@@ -792,8 +809,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Esta herramienta se construyó de forma colaborativa con asistentes de IA: extracción del Apéndice B, reconciliación con la base de municipios del INE, interfaz y copia bilingüe. Las decisiones sobre qué se retiene, qué se publica y cómo se redactan los avisos son humanas y deliberadas. El código y la canalización de datos son inspeccionables: ',
-                  'This tool was built collaboratively with AI assistants: Appendix B extraction, reconciliation against the INE municipality base, interface, and bilingual copy. The decisions about what is withheld, what is published, and how the cautions are worded are human and deliberate. The code and data pipeline are inspectable: ',
+                  'Esta herramienta se construyó de forma colaborativa con asistentes de IA: extracción del Apéndice B, reconciliación con la base de municipios del INE, validación, interfaz y copia bilingüe. Las decisiones sobre qué se retiene, qué se publica y cómo se redactan los avisos son humanas y deliberadas. El código, la canalización de datos y los informes de validación son inspeccionables: ',
+                  'This tool was built collaboratively with AI assistants: Appendix B extraction, reconciliation against the INE municipality base, validation, interface, and bilingual copy. The decisions about what is withheld, what is published, and how the cautions are worded are human and deliberate. The code, data pipeline, and validation reports are inspectable: ',
                 )}
                 <a href="https://github.com/willworth/radon-tool" target="_blank" rel="noreferrer">
                   github.com/willworth/radon-tool

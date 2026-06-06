@@ -27,11 +27,11 @@ export const municipalityDataSummary = municipalities.reduce(
 export const municipalityDataStatus = {
   source: 'official',
   messageEs:
-    `Base municipal completa construida sobre datos INE, con clasificación CTE DB-HS6 Apéndice B superpuesta cuando el bloque provincial parece fiable. ${municipalityDataSummary.pendingValidation.toLocaleString(
+    `Base municipal completa construida sobre datos INE. La clasificación CTE DB-HS6 Apéndice B solo se superpone cuando la extracción y la reconciliación parecen suficientemente fiables; ${municipalityDataSummary.pendingValidation.toLocaleString(
       'es-ES',
-    )} municipios siguen marcados como pendientes de validación antes de presentarlo como referencia definitiva.`,
+    )} municipios siguen marcados como pendientes de validación. Esta herramienta no es un servicio oficial ni una referencia definitiva.`,
   messageEn:
-    `Full municipality base built from INE data, with CTE DB-HS6 Appendix B classification overlaid where the provincial block appears reliable. ${municipalityDataSummary.pendingValidation.toLocaleString(
+    `Full municipality base built from INE data. CTE DB-HS6 Appendix B classification is overlaid only where extraction and reconciliation look sufficiently reliable; ${municipalityDataSummary.pendingValidation.toLocaleString(
       'en-US',
-    )} municipalities are still marked as pending validation before this can be presented as a definitive reference.`,
+    )} municipalities are still marked as pending validation. This tool is not an official service or a definitive reference.`,
 } as const
