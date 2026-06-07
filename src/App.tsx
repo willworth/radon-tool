@@ -776,6 +776,42 @@ export default function App() {
               </p>
             </article>
             <article>
+              <h3>{tcopy(language, 'Si sale alto', 'If the result comes back high')}</h3>
+              <p>
+                {tcopy(
+                  language,
+                  'Una medición por encima del nivel de referencia (300 Bq/m³) es una mala noticia, no una sentencia sobre la vivienda. La pauta habitual es medir, mitigar y volver a medir.',
+                  'A measurement above the reference level (300 Bq/m³) is bad news, not a verdict on the home. The standard pathway is measure, mitigate, and measure again.',
+                )}
+              </p>
+              <p>
+                {tcopy(
+                  language,
+                  'La mitigación es ingeniería conocida, no un producto milagroso. Las tres familias estándar de intervención son: despresurización del subsuelo (un pequeño ventilador que extrae el radón desde debajo del forjado antes de que entre), ventilación adicional o equilibrada en las plantas bajas, y sellado de los puntos obvios de entrada (grietas, pasos de instalaciones, juntas). Suelen combinarse, y una segunda medición después confirma que han funcionado.',
+                  'Mitigation is well-understood engineering, not a miracle product. The three standard families of intervention are: sub-slab depressurisation (a small fan that draws radon out from beneath the slab before it can enter), increased or balanced ventilation on the lower floors, and sealing the obvious entry routes (cracks, service penetrations, joints). They are usually combined, and a second measurement afterwards confirms whether they worked.',
+                )}
+              </p>
+              <p>
+                {tcopy(
+                  language,
+                  'El cuello de botella en España no es la técnica. Es encontrar un instalador cualificado: no existe un directorio nacional de mitigadores certificados, y la mejor referencia técnica abierta es ',
+                  "The bottleneck in Spain is not the technique. It is finding a qualified installer: there is no national certified-mitigator directory, and the clearest open technical reference is ",
+                )}
+                <a
+                  href="https://proyectoradoncero.ietcc.csic.es/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {tcopy(language, 'Proyecto Radoncero del CSIC', "the CSIC's Proyecto Radoncero")}
+                </a>
+                {tcopy(
+                  language,
+                  ', con casos reales documentados. Esta herramienta no recomienda empresas concretas porque no puede verificarlas.',
+                  ', which documents real cases. This tool does not recommend specific companies because it cannot verify them.',
+                )}
+              </p>
+            </article>
+            <article>
               <h3>{tcopy(language, 'Estado del prototipo', 'Prototype status')}</h3>
               <p>
                 {tcopy(
