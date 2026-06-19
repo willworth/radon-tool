@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-06T09:18:16.922Z",
+  "generatedAt": "2026-06-20T07:01:16.000Z",
   "summary": {
     "totalMunicipalities": 8131,
     "byZone": {
-      "I": 1637,
-      "II": 1089,
-      "not_classified": 5405
+      "I": 1615,
+      "II": 1067,
+      "not_classified": 5449
     },
     "bySourceStatus": {
-      "not_classified": 4032,
-      "appendix_overlay": 2726,
-      "pending_validation": 1372,
+      "not_classified": 3902,
+      "appendix_overlay": 2682,
+      "pending_validation": 1546,
       "manual_override": 1
     },
     "manualOverrideCount": 1,
-    "pendingValidationCount": 1372
+    "pendingValidationCount": 1546
   },
   "extractionDiagnostics": {
     "officialAppendixRows": 3678,
@@ -40,6 +40,12 @@
     "likelyProvinceMismatchesInSearchBase": []
   },
   "excludedProvinces": [
+    {
+      "autonomousCommunity": "Andalucía",
+      "province": "Granada",
+      "note": "Granada withheld 2026-06-10: Appendix B extraction bleed — Huelva municipalities found in Granada block; pending spot-check against source PDF.",
+      "pendingValidationMunicipalities": 174
+    },
     {
       "autonomousCommunity": "Andalucía",
       "province": "Huelva",
@@ -276,9 +282,9 @@
       "province": "Granada",
       "autonomousCommunity": "Andalucía",
       "totalMunicipalities": 174,
-      "classifiedMunicipalities": 44,
-      "notClassifiedMunicipalities": 130,
-      "pendingValidationMunicipalities": 0,
+      "classifiedMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 174,
       "manualOverrideMunicipalities": 0
     },
     {

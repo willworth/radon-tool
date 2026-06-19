@@ -551,6 +551,31 @@ select:focus,
   padding: 14px 16px;
 }
 
+.infographicCard {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 243, 235, 0.88)),
+    var(--surface);
+}
+
+.journeyFigure {
+  margin: 0;
+}
+
+.journeyFigure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(96, 120, 128, 0.16);
+  background: #fffaf0;
+}
+
+.journeyFigure figcaption {
+  margin-top: 10px;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
 .siteFooter {
   padding: 4px 6px 0;
   text-align: center;

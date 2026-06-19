@@ -57,13 +57,14 @@ In particular, the next cleanup should:
 After the latest search-base rebuild:
 
 - total municipalities in search base: `8,131`
-- classified via overlay: `2,726`
-- explicitly `not classified`: `4,032`
-- `pending validation`: `1,372`
+- classified via overlay: `2,682`
+- explicitly `not classified`: `3,902`
+- `pending validation`: `1,546`
 - manual overrides: `1`
 
 Currently withheld provinces:
 
+- Granada (withheld 2026-06-10: Appendix B extraction bleed — Huelva municipalities found in the Granada block; pending spot-check against the source PDF)
 - Huelva
 - Sevilla
 - Huesca

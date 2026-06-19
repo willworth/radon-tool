@@ -1,4 +1,9 @@
 [
+  {
+    "autonomousCommunity": "Andalucía",
+    "province": "Granada",
+    "note": "Granada withheld 2026-06-10: Appendix B extraction bleed — Huelva municipalities found in Granada block; pending spot-check against source PDF."
+  },
   { "autonomousCommunity": "Andalucía", "province": "Huelva" },
   { "autonomousCommunity": "Andalucía", "province": "Sevilla" },
   { "autonomousCommunity": "Aragón", "province": "Huesca" },

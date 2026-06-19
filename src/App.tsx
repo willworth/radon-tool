@@ -553,6 +553,13 @@ export default function App() {
                 <p>
                   {tcopy(language, context.detailEs, context.detailEn)}
                 </p>
+                <p>
+                  {tcopy(
+                    language,
+                    'Esta priorización es un criterio editorial de la herramienta, no una clasificación oficial.',
+                    'This prioritisation is the tool’s editorial judgement, not an official classification.',
+                  )}
+                </p>
               </div>
             ) : (
               <div className="notice warning">
@@ -636,6 +643,44 @@ export default function App() {
             </div>
           </section>
         )}
+
+        <section className="card infographicCard" aria-labelledby="journey-infographic-heading">
+          <div className="sectionIntro">
+            <div>
+              <p className="eyebrow">{tcopy(language, 'Del riesgo a la acción', 'From risk to action')}</p>
+              <h2 id="journey-infographic-heading">
+                {tcopy(language, 'Qué pasa después de buscar tu municipio', 'What happens after you look up your municipality')}
+              </h2>
+            </div>
+            <p>
+              {tcopy(
+                language,
+                'La búsqueda municipal es solo el primer paso práctico. Si hay motivo de preocupación, el siguiente paso real es medir.',
+                'The municipality lookup is only the first practical step. If there is reason for concern, the real next step is measurement.',
+              )}
+            </p>
+          </div>
+          <figure className="journeyFigure">
+            <img
+              src={language === 'es' ? '/radon-journey-es.png' : '/radon-journey-en.png'}
+              alt={tcopy(
+                language,
+                'Infografía de cinco pasos: oír hablar del radón, comprobar el riesgo municipal, pedir un kit de medición, interpretar el resultado y buscar ayuda para mejorar la vivienda.',
+                'Five-step infographic: hear about radon, check municipal risk, order a test kit, interpret the result, and find help to improve the home.',
+              )}
+              width="1672"
+              height="941"
+              loading="lazy"
+            />
+            <figcaption>
+              {tcopy(
+                language,
+                'La herramienta ayuda sobre todo con el paso 2. El detector sigue siendo lo que confirma el nivel real de una vivienda concreta.',
+                'This tool mainly helps with step 2. A detector is still what confirms the real level in a specific home.',
+              )}
+            </figcaption>
+          </figure>
+        </section>
 
         <section className="card infoGrid">
           <article>
@@ -743,8 +788,15 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Provincias actualmente retenidas: Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló y Vizcaya / Bizkaia.',
-                  'Currently withheld provinces: Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló, and Vizcaya / Bizkaia.',
+                  'Provincias actualmente retenidas: Granada, Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló y Vizcaya / Bizkaia.',
+                  'Currently withheld provinces: Granada, Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló, and Vizcaya / Bizkaia.',
+                )}
+              </p>
+              <p>
+                {tcopy(
+                  language,
+                  'Además, la provincia de València muestra una cobertura de clasificación inusualmente baja (5 de 266 municipios) y está en revisión; interpreta con cautela los resultados “sin clasificar” de esa provincia.',
+                  'In addition, the province of València shows unusually low classification coverage (5 of 266 municipalities) and is under review; interpret “not classified” results from that province with caution.',
                 )}
               </p>
             </article>
@@ -816,7 +868,7 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Última revisión de datos y validación: junio de 2026. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+'Última revisión de datos y validación: junio de 2026. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
                   'Last data review and validation: June 2026. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
               </p>
@@ -875,8 +927,8 @@ export default function App() {
               'Un proyecto de Will Worth. Más contexto y proyectos en ',
               'A project by Will Worth. More context and projects at ',
             )}
-            <a href="https://willworth.dev" target="_blank" rel="noreferrer">
-              willworth.dev
+            <a href="https://willworth.es" target="_blank" rel="noreferrer">
+              willworth.es
             </a>
             .
           </p>

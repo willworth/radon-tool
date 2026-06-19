@@ -21429,7 +21429,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18002",
@@ -21437,7 +21437,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18003",
@@ -21445,31 +21445,31 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18004",
     "municipality": "Albondón",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18005",
     "municipality": "Albuñán",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18006",
     "municipality": "Albuñol",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18007",
@@ -21477,15 +21477,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18010",
     "municipality": "Aldeire",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18011",
@@ -21493,7 +21493,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18012",
@@ -21501,7 +21501,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18013",
@@ -21509,7 +21509,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18014",
@@ -21517,7 +21517,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18015",
@@ -21525,39 +21525,39 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18016",
     "municipality": "Almegíjar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18017",
     "municipality": "Almuñécar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18904",
     "municipality": "Alpujarra de la Sierra",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18018",
     "municipality": "Alquife",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18020",
@@ -21565,7 +21565,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18021",
@@ -21573,7 +21573,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18022",
@@ -21581,15 +21581,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18023",
     "municipality": "Baza",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18024",
@@ -21597,7 +21597,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18025",
@@ -21605,7 +21605,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18027",
@@ -21613,7 +21613,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18028",
@@ -21621,7 +21621,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18029",
@@ -21629,31 +21629,31 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18030",
     "municipality": "Bérchules",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18032",
     "municipality": "Bubión",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18033",
     "municipality": "Busquístar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18034",
@@ -21661,15 +21661,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18035",
     "municipality": "Cádiar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18036",
@@ -21677,7 +21677,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18114",
@@ -21685,7 +21685,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18037",
@@ -21693,7 +21693,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18038",
@@ -21701,15 +21701,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18039",
     "municipality": "Caniles",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18040",
@@ -21717,15 +21717,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18042",
     "municipality": "Capileira",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18043",
@@ -21733,23 +21733,23 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18044",
     "municipality": "Cástaras",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18045",
     "municipality": "Castilléjar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18046",
@@ -21757,15 +21757,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18047",
     "municipality": "Cenes de la Vega",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18059",
@@ -21773,7 +21773,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18061",
@@ -21781,7 +21781,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18062",
@@ -21789,7 +21789,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18048",
@@ -21797,15 +21797,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18049",
     "municipality": "Cogollos de Guadix",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18050",
@@ -21813,7 +21813,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18051",
@@ -21821,7 +21821,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18053",
@@ -21829,7 +21829,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18054",
@@ -21837,7 +21837,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18912",
@@ -21845,7 +21845,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18056",
@@ -21853,7 +21853,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18057",
@@ -21861,7 +21861,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18063",
@@ -21869,7 +21869,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18064",
@@ -21877,7 +21877,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18065",
@@ -21885,7 +21885,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18066",
@@ -21893,7 +21893,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18067",
@@ -21901,7 +21901,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18068",
@@ -21909,15 +21909,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18069",
     "municipality": "Dólar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18915",
@@ -21925,7 +21925,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18070",
@@ -21933,7 +21933,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18071",
@@ -21941,7 +21941,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18072",
@@ -21949,15 +21949,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18074",
     "municipality": "Ferreira",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18076",
@@ -21965,7 +21965,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18077",
@@ -21973,7 +21973,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18078",
@@ -21981,7 +21981,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18079",
@@ -21989,7 +21989,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18905",
@@ -21997,7 +21997,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18082",
@@ -22005,7 +22005,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18083",
@@ -22013,7 +22013,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18084",
@@ -22021,15 +22021,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18085",
     "municipality": "Gor",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18086",
@@ -22037,7 +22037,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18087",
@@ -22045,7 +22045,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18088",
@@ -22053,15 +22053,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18089",
     "municipality": "Guadix",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18906",
@@ -22069,7 +22069,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18093",
@@ -22077,15 +22077,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18094",
     "municipality": "Güéjar Sierra",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18095",
@@ -22093,7 +22093,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18096",
@@ -22101,15 +22101,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18097",
     "municipality": "Huéneja",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18098",
@@ -22117,7 +22117,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18099",
@@ -22125,7 +22125,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18100",
@@ -22133,7 +22133,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18101",
@@ -22141,7 +22141,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18102",
@@ -22149,15 +22149,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18103",
     "municipality": "Ítrabo",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18105",
@@ -22165,7 +22165,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18106",
@@ -22173,7 +22173,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18107",
@@ -22181,23 +22181,23 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18108",
     "municipality": "Jérez del Marquesado",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18109",
     "municipality": "Jete",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18111",
@@ -22205,15 +22205,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18112",
     "municipality": "Juviles",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18115",
@@ -22221,7 +22221,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18116",
@@ -22229,15 +22229,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18117",
     "municipality": "Lanteira",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18119",
@@ -22245,7 +22245,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18120",
@@ -22253,15 +22253,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18121",
     "municipality": "Lobras",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18122",
@@ -22269,23 +22269,23 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18123",
     "municipality": "Lugros",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18124",
     "municipality": "Lújar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18126",
@@ -22293,7 +22293,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18127",
@@ -22301,7 +22301,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18128",
@@ -22309,7 +22309,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18132",
@@ -22317,7 +22317,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18133",
@@ -22325,15 +22325,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18134",
     "municipality": "Monachil",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18135",
@@ -22341,7 +22341,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18136",
@@ -22349,7 +22349,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18137",
@@ -22357,7 +22357,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18138",
@@ -22365,7 +22365,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18909",
@@ -22373,7 +22373,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18140",
@@ -22381,23 +22381,23 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18141",
     "municipality": "Murtas",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18903",
     "municipality": "Nevada",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18143",
@@ -22405,7 +22405,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18144",
@@ -22413,7 +22413,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18145",
@@ -22421,7 +22421,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18146",
@@ -22429,7 +22429,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18147",
@@ -22437,15 +22437,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18148",
     "municipality": "Otívar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18150",
@@ -22453,15 +22453,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18151",
     "municipality": "Pampaneira",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18152",
@@ -22469,7 +22469,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18153",
@@ -22477,7 +22477,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18154",
@@ -22485,7 +22485,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18910",
@@ -22493,15 +22493,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18157",
     "municipality": "Pinos Genil",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18158",
@@ -22509,7 +22509,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18159",
@@ -22517,7 +22517,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18161",
@@ -22525,23 +22525,23 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18162",
     "municipality": "Polopos",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "I",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18163",
     "municipality": "Pórtugos",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18164",
@@ -22549,7 +22549,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18165",
@@ -22557,7 +22557,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18167",
@@ -22565,7 +22565,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18168",
@@ -22573,7 +22573,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18170",
@@ -22581,7 +22581,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18171",
@@ -22589,7 +22589,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18173",
@@ -22597,7 +22597,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18174",
@@ -22605,7 +22605,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18175",
@@ -22613,15 +22613,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18176",
     "municipality": "Soportújar",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18177",
@@ -22629,15 +22629,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18901",
     "municipality": "Taha, La",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18178",
@@ -22645,7 +22645,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18916",
@@ -22653,7 +22653,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18179",
@@ -22661,15 +22661,15 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18180",
     "municipality": "Trevélez",
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
-    "zone": "II",
-    "sourceStatus": "appendix_overlay"
+    "zone": "not_classified",
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18181",
@@ -22677,7 +22677,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18182",
@@ -22685,7 +22685,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18914",
@@ -22693,7 +22693,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18907",
@@ -22701,7 +22701,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18902",
@@ -22709,7 +22709,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18183",
@@ -22717,7 +22717,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18911",
@@ -22725,7 +22725,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18184",
@@ -22733,7 +22733,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18185",
@@ -22741,7 +22741,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18149",
@@ -22749,7 +22749,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18908",
@@ -22757,7 +22757,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18187",
@@ -22765,7 +22765,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18188",
@@ -22773,7 +22773,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18189",
@@ -22781,7 +22781,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18192",
@@ -22789,7 +22789,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18913",
@@ -22797,7 +22797,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18193",
@@ -22805,7 +22805,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "18194",
@@ -22813,7 +22813,7 @@
     "province": "Granada",
     "autonomousCommunity": "Andalucía",
     "zone": "not_classified",
-    "sourceStatus": "not_classified"
+    "sourceStatus": "pending_validation"
   },
   {
     "ineCode": "19001",
