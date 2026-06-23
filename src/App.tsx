@@ -287,123 +287,18 @@ export default function App() {
               EN
             </button>
           </div>
-          <section className="journeyBlock" aria-label={tcopy(language, 'Cómo funciona', 'How it works')}>
-            <div className="journeyIntro">
-              <p className="eyebrow">{tcopy(language, 'Cómo funciona', 'How it works')}</p>
-              <h2>{tcopy(language, 'Comprueba tu municipio y decide el siguiente paso', 'Check your municipality and decide the next step')}</h2>
-              <p>
-                {tcopy(
-                  language,
-                  'La idea es simple: averiguas si tu municipio aparece en la clasificación actual, entiendes lo que eso significa y decides si conviene medir o pedir más información.',
-                  'The idea is simple: find out whether your municipality appears in the current classification, understand what that means, and decide whether it makes sense to test or ask for more information.',
-                )}
-              </p>
-            </div>
-            <div className="journeyStrip">
-              <article className="journeyStep">
-                <span className="journeyNumber">1</span>
-                <div>
-                  <strong>{tcopy(language, 'Busca tu municipio', 'Search your municipality')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Encuentra tu municipio en segundos, con o sin acentos.',
-                      'Find your municipality in seconds, with or without accents.',
-                    )}
-                  </p>
-                </div>
-              </article>
-              <article className="journeyStep">
-                <span className="journeyNumber">2</span>
-                <div>
-                  <strong>{tcopy(language, 'Entiende la señal', 'Understand the signal')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Mira si aparece como Zona I, Zona II, no clasificado o pendiente de validación.',
-                      'See whether it appears as Zone I, Zone II, not classified, or pending validation.',
-                    )}
-                  </p>
-                </div>
-              </article>
-              <article className="journeyStep">
-                <span className="journeyNumber">3</span>
-                <div>
-                  <strong>{tcopy(language, 'Decide qué hacer', 'Decide what to do')}</strong>
-                  <p>
-                    {tcopy(
-                      language,
-                      'Usa el resultado para decidir si medir, pedir más información o hablar con tu ayuntamiento o comunidad.',
-                      'Use the result to decide whether to test, ask for more information, or contact your town hall or building community.',
-                    )}
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <div className="heroLayout">
-            <div>
-              <p className="eyebrow">{tcopy(language, 'España', 'Spain')}</p>
-              <h1>{tcopy(language, 'Consulta preliminar de radón por municipio', 'Preliminary radon lookup by municipality')}</h1>
-              <p className="lede">
-                {tcopy(
-                  language,
-                  'Busca cualquier municipio de España, revisa si aparece como Zona I, Zona II, no clasificado o pendiente de validación, y añade un poco de contexto sobre la vivienda. Está pensada para orientar, no para certificar.',
-                  'Search any municipality in Spain, check whether it appears as Zone I, Zone II, not classified, or pending validation, and add a little housing context. It is designed to orient, not to certify.',
-                )}
-              </p>
-              <div className="heroGuidance">
-                <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Búsqueda completa', 'Full search base')}</strong>
-                  <span>{tcopy(language, 'Base INE completa, no solo municipios clasificados.', 'Full INE base, not only classified municipalities.')}</span>
-                </div>
-                <div className="heroGuidanceItem">
-                  <strong>{tcopy(language, 'Lectura honesta', 'Honest reading')}</strong>
-                  <span>{tcopy(language, 'Si un bloque provincial no es fiable, se marca como pendiente de validación.', 'If a provincial block is not reliable, it is marked as pending validation.')}</span>
-                </div>
-              </div>
-              <div className="notice warning">
-                <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
-                {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
-              </div>
-            </div>
-
-            <aside className="heroPanel">
-              <p className="panelEyebrow">{tcopy(language, 'Cobertura actual', 'Current coverage')}</p>
-              <div className="statGrid">
-                <article className="statCard">
-                  <strong>{formatCount(language, municipalityDataSummary.total)}</strong>
-                  <span>{tcopy(language, 'municipios en búsqueda', 'municipalities searchable')}</span>
-                </article>
-                <article className="statCard">
-                  <strong>{formatCount(language, municipalityDataSummary.classified)}</strong>
-                  <span>{tcopy(language, 'con clasificación visible', 'with visible classification')}</span>
-                </article>
-                <article className="statCard">
-                  <strong>{formatCount(language, municipalityDataSummary.notClassified)}</strong>
-                  <span>{tcopy(language, 'sin clasificación mostrada', 'with no shown classification')}</span>
-                </article>
-                <article className="statCard statCard-alert">
-                  <strong>{formatCount(language, municipalityDataSummary.pendingValidation)}</strong>
-                  <span>{tcopy(language, 'pendientes de validación', 'pending validation')}</span>
-                </article>
-              </div>
-
-              <div className="legendList">
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-i" />
-                  <span>{tcopy(language, 'Zona I o II: aparece en la superposición actual.', 'Zone I or II: appears in the current overlay.')}</span>
-                </div>
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-neutral" />
-                  <span>{tcopy(language, 'No clasificado: no figura en el Apéndice B retenido.', 'Not classified: does not appear in the retained Appendix B layer.')}</span>
-                </div>
-                <div className="legendItem">
-                  <span className="legendSwatch legendSwatch-pending" />
-                  <span>{tcopy(language, 'Pendiente: la provincia sigue en revisión y no debe leerse como tranquilidad.', 'Pending: the province is still under review and should not be read as reassurance.')}</span>
-                </div>
-              </div>
-            </aside>
+          <p className="eyebrow">{tcopy(language, 'España · Radón', 'Spain · Radon')}</p>
+          <h1>{tcopy(language, '¿Hay radón en tu municipio?', 'Is there radon in your municipality?')}</h1>
+          <p className="lede">
+            {tcopy(
+              language,
+              'Escribe tu municipio y verás si está marcado como zona de atención por radón, qué significa y qué puedes hacer. Es gratis, sin ánimo de lucro y sin nada que vender. Orienta; no certifica ni sustituye una medición.',
+              'Type your municipality and see whether it is flagged as a radon priority area, what that means, and what you can do. Free, non-commercial, with nothing to sell. It orients; it does not certify or replace a measurement.',
+            )}
+          </p>
+          <div className="notice warning">
+            <strong>{tcopy(language, 'Estado del dato:', 'Data status:')}</strong>{' '}
+            {tcopy(language, municipalityDataStatus.messageEs, municipalityDataStatus.messageEn)}
           </div>
         </section>
 
@@ -527,6 +422,22 @@ export default function App() {
                 {selectedHasPendingClassification ? tcopy(language, 'Pendiente', 'Pending') : currentTitle}
               </div>
             </div>
+
+            {selected.zone === 'not_classified' && !selectedHasPendingClassification ? (
+              <div className="reassuranceAlert" role="alert">
+                <span className="reassuranceAlert-icon" aria-hidden="true">!</span>
+                <div>
+                  <strong>{tcopy(language, '«No clasificado» no significa «sin radón».', '“Not classified” does not mean “radon-free”.')}</strong>
+                  <p>
+                    {tcopy(
+                      language,
+                      'Solo quiere decir que esta lista oficial no marca tu municipio como prioritario — no que tu vivienda esté libre de radón. El nivel real depende también de la geología local, del edificio y de la planta. La forma de saberlo con seguridad es medir: es barato, sencillo y la única prueba fiable.',
+                      'It only means this official list does not flag your municipality as a priority — not that your home is free of radon. The real level also depends on local geology, the building, and the floor. The way to know for sure is to measure: it is cheap, simple, and the only reliable check.',
+                    )}
+                  </p>
+                </div>
+              </div>
+            ) : null}
 
             <div className="dual">
               <div>
@@ -723,6 +634,54 @@ export default function App() {
               )}
             </p>
           </article>
+        </section>
+
+        <section className="card coverageCard" aria-label={tcopy(language, 'Cobertura actual', 'Current coverage')}>
+          <div className="sectionIntro">
+            <div>
+              <p className="eyebrow">{tcopy(language, 'Cobertura actual', 'Current coverage')}</p>
+              <h2>{tcopy(language, 'Qué hay dentro de la búsqueda', 'What is inside the search')}</h2>
+            </div>
+            <p>
+              {tcopy(
+                language,
+                'Puedes buscar cualquier municipio de España. No todos tienen una clasificación visible, y algunas provincias están retenidas a propósito mientras se revisan.',
+                'You can search any municipality in Spain. Not all of them have a visible classification, and some provinces are deliberately withheld while they are under review.',
+              )}
+            </p>
+          </div>
+          <div className="statGrid">
+            <article className="statCard">
+              <strong>{formatCount(language, municipalityDataSummary.total)}</strong>
+              <span>{tcopy(language, 'municipios en búsqueda', 'municipalities searchable')}</span>
+            </article>
+            <article className="statCard">
+              <strong>{formatCount(language, municipalityDataSummary.classified)}</strong>
+              <span>{tcopy(language, 'con clasificación visible', 'with visible classification')}</span>
+            </article>
+            <article className="statCard">
+              <strong>{formatCount(language, municipalityDataSummary.notClassified)}</strong>
+              <span>{tcopy(language, 'sin clasificación mostrada', 'with no shown classification')}</span>
+            </article>
+            <article className="statCard statCard-alert">
+              <strong>{formatCount(language, municipalityDataSummary.pendingValidation)}</strong>
+              <span>{tcopy(language, 'pendientes de validación', 'pending validation')}</span>
+            </article>
+          </div>
+          <div className="legendList">
+            <div className="legendItem">
+              <span className="legendSwatch legendSwatch-i" />
+              <span>{tcopy(language, 'Zona I o II: aparece en la superposición actual.', 'Zone I or II: appears in the current overlay.')}</span>
+            </div>
+            <div className="legendItem">
+              <span className="legendSwatch legendSwatch-neutral" />
+              <span>{tcopy(language, 'No clasificado: no figura en el Apéndice B retenido.', 'Not classified: does not appear in the retained Appendix B layer.')}</span>
+            </div>
+            <div className="legendItem">
+              <span className="legendSwatch legendSwatch-pending" />
+              <span>{tcopy(language, 'Pendiente: la provincia sigue en revisión y no debe leerse como tranquilidad.', 'Pending: the province is still under review and should not be read as reassurance.')}</span>
+            </div>
+          </div>
         </section>
 
         <section className="card disclosureCard" aria-labelledby="disclosure-heading">
