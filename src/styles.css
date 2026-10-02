@@ -695,3 +695,17 @@ select:focus,
   color: #5a4209;
   line-height: 1.5;
 }
+
+.reviewAlert {
+  margin: 4px 0 18px;
+}
+
+.reviewAlert strong {
+  font-size: 1.15rem;
+}
+
+.reviewAlert a {
+  color: #4a3607;
+  font-weight: 700;
+  text-decoration: underline;
+}

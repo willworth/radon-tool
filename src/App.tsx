@@ -289,6 +289,40 @@ export default function App() {
           </div>
           <p className="eyebrow">{tcopy(language, 'España · Radón', 'Spain · Radon')}</p>
           <h1>{tcopy(language, '¿Hay radón en tu municipio?', 'Is there radon in your municipality?')}</h1>
+          <div className="reassuranceAlert reviewAlert" role="note">
+            <span className="reassuranceAlert-icon" aria-hidden="true">!</span>
+            <div>
+              <strong>
+                {tcopy(
+                  language,
+                  'Esta herramienta no la ha revisado ningún especialista en radón.',
+                  'This tool has not been reviewed by a radon specialist.',
+                )}
+              </strong>
+              <p>
+                {tcopy(
+                  language,
+                  'La hizo un desarrollador a partir de datos oficiales públicos. Pedí una revisión experta y aún no ha sido posible. Úsala solo para orientarte: para tomar decisiones, consulta los ',
+                  'It was built by a developer from public official data. I asked for an expert review and it has not yet been possible. Use it only for orientation: for decisions, use the ',
+                )}
+                <a href="https://www.csn.es/mapa-del-potencial-de-radon-en-espana" target="_blank" rel="noreferrer">
+                  {tcopy(language, 'mapas oficiales del CSN', 'official CSN maps')}
+                </a>
+                {tcopy(language, ' y mide tu vivienda. ', ' and measure your home. ')}
+                <a
+                  href={tcopy(
+                    language,
+                    'https://willworth.es/el-nuevo-cuello-de-botella',
+                    'https://willworth.dev/the-new-bottleneck',
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {tcopy(language, 'Por qué no está revisada →', 'Why it has not been reviewed →')}
+                </a>
+              </p>
+            </div>
+          </div>
           <p className="lede">
             {tcopy(
               language,
