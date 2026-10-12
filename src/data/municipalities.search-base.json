@@ -748,8 +748,8 @@
     "municipality": "Lezuza",
     "province": "Albacete",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "02044",
@@ -892,8 +892,8 @@
     "municipality": "Pétrola",
     "province": "Albacete",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "02062",
@@ -1100,8 +1100,8 @@
     "municipality": "Yeste",
     "province": "Albacete",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "03002",
@@ -3268,8 +3268,8 @@
     "municipality": "Bohodón, El",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05037",
@@ -3404,16 +3404,16 @@
     "municipality": "Casavieja",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05055",
     "municipality": "Casillas",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05056",
@@ -3428,40 +3428,40 @@
     "municipality": "Cebreros",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05058",
     "municipality": "Cepeda la Mora",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05067",
     "municipality": "Chamartín",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05059",
     "municipality": "Cillán",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05060",
     "municipality": "Cisla",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05061",
@@ -3476,64 +3476,64 @@
     "municipality": "Collado de Contreras",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05063",
     "municipality": "Collado del Mirón",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05064",
     "municipality": "Constanzana",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05065",
     "municipality": "Crespos",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05066",
     "municipality": "Cuevas del Valle",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05903",
     "municipality": "Diego del Carpio",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05069",
     "municipality": "Donjimeno",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05070",
     "municipality": "Donvidas",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05072",
@@ -3572,8 +3572,8 @@
     "municipality": "Fresno, El",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05077",
@@ -4316,8 +4316,8 @@
     "municipality": "Oso, El",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05176",
@@ -4532,8 +4532,8 @@
     "municipality": "San Esteban de los Patos",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05208",
@@ -4548,24 +4548,24 @@
     "municipality": "San Esteban del Valle",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05209",
     "municipality": "San García de Ingelmos",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05901",
     "municipality": "San Juan de Gredos",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05210",
@@ -4580,40 +4580,40 @@
     "municipality": "San Juan de la Nava",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05212",
     "municipality": "San Juan del Molinillo",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05213",
     "municipality": "San Juan del Olmo",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05214",
     "municipality": "San Lorenzo de Tormes",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05215",
     "municipality": "San Martín de la Vega del Alberche",
     "province": "Ávila",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "05216",
@@ -5516,8 +5516,8 @@
     "municipality": "Guadiana",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06060",
@@ -5884,24 +5884,24 @@
     "municipality": "Puebla de Obando",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06108",
     "municipality": "Puebla de Sancho Pérez",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06105",
     "municipality": "Puebla del Maestre",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06106",
@@ -5924,24 +5924,24 @@
     "municipality": "Quintana de la Serena",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06110",
     "municipality": "Reina",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06111",
     "municipality": "Rena",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06112",
@@ -5964,8 +5964,8 @@
     "municipality": "Risco",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06115",
@@ -5980,16 +5980,16 @@
     "municipality": "Salvaleón",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06117",
     "municipality": "Salvatierra de los Barros",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06119",
@@ -6268,8 +6268,8 @@
     "municipality": "Villagonzalo",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06152",
@@ -6292,8 +6292,8 @@
     "municipality": "Villanueva del Fresno",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06156",
@@ -6332,8 +6332,8 @@
     "municipality": "Zahínos",
     "province": "Badajoz",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "06160",
@@ -6676,8 +6676,8 @@
     "municipality": "Migjorn Gran, Es",
     "province": "Islas Baleares / Illes Balears",
     "autonomousCommunity": "Islas Baleares",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "07038",
@@ -6748,8 +6748,8 @@
     "municipality": "Salines, Ses",
     "province": "Islas Baleares / Illes Balears",
     "autonomousCommunity": "Islas Baleares",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "07046",
@@ -6940,8 +6940,8 @@
     "municipality": "Ametlla del Vallès, L'",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08006",
@@ -7628,8 +7628,8 @@
     "municipality": "Franqueses del Vallès, Les",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08090",
@@ -7740,8 +7740,8 @@
     "municipality": "Hospitalet de Llobregat, L'",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08162",
@@ -7876,16 +7876,16 @@
     "municipality": "Masies de Roda, Les",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08117",
     "municipality": "Masies de Voltregà, Les",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08118",
@@ -8748,8 +8748,8 @@
     "municipality": "Sant Mateu de Bages",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08231",
@@ -8772,16 +8772,16 @@
     "municipality": "Sant Pere de Torelló",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08234",
     "municipality": "Sant Pere de Vilamajor",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08189",
@@ -8812,16 +8812,16 @@
     "municipality": "Sant Quirze de Besora",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08238",
     "municipality": "Sant Quirze del Vallès",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08239",
@@ -8860,8 +8860,8 @@
     "municipality": "Sant Vicenç de Castellet",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08264",
@@ -8876,16 +8876,16 @@
     "municipality": "Sant Vicenç de Torelló",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08263",
     "municipality": "Sant Vicenç dels Horts",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08243",
@@ -8900,8 +8900,8 @@
     "municipality": "Santa Coloma de Cervelló",
     "province": "Barcelona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "08245",
@@ -11004,16 +11004,16 @@
     "municipality": "Pedrosa del Príncipe",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09261",
     "municipality": "Peñaranda de Duero",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09262",
@@ -11036,8 +11036,8 @@
     "municipality": "Pineda de la Sierra",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09267",
@@ -11060,8 +11060,8 @@
     "municipality": "Pinilla de los Moros",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09270",
@@ -11084,16 +11084,16 @@
     "municipality": "Prádanos de Bureba",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09274",
     "municipality": "Pradoluengo",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09275",
@@ -11116,8 +11116,8 @@
     "municipality": "Puentedura",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09279",
@@ -11164,8 +11164,8 @@
     "municipality": "Quintanapalla",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09289",
@@ -11180,8 +11180,8 @@
     "municipality": "Quintanavides",
     "province": "Burgos",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "09294",
@@ -12932,24 +12932,24 @@
     "municipality": "Eljas",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10073",
     "municipality": "Escurial",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10075",
     "municipality": "Fresnedoso de Ibor",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10076",
@@ -12964,16 +12964,16 @@
     "municipality": "Garciaz",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10079",
     "municipality": "Garganta la Olla",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10078",
@@ -12988,32 +12988,32 @@
     "municipality": "Gargantilla",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10081",
     "municipality": "Gargüera",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10082",
     "municipality": "Garrovillas de Alconétar",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10083",
     "municipality": "Garvín",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10084",
@@ -13836,8 +13836,8 @@
     "municipality": "Tornavacas",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10184",
@@ -13852,64 +13852,64 @@
     "municipality": "Torre de Don Miguel",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10188",
     "municipality": "Torre de Santa María",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10185",
     "municipality": "Torrecilla de los Ángeles",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10186",
     "municipality": "Torrecillas de la Tiesa",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10190",
     "municipality": "Torrejón el Rubio",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10189",
     "municipality": "Torrejoncillo",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10191",
     "municipality": "Torremenga",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10192",
     "municipality": "Torremocha",
     "province": "Cáceres",
     "autonomousCommunity": "Extremadura",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "10193",
@@ -15580,32 +15580,32 @@
     "municipality": "Abenójar",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13002",
     "municipality": "Agudo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13003",
     "municipality": "Alamillo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13004",
     "municipality": "Albaladejo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13005",
@@ -15620,8 +15620,8 @@
     "municipality": "Alcoba",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13007",
@@ -15660,16 +15660,16 @@
     "municipality": "Almadén",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13012",
     "municipality": "Almadenejos",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13013",
@@ -15684,32 +15684,32 @@
     "municipality": "Almedina",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13015",
     "municipality": "Almodóvar del Campo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13016",
     "municipality": "Almuradiel",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13017",
     "municipality": "Anchuras",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13903",
@@ -15748,8 +15748,8 @@
     "municipality": "Arroba de los Montes",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13022",
@@ -15772,32 +15772,32 @@
     "municipality": "Brazatortas",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13025",
     "municipality": "Cabezarados",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13026",
     "municipality": "Cabezarrubias del Puerto",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13027",
     "municipality": "Calzada de Calatrava",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13028",
@@ -15844,16 +15844,16 @@
     "municipality": "Castellar de Santiago",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13038",
     "municipality": "Chillón",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13034",
@@ -15876,16 +15876,16 @@
     "municipality": "Cortijos, Los",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13037",
     "municipality": "Cózar",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13039",
@@ -15900,24 +15900,24 @@
     "municipality": "Fernán Caballero",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13041",
     "municipality": "Fontanarejo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13042",
     "municipality": "Fuencaliente",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13043",
@@ -15932,8 +15932,8 @@
     "municipality": "Fuente el Fresno",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13045",
@@ -15948,8 +15948,8 @@
     "municipality": "Guadalmez",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13047",
@@ -15964,24 +15964,24 @@
     "municipality": "Hinojosas de Calatrava",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13049",
     "municipality": "Horcajo de los Montes",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13050",
     "municipality": "Labores, Las",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13904",
@@ -16004,8 +16004,8 @@
     "municipality": "Malagón",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13053",
@@ -16028,8 +16028,8 @@
     "municipality": "Mestanza",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13056",
@@ -16060,16 +16060,16 @@
     "municipality": "Navalpino",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13060",
     "municipality": "Navas de Estena",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13061",
@@ -16092,8 +16092,8 @@
     "municipality": "Piedrabuena",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13064",
@@ -16108,8 +16108,8 @@
     "municipality": "Porzuna",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13066",
@@ -16132,48 +16132,48 @@
     "municipality": "Puebla de Don Rodrigo",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13069",
     "municipality": "Puebla del Príncipe",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13070",
     "municipality": "Puerto Lápice",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13071",
     "municipality": "Puertollano",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13072",
     "municipality": "Retuerta del Bullaque",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13901",
     "municipality": "Robledo, El",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13902",
@@ -16188,8 +16188,8 @@
     "municipality": "Saceruela",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13074",
@@ -16204,24 +16204,24 @@
     "municipality": "San Lorenzo de Calatrava",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13076",
     "municipality": "Santa Cruz de los Cáñamos",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13077",
     "municipality": "Santa Cruz de Mudela",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13078",
@@ -16236,8 +16236,8 @@
     "municipality": "Solana del Pino",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13079",
@@ -16252,8 +16252,8 @@
     "municipality": "Terrinches",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13082",
@@ -16276,24 +16276,24 @@
     "municipality": "Torre de Juan Abad",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13085",
     "municipality": "Torrenueva",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13086",
     "municipality": "Valdemanco del Esteras",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13087",
@@ -16324,8 +16324,8 @@
     "municipality": "Villamanrique",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13091",
@@ -16348,8 +16348,8 @@
     "municipality": "Villanueva de los Infantes",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13094",
@@ -16372,24 +16372,24 @@
     "municipality": "Villarrubia de los Ojos",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13097",
     "municipality": "Villarta de San Juan",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "13098",
     "municipality": "Viso del Marqués",
     "province": "Ciudad Real",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "14001",
@@ -16676,8 +16676,8 @@
     "municipality": "Guijo, El",
     "province": "Córdoba",
     "autonomousCommunity": "Andalucía",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "14035",
@@ -17060,8 +17060,8 @@
     "municipality": "Baña, A",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15008",
@@ -17148,8 +17148,8 @@
     "municipality": "Capela, A",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15019",
@@ -17244,8 +17244,8 @@
     "municipality": "Coruña, A",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15031",
@@ -17324,8 +17324,8 @@
     "municipality": "Laracha, A",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15040",
@@ -17492,96 +17492,96 @@
     "municipality": "Ortigueira",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15062",
     "municipality": "Outes",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15902",
     "municipality": "Oza-Cesuras",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15064",
     "municipality": "Paderne",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15065",
     "municipality": "Padrón",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15066",
     "municipality": "Pino, O",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15067",
     "municipality": "Pobra do Caramiñal, A",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15068",
     "municipality": "Ponteceso",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15069",
     "municipality": "Pontedeume",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15070",
     "municipality": "Pontes de García Rodríguez, As",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15071",
     "municipality": "Porto do Son",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15072",
     "municipality": "Rianxo",
     "province": "La Coruña / A Coruña",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "15073",
@@ -17932,8 +17932,8 @@
     "municipality": "Arguisuelas",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16025",
@@ -17980,8 +17980,8 @@
     "municipality": "Beamud",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16032",
@@ -18076,8 +18076,8 @@
     "municipality": "Campillos-Sierra",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16901",
@@ -18164,16 +18164,16 @@
     "municipality": "Carboneras de Guadazaón",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16056",
     "municipality": "Cardenete",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16057",
@@ -18236,8 +18236,8 @@
     "municipality": "Casas de los Pinos",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16066",
@@ -18404,8 +18404,8 @@
     "municipality": "Fuentes",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16091",
@@ -18444,8 +18444,8 @@
     "municipality": "Graja de Campalbo",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16096",
@@ -18460,8 +18460,8 @@
     "municipality": "Henarejos",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16098",
@@ -18564,8 +18564,8 @@
     "municipality": "Huerta del Marquesado",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16112",
@@ -18588,8 +18588,8 @@
     "municipality": "Laguna del Marquesado",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16116",
@@ -18604,8 +18604,8 @@
     "municipality": "Landete",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16118",
@@ -18700,8 +18700,8 @@
     "municipality": "Monteagudo de las Salinas",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16132",
@@ -18716,8 +18716,8 @@
     "municipality": "Mota del Cuervo",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16134",
@@ -18788,8 +18788,8 @@
     "municipality": "Osa de la Vega",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16146",
@@ -19028,8 +19028,8 @@
     "municipality": "Reíllo",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16181",
@@ -19084,8 +19084,8 @@
     "municipality": "San Clemente",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16191",
@@ -19116,8 +19116,8 @@
     "municipality": "Santa Cruz de Moya",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16196",
@@ -19172,8 +19172,8 @@
     "municipality": "Talayuelas",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16203",
@@ -19292,8 +19292,8 @@
     "municipality": "Valdemeca",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16225",
@@ -19308,8 +19308,8 @@
     "municipality": "Valdemoro-Sierra",
     "province": "Cuenca",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "16228",
@@ -19732,8 +19732,8 @@
     "municipality": "Armentera, L'",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17012",
@@ -19868,8 +19868,8 @@
     "municipality": "Brunyola i Sant Martí Sapresa",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17031",
@@ -19908,8 +19908,8 @@
     "municipality": "Calonge i Sant Antoni",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17035",
@@ -20084,8 +20084,8 @@
     "municipality": "Cruïlles, Monells i Sant Sadurní de l'Heura",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17060",
@@ -20108,8 +20108,8 @@
     "municipality": "Escala, L'",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17063",
@@ -20388,8 +20388,8 @@
     "municipality": "Llosses, Les",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17102",
@@ -20636,8 +20636,8 @@
     "municipality": "Planes d'Hostoles, Les",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17134",
@@ -20652,8 +20652,8 @@
     "municipality": "Pont de Molins",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17136",
@@ -20668,8 +20668,8 @@
     "municipality": "Porqueres",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17140",
@@ -20692,24 +20692,24 @@
     "municipality": "Preses, Les",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17141",
     "municipality": "Puigcerdà",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17142",
     "municipality": "Quart",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17043",
@@ -20732,8 +20732,8 @@
     "municipality": "Regencós",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17145",
@@ -20756,8 +20756,8 @@
     "municipality": "Ripoll",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17148",
@@ -20772,24 +20772,24 @@
     "municipality": "Riudaura",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17150",
     "municipality": "Riudellots de la Selva",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17151",
     "municipality": "Riumors",
     "province": "Gerona / Girona",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "17152",
@@ -22900,16 +22900,16 @@
     "municipality": "Alcolea del Pinar",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19013",
     "municipality": "Alcoroches",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19015",
@@ -22988,24 +22988,24 @@
     "municipality": "Alovera",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19027",
     "municipality": "Alustante",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19031",
     "municipality": "Angón",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19032",
@@ -23028,8 +23028,8 @@
     "municipality": "Anquela del Pedregal",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19036",
@@ -23044,8 +23044,8 @@
     "municipality": "Arbancón",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19038",
@@ -23060,8 +23060,8 @@
     "municipality": "Argecilla",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19040",
@@ -23084,8 +23084,8 @@
     "municipality": "Arroyo de las Fraguas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19043",
@@ -23100,8 +23100,8 @@
     "municipality": "Atienza",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19045",
@@ -23116,8 +23116,8 @@
     "municipality": "Azuqueca de Henares",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19047",
@@ -23140,8 +23140,8 @@
     "municipality": "Bañuelos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19050",
@@ -23164,8 +23164,8 @@
     "municipality": "Bodera, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19053",
@@ -23196,40 +23196,40 @@
     "municipality": "Bustares",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19058",
     "municipality": "Cabanillas del Campo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19059",
     "municipality": "Campillo de Dueñas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19060",
     "municipality": "Campillo de Ranas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19061",
     "municipality": "Campisábalos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19064",
@@ -23244,8 +23244,8 @@
     "municipality": "Cantalojas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19066",
@@ -23260,24 +23260,24 @@
     "municipality": "Cardoso de la Sierra, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19070",
     "municipality": "Casa de Uceda",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19071",
     "municipality": "Casar, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19073",
@@ -23356,8 +23356,8 @@
     "municipality": "Checa",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19104",
@@ -23380,8 +23380,8 @@
     "municipality": "Chiloeches",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19086",
@@ -23396,8 +23396,8 @@
     "municipality": "Cincovillas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19088",
@@ -23436,8 +23436,8 @@
     "municipality": "Cogolludo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19095",
@@ -23452,16 +23452,16 @@
     "municipality": "Condemios de Arriba",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19097",
     "municipality": "Congostrina",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19098",
@@ -23484,8 +23484,8 @@
     "municipality": "Cubillo de Uceda, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19107",
@@ -23540,8 +23540,8 @@
     "municipality": "Espinosa de Henares",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19114",
@@ -23556,24 +23556,24 @@
     "municipality": "Establés",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19116",
     "municipality": "Estriégana",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19117",
     "municipality": "Fontanar",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19118",
@@ -23596,8 +23596,8 @@
     "municipality": "Fuentelahiguera de Albatages",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19121",
@@ -23644,48 +23644,48 @@
     "municipality": "Galápagos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19127",
     "municipality": "Galve de Sorbe",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19129",
     "municipality": "Gascueña de Bornova",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19130",
     "municipality": "Guadalajara",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19132",
     "municipality": "Henche",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19133",
     "municipality": "Heras de Ayuso",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19134",
@@ -23700,8 +23700,8 @@
     "municipality": "Hiendelaencina",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19136",
@@ -23716,16 +23716,16 @@
     "municipality": "Hita",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19139",
     "municipality": "Hombrados",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19142",
@@ -23756,8 +23756,8 @@
     "municipality": "Huerce, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19147",
@@ -23788,8 +23788,8 @@
     "municipality": "Humanes",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19152",
@@ -23828,24 +23828,24 @@
     "municipality": "Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19157",
     "municipality": "Jirueque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19159",
     "municipality": "Ledanca",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19160",
@@ -23884,24 +23884,24 @@
     "municipality": "Majaelrayo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19166",
     "municipality": "Málaga del Fresno",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19167",
     "municipality": "Malaguilla",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19168",
@@ -23924,16 +23924,16 @@
     "municipality": "Maranchón",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19171",
     "municipality": "Marchamalo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19172",
@@ -23948,16 +23948,16 @@
     "municipality": "Matarrubia",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19174",
     "municipality": "Matillas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19175",
@@ -23980,8 +23980,8 @@
     "municipality": "Medranda",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19178",
@@ -23996,24 +23996,24 @@
     "municipality": "Membrillera",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19181",
     "municipality": "Miedes de Atienza",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19182",
     "municipality": "Mierla, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19184",
@@ -24036,8 +24036,8 @@
     "municipality": "Miñosa, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19186",
@@ -24060,16 +24060,16 @@
     "municipality": "Mochales",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19189",
     "municipality": "Mohernando",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19190",
@@ -24084,8 +24084,8 @@
     "municipality": "Monasterio",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19192",
@@ -24116,8 +24116,8 @@
     "municipality": "Morenilla",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19196",
@@ -24132,8 +24132,8 @@
     "municipality": "Navas de Jadraque, Las",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19198",
@@ -24172,32 +24172,32 @@
     "municipality": "Olmeda de Jadraque, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19203",
     "municipality": "Ordial, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19204",
     "municipality": "Orea",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19208",
     "municipality": "Pálmaces de Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19209",
@@ -24236,8 +24236,8 @@
     "municipality": "Pedregal, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19214",
@@ -24276,8 +24276,8 @@
     "municipality": "Pinilla de Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19219",
@@ -24308,8 +24308,8 @@
     "municipality": "Pobo de Dueñas, El",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19223",
@@ -24340,8 +24340,8 @@
     "municipality": "Prádena de Atienza",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19227",
@@ -24356,32 +24356,32 @@
     "municipality": "Puebla de Beleña",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19229",
     "municipality": "Puebla de Valles",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19230",
     "municipality": "Quer",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19231",
     "municipality": "Rebollosa de Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19232",
@@ -24404,8 +24404,8 @@
     "municipality": "Retiendas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19235",
@@ -24428,24 +24428,24 @@
     "municipality": "Riofrío del Llano",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19239",
     "municipality": "Robledillo de Mohernando",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19240",
     "municipality": "Robledo de Corpes",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19241",
@@ -24508,8 +24508,8 @@
     "municipality": "San Andrés del Congosto",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19249",
@@ -24532,8 +24532,8 @@
     "municipality": "Saúca",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19252",
@@ -24556,16 +24556,16 @@
     "municipality": "Semillas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19255",
     "municipality": "Setiles",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19256",
@@ -24580,8 +24580,8 @@
     "municipality": "Sigüenza",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19258",
@@ -24596,8 +24596,8 @@
     "municipality": "Somolinos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19260",
@@ -24620,8 +24620,8 @@
     "municipality": "Tamajón",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19263",
@@ -24644,8 +24644,8 @@
     "municipality": "Tartanedo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19266",
@@ -24692,16 +24692,16 @@
     "municipality": "Tordelrábano",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19272",
     "municipality": "Tordesilos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19274",
@@ -24716,8 +24716,8 @@
     "municipality": "Torre del Burgo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19277",
@@ -24740,8 +24740,8 @@
     "municipality": "Torrejón del Rey",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19281",
@@ -24756,8 +24756,8 @@
     "municipality": "Torremocha del Campo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19283",
@@ -24780,8 +24780,8 @@
     "municipality": "Torrubia",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19286",
@@ -24804,8 +24804,8 @@
     "municipality": "Tortuero",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19289",
@@ -24836,8 +24836,8 @@
     "municipality": "Uceda",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19294",
@@ -24868,8 +24868,8 @@
     "municipality": "Valdearenas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19299",
@@ -24884,8 +24884,8 @@
     "municipality": "Valdeaveruelo",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19301",
@@ -24916,16 +24916,16 @@
     "municipality": "Valdenuño Fernández",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19305",
     "municipality": "Valdepeñas de la Sierra",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19306",
@@ -24940,8 +24940,8 @@
     "municipality": "Valdesotos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19308",
@@ -24972,8 +24972,8 @@
     "municipality": "Valverde de los Arroyos",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19314",
@@ -25004,32 +25004,32 @@
     "municipality": "Villanueva de la Torre",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19321",
     "municipality": "Villares de Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19322",
     "municipality": "Villaseca de Henares",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19323",
     "municipality": "Villaseca de Uceda",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19324",
@@ -25044,8 +25044,8 @@
     "municipality": "Viñuelas",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19326",
@@ -25084,16 +25084,16 @@
     "municipality": "Yunquera de Henares",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19332",
     "municipality": "Yunta, La",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19333",
@@ -25108,8 +25108,8 @@
     "municipality": "Zarzuela de Jadraque",
     "province": "Guadalajara",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "19335",
@@ -25604,48 +25604,48 @@
     "municipality": "Lizartza",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20901",
     "municipality": "Mendaro",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20057",
     "municipality": "Mutiloa",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20056",
     "municipality": "Mutriku",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20063",
     "municipality": "Oiartzun",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20058",
     "municipality": "Olaberria",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20059",
@@ -25660,24 +25660,24 @@
     "municipality": "Ordizia",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20905",
     "municipality": "Orendain",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20060",
     "municipality": "Orexa",
     "province": "Guipúzcoa / Gipuzkoa",
     "autonomousCommunity": "País Vasco",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "20061",
@@ -29748,24 +29748,24 @@
     "municipality": "Prioro",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24121",
     "municipality": "Puebla de Lillo",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24122",
     "municipality": "Puente de Domingo Flórez",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24123",
@@ -29780,16 +29780,16 @@
     "municipality": "Quintana del Marco",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24125",
     "municipality": "Quintana y Congosto",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24127",
@@ -29804,32 +29804,32 @@
     "municipality": "Reyero",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24130",
     "municipality": "Riaño",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24131",
     "municipality": "Riego de la Vega",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24132",
     "municipality": "Riello",
     "province": "León",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "24133",
@@ -30932,8 +30932,8 @@
     "municipality": "Bòrdes, Es",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25058",
@@ -31644,8 +31644,8 @@
     "municipality": "Oluges, Les",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25153",
@@ -31732,8 +31732,8 @@
     "municipality": "Plans de Sió, Els",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25168",
@@ -31812,8 +31812,8 @@
     "municipality": "Preixens",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25179",
@@ -31836,16 +31836,16 @@
     "municipality": "Puigverd d'Agramunt",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25182",
     "municipality": "Puigverd de Lleida",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25183",
@@ -31860,8 +31860,8 @@
     "municipality": "Ribera d'Ondara",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25185",
@@ -31908,8 +31908,8 @@
     "municipality": "Sanaüja",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25196",
@@ -31980,8 +31980,8 @@
     "municipality": "Senterada",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25035",
@@ -32052,16 +32052,16 @@
     "municipality": "Soses",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25211",
     "municipality": "Sudanell",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25212",
@@ -32084,8 +32084,8 @@
     "municipality": "Talavera",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25217",
@@ -32268,16 +32268,16 @@
     "municipality": "Valls d'Aguilar, Les",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25239",
     "municipality": "Valls de Valira, Les",
     "province": "Lérida / Lleida",
     "autonomousCommunity": "Cataluña",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "25909",
@@ -32956,16 +32956,16 @@
     "municipality": "Haro",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26072",
     "municipality": "Herce",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26073",
@@ -32980,8 +32980,8 @@
     "municipality": "Hervías",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26075",
@@ -33004,8 +33004,8 @@
     "municipality": "Hornillos de Cameros",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26078",
@@ -33028,8 +33028,8 @@
     "municipality": "Igea",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26081",
@@ -33052,8 +33052,8 @@
     "municipality": "Lagunilla del Jubera",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26084",
@@ -33084,8 +33084,8 @@
     "municipality": "Leza de Río Leza",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26089",
@@ -33116,16 +33116,16 @@
     "municipality": "Mansilla de la Sierra",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26094",
     "municipality": "Manzanares de Rioja",
     "province": "La Rioja",
     "autonomousCommunity": "La Rioja",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "26095",
@@ -33916,8 +33916,8 @@
     "municipality": "Corgo, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27015",
@@ -33940,8 +33940,8 @@
     "municipality": "Fonsagrada, A",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27019",
@@ -33980,8 +33980,8 @@
     "municipality": "Incio, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27026",
@@ -34068,8 +34068,8 @@
     "municipality": "Nogais, As",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27038",
@@ -34116,16 +34116,16 @@
     "municipality": "Páramo, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27044",
     "municipality": "Pastoriza, A",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27045",
@@ -34140,8 +34140,8 @@
     "municipality": "Pobra do Brollón, A",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27046",
@@ -34156,8 +34156,8 @@
     "municipality": "Pontenova, A",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27049",
@@ -34236,8 +34236,8 @@
     "municipality": "Saviñao, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27059",
@@ -34276,16 +34276,16 @@
     "municipality": "Valadouro, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27064",
     "municipality": "Vicedo, O",
     "province": "Lugo",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "27065",
@@ -34556,8 +34556,8 @@
     "municipality": "Cabrera, La",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28031",
@@ -34820,8 +34820,8 @@
     "municipality": "Gargantilla del Lozoya y Pinilla de Buitrago",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28064",
@@ -34868,8 +34868,8 @@
     "municipality": "Hiruela, La",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28070",
@@ -34924,24 +34924,24 @@
     "municipality": "Lozoya",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28901",
     "municipality": "Lozoyuela-Navas-Sieteiglesias",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28078",
     "municipality": "Madarcos",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28079",
@@ -35004,8 +35004,8 @@
     "municipality": "Molinos, Los",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28088",
@@ -35308,8 +35308,8 @@
     "municipality": "Rozas de Madrid, Las",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28128",
@@ -35332,8 +35332,8 @@
     "municipality": "San Fernando de Henares",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28131",
@@ -35348,8 +35348,8 @@
     "municipality": "San Martín de la Vega",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28133",
@@ -35364,8 +35364,8 @@
     "municipality": "San Sebastián de los Reyes",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28135",
@@ -35396,8 +35396,8 @@
     "municipality": "Serna del Monte, La",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28140",
@@ -35436,32 +35436,32 @@
     "municipality": "Talamanca de Jarama",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28146",
     "municipality": "Tielmes",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28147",
     "municipality": "Titulcia",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28148",
     "municipality": "Torrejón de Ardoz",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28149",
@@ -35476,8 +35476,8 @@
     "municipality": "Torrejón de Velasco",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28151",
@@ -35500,8 +35500,8 @@
     "municipality": "Torremocha de Jarama",
     "province": "Madrid",
     "autonomousCommunity": "Comunidad de Madrid",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "28154",
@@ -38364,16 +38364,16 @@
     "municipality": "Mirafuentes",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31171",
     "municipality": "Miranda de Arga",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31172",
@@ -38404,8 +38404,8 @@
     "municipality": "Mues",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31176",
@@ -38460,8 +38460,8 @@
     "municipality": "Nazar",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31088",
@@ -38500,16 +38500,16 @@
     "municipality": "Odieta",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31187",
     "municipality": "Oiz",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31188",
@@ -38604,8 +38604,8 @@
     "municipality": "Orreaga/Roncesvalles",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31200",
@@ -38708,8 +38708,8 @@
     "municipality": "Saldías",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31214",
@@ -38740,8 +38740,8 @@
     "municipality": "Sangüesa/Zangoza",
     "province": "Navarra",
     "autonomousCommunity": "Comunidad Foral de Navarra",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "31219",
@@ -39132,112 +39132,112 @@
     "municipality": "Arnoia, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32004",
     "municipality": "Avión",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32005",
     "municipality": "Baltar",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32006",
     "municipality": "Bande",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32007",
     "municipality": "Baños de Molgas",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32008",
     "municipality": "Barbadás",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32009",
     "municipality": "Barco de Valdeorras, O",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32010",
     "municipality": "Beade",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32011",
     "municipality": "Beariz",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32012",
     "municipality": "Blancos, Os",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32013",
     "municipality": "Boborás",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32014",
     "municipality": "Bola, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32015",
     "municipality": "Bolo, O",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32016",
     "municipality": "Calvos de Randín",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32018",
@@ -39260,8 +39260,8 @@
     "municipality": "Carballiño, O",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32020",
@@ -39372,16 +39372,16 @@
     "municipality": "Gudiña, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32035",
     "municipality": "Irixo, O",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32038",
@@ -39460,16 +39460,16 @@
     "municipality": "Merca, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32048",
     "municipality": "Mezquita, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32049",
@@ -39548,16 +39548,16 @@
     "municipality": "Pereiro de Aguiar, O",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32059",
     "municipality": "Peroxa, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32060",
@@ -39580,8 +39580,8 @@
     "municipality": "Pobra de Trives, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32064",
@@ -39652,8 +39652,8 @@
     "municipality": "Rúa, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32073",
@@ -39724,8 +39724,8 @@
     "municipality": "Teixeira, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32081",
@@ -39748,8 +39748,8 @@
     "municipality": "Veiga, A",
     "province": "Orense / Ourense",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "32084",
@@ -42348,8 +42348,8 @@
     "municipality": "Cañiza, A",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36010",
@@ -42364,8 +42364,8 @@
     "municipality": "Cerdedo-Cotobade",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36013",
@@ -42404,8 +42404,8 @@
     "municipality": "Estrada, A",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36018",
@@ -42428,40 +42428,40 @@
     "municipality": "Gondomar",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36022",
     "municipality": "Grove, O",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36023",
     "municipality": "Guarda, A",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36901",
     "municipality": "Illa de Arousa, A",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36024",
     "municipality": "Lalín",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36025",
@@ -42476,56 +42476,56 @@
     "municipality": "Marín",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36027",
     "municipality": "Meaño",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36028",
     "municipality": "Meis",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36029",
     "municipality": "Moaña",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36030",
     "municipality": "Mondariz",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36031",
     "municipality": "Mondariz-Balneario",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36032",
     "municipality": "Moraña",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36033",
@@ -42540,8 +42540,8 @@
     "municipality": "Neves, As",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36035",
@@ -42612,8 +42612,8 @@
     "municipality": "Porriño, O",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36040",
@@ -42652,8 +42652,8 @@
     "municipality": "Rosal, O",
     "province": "Pontevedra",
     "autonomousCommunity": "Galicia",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "36049",
@@ -45700,8 +45700,8 @@
     "municipality": "Arona",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38007",
@@ -45732,24 +45732,24 @@
     "municipality": "Buenavista del Norte",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38011",
     "municipality": "Candelaria",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38012",
     "municipality": "Fasnia",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38013",
@@ -45772,8 +45772,8 @@
     "municipality": "Garachico",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38016",
@@ -45788,8 +45788,8 @@
     "municipality": "Granadilla de Abona",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38018",
@@ -45908,8 +45908,8 @@
     "municipality": "Rosario, El",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38033",
@@ -45988,8 +45988,8 @@
     "municipality": "Sauzal, El",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38042",
@@ -46012,8 +46012,8 @@
     "municipality": "Tanque, El",
     "province": "Santa Cruz de Tenerife",
     "autonomousCommunity": "Canarias",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "38045",
@@ -47452,8 +47452,8 @@
     "municipality": "Escobar de Polendos",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40076",
@@ -47484,8 +47484,8 @@
     "municipality": "Fresno de Cantespino",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40080",
@@ -47508,8 +47508,8 @@
     "municipality": "Fuente de Santa Cruz",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40083",
@@ -47532,8 +47532,8 @@
     "municipality": "Fuentepelayo",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40087",
@@ -47556,8 +47556,8 @@
     "municipality": "Fuentesaúco de Fuentidueña",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40091",
@@ -47572,8 +47572,8 @@
     "municipality": "Fuentidueña",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40093",
@@ -47588,24 +47588,24 @@
     "municipality": "Garcillán",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40095",
     "municipality": "Gomezserracín",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40097",
     "municipality": "Grajera",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40099",
@@ -48388,24 +48388,24 @@
     "municipality": "Torreiglesias",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40207",
     "municipality": "Trescasas",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40208",
     "municipality": "Turégano",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40210",
@@ -48420,8 +48420,8 @@
     "municipality": "Valdeprados",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40212",
@@ -48436,8 +48436,8 @@
     "municipality": "Valdevacas y Guijar",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40218",
@@ -48508,24 +48508,24 @@
     "municipality": "Vegas de Matute",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40224",
     "municipality": "Ventosilla y Tejadilla",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40225",
     "municipality": "Villacastín",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40228",
@@ -48564,8 +48564,8 @@
     "municipality": "Zarzuela del Monte",
     "province": "Segovia",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "40234",
@@ -49940,16 +49940,16 @@
     "municipality": "Cubo de la Solana",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42073",
     "municipality": "Cueva de Ágreda",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42075",
@@ -49964,8 +49964,8 @@
     "municipality": "Deza",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42078",
@@ -49980,8 +49980,8 @@
     "municipality": "Escobosa de Almazán",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42080",
@@ -50004,16 +50004,16 @@
     "municipality": "Estepa de San Juan",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42083",
     "municipality": "Frechilla de Almazán",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42084",
@@ -50028,8 +50028,8 @@
     "municipality": "Fuentearmegil",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42086",
@@ -50076,16 +50076,16 @@
     "municipality": "Fuentes de Magaña",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42093",
     "municipality": "Fuentestrún",
     "province": "Soria",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "42094",
@@ -53044,8 +53044,8 @@
     "municipality": "Estercuel",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44101",
@@ -53068,8 +53068,8 @@
     "municipality": "Formiche Alto",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44105",
@@ -53132,8 +53132,8 @@
     "municipality": "Fuentes Claras",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44113",
@@ -53172,8 +53172,8 @@
     "municipality": "Gea de Albarracín",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44118",
@@ -53188,8 +53188,8 @@
     "municipality": "Griegos",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44120",
@@ -53204,8 +53204,8 @@
     "municipality": "Gúdar",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44122",
@@ -53236,8 +53236,8 @@
     "municipality": "Huesa del Común",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44126",
@@ -53292,16 +53292,16 @@
     "municipality": "Lagueruela",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44133",
     "municipality": "Lanzuela",
     "province": "Teruel",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "44135",
@@ -54252,8 +54252,8 @@
     "municipality": "Ajofrín",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45002",
@@ -54268,16 +54268,16 @@
     "municipality": "Albarreal de Tajo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45004",
     "municipality": "Alcabón",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45005",
@@ -54292,8 +54292,8 @@
     "municipality": "Alcaudete de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45007",
@@ -54308,72 +54308,72 @@
     "municipality": "Aldea en Cabo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45009",
     "municipality": "Aldeanueva de Barbarroya",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45010",
     "municipality": "Aldeanueva de San Bartolomé",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45011",
     "municipality": "Almendral de la Cañada",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45012",
     "municipality": "Almonacid de Toledo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45013",
     "municipality": "Almorox",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45014",
     "municipality": "Añover de Tajo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45015",
     "municipality": "Arcicóllar",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45016",
     "municipality": "Argés",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45017",
@@ -54388,56 +54388,56 @@
     "municipality": "Barcience",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45019",
     "municipality": "Bargas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45020",
     "municipality": "Belvís de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45021",
     "municipality": "Borox",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45022",
     "municipality": "Buenaventura",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45023",
     "municipality": "Burguillos de Toledo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45024",
     "municipality": "Burujón",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45025",
@@ -54468,8 +54468,8 @@
     "municipality": "Calera y Chozas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45029",
@@ -54492,24 +54492,24 @@
     "municipality": "Camarena",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45032",
     "municipality": "Camarenilla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45033",
     "municipality": "Campillo de la Jara, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45034",
@@ -54524,24 +54524,24 @@
     "municipality": "Cardiel de los Montes",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45036",
     "municipality": "Carmena",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45037",
     "municipality": "Carpio de Tajo, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45038",
@@ -54556,80 +54556,80 @@
     "municipality": "Carriches",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45040",
     "municipality": "Casar de Escalona, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45041",
     "municipality": "Casarrubios del Monte",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45042",
     "municipality": "Casasbuenas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45043",
     "municipality": "Castillo de Bayuela",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45045",
     "municipality": "Cazalegas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45046",
     "municipality": "Cebolla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45047",
     "municipality": "Cedillo del Condado",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45048",
     "municipality": "Cerralbos, Los",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45049",
     "municipality": "Cervera de los Montes",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45056",
@@ -54644,8 +54644,8 @@
     "municipality": "Chueca",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45050",
@@ -54660,16 +54660,16 @@
     "municipality": "Cobeja",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45052",
     "municipality": "Cobisa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45053",
@@ -54692,16 +54692,16 @@
     "municipality": "Cuerva",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45058",
     "municipality": "Domingo Pérez",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45059",
@@ -54716,16 +54716,16 @@
     "municipality": "Erustes",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45061",
     "municipality": "Escalona",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45062",
@@ -54740,40 +54740,40 @@
     "municipality": "Espinoso del Rey",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45064",
     "municipality": "Esquivias",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45065",
     "municipality": "Estrella, La",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45066",
     "municipality": "Fuensalida",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45067",
     "municipality": "Gálvez",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45068",
@@ -54788,16 +54788,16 @@
     "municipality": "Gerindote",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45070",
     "municipality": "Guadamur",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45071",
@@ -54812,8 +54812,8 @@
     "municipality": "Herencias, Las",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45073",
@@ -54828,32 +54828,32 @@
     "municipality": "Hinojosa de San Vicente",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45075",
     "municipality": "Hontanar",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45076",
     "municipality": "Hormigos",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45077",
     "municipality": "Huecas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45078",
@@ -54868,8 +54868,8 @@
     "municipality": "Iglesuela del Tiétar, La",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45080",
@@ -54884,24 +54884,24 @@
     "municipality": "Illescas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45082",
     "municipality": "Lagartera",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45083",
     "municipality": "Layos",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45084",
@@ -54924,40 +54924,40 @@
     "municipality": "Lucillos",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45087",
     "municipality": "Madridejos",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45088",
     "municipality": "Magán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45089",
     "municipality": "Malpica de Tajo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45090",
     "municipality": "Manzaneque",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45091",
@@ -54972,24 +54972,24 @@
     "municipality": "Marjaliza",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45093",
     "municipality": "Marrupe",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45094",
     "municipality": "Mascaraque",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45095",
@@ -55004,152 +55004,152 @@
     "municipality": "Mazarambroz",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45097",
     "municipality": "Mejorada",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45098",
     "municipality": "Menasalbas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45099",
     "municipality": "Méntrida",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45100",
     "municipality": "Mesegar de Tajo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45101",
     "municipality": "Miguel Esteban",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45102",
     "municipality": "Mocejón",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45103",
     "municipality": "Mohedas de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45104",
     "municipality": "Montearagón",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45105",
     "municipality": "Montesclaros",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45106",
     "municipality": "Mora",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45107",
     "municipality": "Nambroca",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45108",
     "municipality": "Nava de Ricomalillo, La",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45109",
     "municipality": "Navahermosa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45110",
     "municipality": "Navalcán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45111",
     "municipality": "Navalmoralejo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45112",
     "municipality": "Navalmorales, Los",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45113",
     "municipality": "Navalucillos, Los",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45114",
     "municipality": "Navamorcuende",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45115",
@@ -55164,40 +55164,40 @@
     "municipality": "Noez",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45117",
     "municipality": "Nombela",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45118",
     "municipality": "Novés",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45119",
     "municipality": "Numancia de la Sagra",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45120",
     "municipality": "Nuño Gómez",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45121",
@@ -55212,40 +55212,40 @@
     "municipality": "Olías del Rey",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45123",
     "municipality": "Ontígola",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45124",
     "municipality": "Orgaz",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45125",
     "municipality": "Oropesa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45126",
     "municipality": "Otero",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45127",
@@ -55260,72 +55260,72 @@
     "municipality": "Pantoja",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45129",
     "municipality": "Paredes de Escalona",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45130",
     "municipality": "Parrillas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45131",
     "municipality": "Pelahustán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45132",
     "municipality": "Pepino",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45133",
     "municipality": "Polán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45134",
     "municipality": "Portillo de Toledo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45135",
     "municipality": "Puebla de Almoradiel, La",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45136",
     "municipality": "Puebla de Montalbán, La",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45137",
@@ -55340,24 +55340,24 @@
     "municipality": "Puente del Arzobispo, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45139",
     "municipality": "Puerto de San Vicente",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45140",
     "municipality": "Pulgar",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45141",
@@ -55372,8 +55372,8 @@
     "municipality": "Quintanar de la Orden",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45143",
@@ -55388,8 +55388,8 @@
     "municipality": "Real de San Vicente, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45145",
@@ -55404,24 +55404,24 @@
     "municipality": "Retamoso de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45147",
     "municipality": "Rielves",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45148",
     "municipality": "Robledo del Mazo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45149",
@@ -55444,40 +55444,40 @@
     "municipality": "San Martín de Montalbán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45152",
     "municipality": "San Martín de Pusa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45153",
     "municipality": "San Pablo de los Montes",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45154",
     "municipality": "San Román de los Montes",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45155",
     "municipality": "Santa Ana de Pusa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45156",
@@ -55492,80 +55492,80 @@
     "municipality": "Santa Cruz del Retamar",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45158",
     "municipality": "Santa Olalla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45901",
     "municipality": "Santo Domingo-Caudilla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45159",
     "municipality": "Sartajada",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45160",
     "municipality": "Segurilla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45161",
     "municipality": "Seseña",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45162",
     "municipality": "Sevilleja de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45163",
     "municipality": "Sonseca",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45164",
     "municipality": "Sotillo de las Palomas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45165",
     "municipality": "Talavera de la Reina",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45166",
@@ -55588,16 +55588,16 @@
     "municipality": "Toledo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45169",
     "municipality": "Torralba de Oropesa",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45171",
@@ -55612,32 +55612,32 @@
     "municipality": "Torrecilla de la Jara",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45172",
     "municipality": "Torrico",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45173",
     "municipality": "Torrijos",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45174",
     "municipality": "Totanés",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45175",
@@ -55652,8 +55652,8 @@
     "municipality": "Ugena",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45177",
@@ -55668,40 +55668,40 @@
     "municipality": "Valdeverdeja",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45180",
     "municipality": "Valmojado",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45181",
     "municipality": "Velada",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45182",
     "municipality": "Ventas con Peña Aguilera, Las",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45183",
     "municipality": "Ventas de Retamosa, Las",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45184",
@@ -55748,24 +55748,24 @@
     "municipality": "Villamiel de Toledo",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45190",
     "municipality": "Villaminaya",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45191",
     "municipality": "Villamuelas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45192",
@@ -55780,16 +55780,16 @@
     "municipality": "Villanueva de Bogas",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45194",
     "municipality": "Villarejo de Montalbán",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45195",
@@ -55804,16 +55804,16 @@
     "municipality": "Villaseca de la Sagra",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45197",
     "municipality": "Villasequilla",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45198",
@@ -55828,24 +55828,24 @@
     "municipality": "Viso de San Juan, El",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45200",
     "municipality": "Yébenes, Los",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45201",
     "municipality": "Yeles",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45202",
@@ -55860,8 +55860,8 @@
     "municipality": "Yuncler",
     "province": "Toledo",
     "autonomousCommunity": "Castilla-La Mancha",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "45204",
@@ -58756,8 +58756,8 @@
     "municipality": "Moraleja de las Panaderas",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47096",
@@ -58796,40 +58796,40 @@
     "municipality": "Muriel",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47101",
     "municipality": "Nava del Rey",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47102",
     "municipality": "Nueva Villa de las Torres",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47103",
     "municipality": "Olivares de Duero",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47104",
     "municipality": "Olmedo",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47105",
@@ -58844,8 +58844,8 @@
     "municipality": "Olmos de Peñafiel",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47109",
@@ -58884,16 +58884,16 @@
     "municipality": "Pedrosa del Rey",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47114",
     "municipality": "Peñafiel",
     "province": "Valladolid",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "47115",
@@ -61116,40 +61116,40 @@
     "municipality": "Cubillos",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49057",
     "municipality": "Cubo de Benavente",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49058",
     "municipality": "Cubo de Tierra del Vino, El",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49059",
     "municipality": "Cuelgamures",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49061",
     "municipality": "Entrala",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49062",
@@ -61436,8 +61436,8 @@
     "municipality": "Maderal, El",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49103",
@@ -61764,8 +61764,8 @@
     "municipality": "Pego, El",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49147",
@@ -61804,8 +61804,8 @@
     "municipality": "Perdigón, El",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49152",
@@ -61828,8 +61828,8 @@
     "municipality": "Pías",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49155",
@@ -61852,16 +61852,16 @@
     "municipality": "Pino del Oro",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49158",
     "municipality": "Piñero, El",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49160",
@@ -61884,8 +61884,8 @@
     "municipality": "Porto",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49163",
@@ -61916,8 +61916,8 @@
     "municipality": "Puebla de Sanabria",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49167",
@@ -61964,24 +61964,24 @@
     "municipality": "Rabanales",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49173",
     "municipality": "Rábano de Aliste",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49174",
     "municipality": "Requejo",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49175",
@@ -62004,8 +62004,8 @@
     "municipality": "Rionegro del Puente",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49178",
@@ -62020,8 +62020,8 @@
     "municipality": "Robleda-Cervantes",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "II",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49180",
@@ -62308,32 +62308,32 @@
     "municipality": "Uña de Quintana",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49226",
     "municipality": "Vadillo de la Guareña",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49227",
     "municipality": "Valcabado",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49228",
     "municipality": "Valdefinjas",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49229",
@@ -62348,16 +62348,16 @@
     "municipality": "Vallesa de la Guareña",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49231",
     "municipality": "Vega de Tera",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49232",
@@ -62372,24 +62372,24 @@
     "municipality": "Vegalatrave",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49234",
     "municipality": "Venialbo",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49235",
     "municipality": "Vezdemarbán",
     "province": "Zamora",
     "autonomousCommunity": "Castilla y León",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "49236",
@@ -63428,8 +63428,8 @@
     "municipality": "Cuerlas, Las",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50094",
@@ -63628,8 +63628,8 @@
     "municipality": "Gotor",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50122",
@@ -63652,8 +63652,8 @@
     "municipality": "Herrera de los Navarros",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50125",
@@ -63668,8 +63668,8 @@
     "municipality": "Illueca",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50128",
@@ -63692,8 +63692,8 @@
     "municipality": "Jarque de Moncayo",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50131",
@@ -63772,8 +63772,8 @@
     "municipality": "Litago",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50141",
@@ -63796,16 +63796,16 @@
     "municipality": "Longares",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50144",
     "municipality": "Longás",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50146",
@@ -64996,8 +64996,8 @@
     "municipality": "Vilueña, La",
     "province": "Zaragoza",
     "autonomousCommunity": "Aragón",
-    "zone": "not_classified",
-    "sourceStatus": "pending_validation"
+    "zone": "I",
+    "sourceStatus": "appendix_overlay"
   },
   {
     "ineCode": "50295",

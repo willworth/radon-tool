@@ -115,6 +115,22 @@ function municipalityVariants(name) {
     variants.add(commaArticleMatch[1])
   }
 
+  // Catalan/Balearic articles: INE "Hospitalet de Llobregat, L'" / "Franqueses del Vallès, les"
+  // versus Appendix B "L'Hospitalet de Llobregat" / "Les Franqueses del Vallès" (2026-10-12, KAL-1708).
+  const elidedMatch = name.match(/^(l)['’]\s*(.+)$/iu)
+  if (elidedMatch) variants.add(`${elidedMatch[2]}, ${elidedMatch[1]}'`)
+  const commaElidedMatch = name.match(/^(.+),\s+(l)['’]$/iu)
+  if (commaElidedMatch) variants.add(`${commaElidedMatch[2]}'${commaElidedMatch[1]}`)
+  // Galician articles: INE "Fonsagrada, A" / "Rosal, O" versus Appendix B "A Fonsagrada" / "O Rosal".
+  const galicianArticle = name.match(/^(A|O|As|Os)\s+(.+)$/u)
+  if (galicianArticle) variants.add(`${galicianArticle[2]}, ${galicianArticle[1]}`)
+  const commaGalicianArticle = name.match(/^(.+),\s+(A|O|As|Os)$/u)
+  if (commaGalicianArticle) variants.add(`${commaGalicianArticle[2]} ${commaGalicianArticle[1]}`)
+  const catalanArticle = name.match(/^(els|les|es|ses|sa|s)\s+(.+)$/iu)
+  if (catalanArticle) variants.add(`${catalanArticle[2]}, ${catalanArticle[1]}`)
+  const commaCatalanArticle = name.match(/^(.+),\s+(els|les|es|ses|sa|s)$/iu)
+  if (commaCatalanArticle) variants.add(`${commaCatalanArticle[2]} ${commaCatalanArticle[1]}`)
+
   return [...variants].map(normalize)
 }
 
@@ -162,12 +178,23 @@ const manualAliases = new Map([
   ['moreda de alava moreda araba|alava araba', '01039'],
   ['abanto y ciervana abanto zierbena|vizcaya bizkaia', '48002'],
   ['karrantza harana valle de carranza|vizcaya bizkaia', '48022'],
-  ['gargantilla del lozoya y pinilla de buitrago|madrid', '28062'],
+  // 2026-10-12 (KAL-1708): three aliases pointed at the wrong INE code (28062 Garganta de los Montes,
+  // 18045 Castilléjar, 14035 Hinojosa del Duque). Corrected against data-source/ine-municipios-55200.json.
+  ['gargantilla del lozoya y pinilla de buitrago|madrid', '28063'],
   ['las tres villas|almeria', '04901'],
   ['la taha|granada', '18901'],
-  ['la calahorra|granada', '18045'],
-  ['el guijo|cordoba', '14035'],
+  ['la calahorra|granada', '18114'],
+  ['el guijo|cordoba', '14034'],
   ['el viso|cordoba', '14074'],
+  // Renamed or merged since the Appendix B list was compiled (checked 2026-10-12 against the INE base).
+  ['brunyola|gerona girona', '17028'],
+  ['calonge|gerona girona', '17034'],
+  ['jarque|zaragoza', '50130'],
+  ['guadiana del caudillo|badajoz', '06903'],
+  ['la iglesuela|toledo', '45079'],
+  // Cerdedo and Cotobade merged into Cerdedo-Cotobade (36902); both are Zone II in Appendix B.
+  ['cerdedo|pontevedra', '36902'],
+  ['cotobade|pontevedra', '36902'],
 ])
 
 async function main() {

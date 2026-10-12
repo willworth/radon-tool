@@ -13,6 +13,7 @@ const officialPath = path.join(root, 'src/data/municipalities.official.json')
 const inePath = path.join(root, 'data-source/ine-municipios-55200.json')
 const reconciliationPath = path.join(root, 'data-source/ine-reconciliation-report.json')
 const outPath = path.join(root, 'data-source/search-base-validation-report.json')
+const independentCheckPath = path.join(root, 'data-source/appendixB.independent-check.json')
 
 function normalize(value) {
   return value
@@ -70,6 +71,7 @@ const reviewedLowCoverageProvinces = await readOptionalJson(reviewedLowCoverageP
 const official = await readOptionalJson(officialPath, [])
 const ine = await readOptionalJson(inePath, [])
 const reconciliation = await readOptionalJson(reconciliationPath, null)
+const independentCheck = await readOptionalJson(independentCheckPath, { entries: [] })
 
 const ineProvinceByCode = new Map(ine.map((row) => [row.code, row.province]))
 const ineProvincesByMunicipality = new Map()
@@ -221,6 +223,44 @@ for (const row of searchBase) {
   }
 }
 
+// Negative-completeness checks (2026-10-12, KAL-1708). The old report passed while whole provinces lost
+// their classifications, because an absent province looks less suspicious than a sparse one.
+const searchBaseByCode = new Map(searchBase.map((row) => [row.ineCode, row]))
+const independentCheckContradictions = []
+let independentCheckAgreeing = 0
+let independentCheckWithheld = 0
+for (const entry of independentCheck.entries) {
+  const row = searchBaseByCode.get(entry.ineCode)
+  if (!row) {
+    independentCheckContradictions.push({ ...entry, shown: 'missing from search base' })
+  } else if (row.sourceStatus === 'pending_validation') {
+    independentCheckWithheld += 1
+  } else if (row.zone !== entry.zone) {
+    independentCheckContradictions.push({ ...entry, shown: row.zone, sourceStatus: row.sourceStatus })
+  } else {
+    independentCheckAgreeing += 1
+  }
+}
+
+// Any province whose Appendix B rows the independent check expects, but which has no classified
+// municipality and is not withheld, is release-blocking: that is exactly how Castilla-La Mancha vanished.
+const independentProvinces = new Set(independentCheck.entries.map((entry) => entry.province))
+const provincesMissingClassifications = [...provinceStats.values()]
+  .filter((row) => independentProvinces.has(row.province))
+  .filter((row) => row.classifiedMunicipalities === 0 && row.pendingValidationMunicipalities < row.totalMunicipalities)
+  .map((row) => row.province)
+
+// Two Appendix B rows reconciled to one INE code must agree on the zone (e.g. merged municipalities).
+const officialZonesByCode = new Map()
+for (const row of official) {
+  if (!row.ineCode) continue
+  if (!officialZonesByCode.has(row.ineCode)) officialZonesByCode.set(row.ineCode, new Set())
+  officialZonesByCode.get(row.ineCode).add(row.zone)
+}
+const conflictingOfficialZones = [...officialZonesByCode.entries()]
+  .filter(([, zones]) => zones.size > 1)
+  .map(([ineCode, zones]) => ({ ineCode, zones: [...zones] }))
+
 const report = {
   generatedAt: new Date().toISOString(),
   summary,
@@ -232,6 +272,15 @@ const report = {
     activeOverlayDuplicateCodes,
     likelyProvinceMismatchCount: likelyProvinceMismatchesInSearchBase.length,
     likelyProvinceMismatchesInSearchBase,
+  },
+  independentCheckDiagnostics: {
+    entries: independentCheck.entries.length,
+    agreeing: independentCheckAgreeing,
+    withheld: independentCheckWithheld,
+    contradictionCount: independentCheckContradictions.length,
+    contradictions: independentCheckContradictions,
+    provincesMissingClassifications,
+    conflictingOfficialZones,
   },
   excludedProvinces,
   reviewedLowCoverageProvinces: reviewedLowCoverage,
@@ -247,3 +296,23 @@ console.log(JSON.stringify(report.publicSearchBaseDiagnostics, null, 2))
 console.log(`excluded provinces: ${excludedProvinces.length}`)
 console.log(`reviewed low-coverage provinces: ${reviewedLowCoverage.length}`)
 console.log(`suspicious provinces: ${suspiciousProvinces.length}`)
+console.log(
+  `independent check: ${independentCheckAgreeing} agree, ${independentCheckWithheld} withheld, ${independentCheckContradictions.length} contradictions; provinces missing classifications: ${provincesMissingClassifications.length}`,
+)
+
+const releaseBlocking = {
+  activeOverlayCodeMismatches: activeOverlayCodeMismatches.length,
+  activeOverlayDuplicateCodes: activeOverlayDuplicateCodes.length,
+  likelyProvinceMismatchesInSearchBase: likelyProvinceMismatchesInSearchBase.length,
+  suspiciousProvinces: suspiciousProvinces.length,
+  independentCheckContradictions: independentCheckContradictions.length,
+  provincesMissingClassifications: provincesMissingClassifications.length,
+  conflictingOfficialZones: conflictingOfficialZones.length,
+}
+const failures = Object.entries(releaseBlocking).filter(([, count]) => count > 0)
+if (failures.length > 0) {
+  console.error(`RELEASE-BLOCKING: ${failures.map(([name, count]) => `${name}=${count}`).join(', ')}`)
+  process.exitCode = 1
+} else {
+  console.log('release checks: pass')
+}
