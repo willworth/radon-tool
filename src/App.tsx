@@ -62,47 +62,59 @@ const zoneCopy: Record<
     titleEs: 'No clasificado',
     titleEn: 'Not classified',
     descriptionEs:
-      'El municipio no figura aquí como Zona I o Zona II. Eso no garantiza niveles bajos: solo indica que esta clasificación no lo señala como prioritario.',
+      'Esta herramienta no ha encontrado el municipio como Zona I o Zona II en su lectura del Apéndice B. Eso no es una confirmación oficial y no garantiza niveles bajos.',
     descriptionEn:
-      'The municipality is not listed here as Zone I or Zone II. That does not guarantee low levels, it only means this classification does not flag it as a priority area.',
+      'This tool did not find the municipality as Zone I or Zone II in its reading of Appendix B. That is not an official confirmation and does not guarantee low levels.',
     nextStepsEs: [
+      'Comprueba tu municipio en la lista oficial del Apéndice B del CTE DB-HS6 (enlace en «Fuentes, estado y cautelas»).',
       'Si hay sótano, planta baja, roca granítica o dudas razonables, medir sigue siendo válido.',
-      'Usa el resultado con cautela y busca datos locales adicionales cuando existan.',
       'La medición directa sigue siendo la única forma de saber el nivel real.',
     ],
     nextStepsEn: [
+      'Check your municipality in the official CTE DB-HS6 Appendix B list (link under “Sources, status, and cautions”).',
       'If there is a basement, ground floor exposure, granite geology, or reasonable concern, testing can still make sense.',
-      'Use this result cautiously and look for better local data when available.',
       'Direct measurement remains the only way to know the real level.',
     ],
   },
 }
 
 const pendingValidationCopy = {
-  titleEs: 'Clasificación pendiente de validación',
-  titleEn: 'Classification pending validation',
+  titleEs: 'Sin verificar: no sabemos la zona de este municipio',
+  titleEn: 'Unverified: we do not know this municipality’s zone',
+  alertTitleEs: 'No hemos verificado esta provincia. Puede estar en Zona I o Zona II.',
+  alertTitleEn: 'We have not verified this province. It may be in Zone I or Zone II.',
+  alertBodyEs:
+    'Nuestra lectura de la lista oficial no es fiable para esta provincia: hemos encontrado errores de extracción, incluidos municipios de Zona I o II que no aparecían. Hasta corregirlo, no damos una respuesta para este municipio. Consulta la lista oficial del Apéndice B del CTE DB-HS6 y considera medir tu vivienda.',
+  alertBodyEn:
+    'Our reading of the official list is not reliable for this province: we have found extraction errors, including Zone I or II municipalities that were missing. Until that is fixed, we give no answer for this municipality. Check the official CTE DB-HS6 Appendix B list and consider testing your home.',
   descriptionEs:
-    'Este municipio está en una provincia cuyo bloque del Apéndice B se retiró temporalmente de la superposición por problemas de extracción o reconciliación. Este resultado no significa “riesgo bajo” ni “no clasificado” con seguridad.',
+    'Este resultado no significa «riesgo bajo» ni «no clasificado». Significa que esta herramienta no puede decirte con fiabilidad si el municipio figura en la lista oficial.',
   descriptionEn:
-    'This municipality sits in a province whose Appendix B block was temporarily removed from the overlay because of extraction or reconciliation problems. This result does not safely mean “low risk” or “not classified”.',
+    'This result does not mean “low risk” or “not classified”. It means this tool cannot reliably tell you whether the municipality appears in the official list.',
   nextStepsEs: [
-    'Trata este caso como dato pendiente, no como tranquilidad confirmada.',
-    'Si la vivienda está en contacto con el terreno o hay preocupación razonable, medir sigue siendo una decisión válida.',
-    'Antes de compartir públicamente este caso como referencia, conviene revisar la provincia en la fuente oficial.',
+    'Busca tu municipio en la lista oficial: CTE DB-HS6, Apéndice B (enlace abajo).',
+    'Si la vivienda está en contacto con el terreno o hay preocupación razonable, mide: es la única forma de conocer el nivel real.',
+    'No tomes este resultado como tranquilidad.',
   ],
   nextStepsEn: [
-    'Treat this as pending data, not as confirmed reassurance.',
-    'If the home is in contact with the ground or there is reasonable concern, testing can still be sensible.',
-    'Before relying on this publicly, the province should be rechecked against the official source.',
+    'Look up your municipality in the official list: CTE DB-HS6, Appendix B (link below).',
+    'If the home is in contact with the ground or there is reasonable concern, test: it is the only way to know the real level.',
+    'Do not take this result as reassurance.',
   ],
 } as const
+
+const officialListUrl = 'https://www.codigotecnico.org/DocumentosCTE/Salubridad.html'
+
+const pendingProvinces = [
+  ...new Set(municipalities.filter((m) => m.sourceStatus === 'pending_validation').map((m) => m.province)),
+].sort((a, b) => a.localeCompare(b, 'es'))
 
 function isClassificationPending(record: MunicipalityRecord) {
   return record.sourceStatus === 'pending_validation'
 }
 
 function sourceStatusLabel(language: Language, sourceStatus?: MunicipalitySourceStatus, zone?: RadonZone) {
-  if (sourceStatus === 'pending_validation') return tcopy(language, 'Pendiente de validación', 'Pending validation')
+  if (sourceStatus === 'pending_validation') return tcopy(language, 'Sin verificar', 'Unverified')
   if (sourceStatus === 'manual_override') {
     return zone === 'not_classified'
       ? tcopy(language, 'No clasificado (ajuste manual)', 'Not classified (manual adjustment)')
@@ -259,7 +271,9 @@ export default function App() {
       : zoneCopy[selected.zone]
     : null
   const context =
-    selected && !selectedHasPendingClassification ? scoreContext(selected.zone, housingType, floor, age) : null
+    selected && !selectedHasPendingClassification && selected.zone !== 'not_classified'
+      ? scoreContext(selected.zone, housingType, floor, age)
+      : null
   const hasQuery = query.trim().length > 0
   const currentTitle = selectedHasPendingClassification
     ? tcopy(language, pendingValidationCopy.titleEs, pendingValidationCopy.titleEn)
@@ -453,9 +467,24 @@ export default function App() {
                 <p className="selectedMeta">{selected.autonomousCommunity}</p>
               </div>
               <div className={`badge ${selectedHasPendingClassification ? 'badge-pending' : `badge-${selected.zone}`}`}>
-                {selectedHasPendingClassification ? tcopy(language, 'Pendiente', 'Pending') : currentTitle}
+                {selectedHasPendingClassification ? tcopy(language, 'Sin verificar', 'Unverified') : currentTitle}
               </div>
             </div>
+
+            {selectedHasPendingClassification ? (
+              <div className="reassuranceAlert" role="alert">
+                <span className="reassuranceAlert-icon" aria-hidden="true">!</span>
+                <div>
+                  <strong>{tcopy(language, pendingValidationCopy.alertTitleEs, pendingValidationCopy.alertTitleEn)}</strong>
+                  <p>{tcopy(language, pendingValidationCopy.alertBodyEs, pendingValidationCopy.alertBodyEn)}</p>
+                  <p>
+                    <a href={officialListUrl} target="_blank" rel="noreferrer">
+                      {tcopy(language, 'Lista oficial: CTE DB-HS6, Apéndice B →', 'Official list: CTE DB-HS6, Appendix B →')}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            ) : null}
 
             {selected.zone === 'not_classified' && !selectedHasPendingClassification ? (
               <div className="reassuranceAlert" role="alert">
@@ -465,9 +494,14 @@ export default function App() {
                   <p>
                     {tcopy(
                       language,
-                      'Solo quiere decir que esta lista oficial no marca tu municipio como prioritario — no que tu vivienda esté libre de radón. El nivel real depende también de la geología local, del edificio y de la planta. La forma de saberlo con seguridad es medir: es barato, sencillo y la única prueba fiable.',
-                      'It only means this official list does not flag your municipality as a priority — not that your home is free of radon. The real level also depends on local geology, the building, and the floor. The way to know for sure is to measure: it is cheap, simple, and the only reliable check.',
+                      'No hemos verificado la clasificación de este municipio. La ausencia de un resultado en esta herramienta no demuestra que el municipio no figure en el Apéndice B. Consulta la fuente oficial y considera medir tu vivienda: es la única forma fiable de conocer el nivel real.',
+                      "We have not verified this municipality's classification. A missing result in this tool does not establish that the municipality is absent from Appendix B. Check the official source and consider testing your home: it is the only reliable way to know the real level.",
                     )}
+                  </p>
+                  <p>
+                    <a href={officialListUrl} target="_blank" rel="noreferrer">
+                      {tcopy(language, 'Lista oficial: CTE DB-HS6, Apéndice B →', 'Official list: CTE DB-HS6, Appendix B →')}
+                    </a>
                   </p>
                 </div>
               </div>
@@ -511,8 +545,8 @@ export default function App() {
                 <strong>{tcopy(language, 'Interpretación:', 'Interpretation:')}</strong>{' '}
                 {tcopy(
                   language,
-                  'En provincias marcadas como pendientes no mostramos una prioridad resumida basada en zona porque la capa de clasificación sigue en revisión. El contexto de vivienda sigue importando, pero la capa municipal no es lo bastante fiable todavía.',
-                  'In provinces marked as pending we do not show a zone-based priority summary because the classification layer is still under review. Housing context still matters, but the municipal overlay is not reliable enough yet.',
+                  'Sin una clasificación verificada no mostramos una prioridad resumida para medir: podría tranquilizar sin motivo. El contexto de vivienda sigue importando: en sótano, planta baja o casa en contacto con el terreno, medir tiene sentido.',
+                  'Without a verified classification we do not show a summary testing priority: it could reassure without reason. Housing context still matters: in a basement, on the ground floor or in a house in contact with the ground, testing makes sense.',
                 )}
               </div>
             )}
@@ -709,11 +743,11 @@ export default function App() {
             </div>
             <div className="legendItem">
               <span className="legendSwatch legendSwatch-neutral" />
-              <span>{tcopy(language, 'No clasificado: no figura en el Apéndice B retenido.', 'Not classified: does not appear in the retained Appendix B layer.')}</span>
+              <span>{tcopy(language, 'No clasificado: no lo hemos encontrado en nuestra lectura del Apéndice B; su ausencia en la lista oficial no está verificada.', 'Not classified: we did not find it in our reading of Appendix B; its absence from the official list is not verified.')}</span>
             </div>
             <div className="legendItem">
               <span className="legendSwatch legendSwatch-pending" />
-              <span>{tcopy(language, 'Pendiente: la provincia sigue en revisión y no debe leerse como tranquilidad.', 'Pending: the province is still under review and should not be read as reassurance.')}</span>
+              <span>{tcopy(language, 'Sin verificar (pendiente): no sabemos su zona; puede estar en Zona I o II. No lo leas como tranquilidad.', 'Unverified (pending): we do not know its zone; it may be Zone I or II. Do not read it as reassurance.')}</span>
             </div>
           </div>
         </section>
@@ -764,8 +798,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Un municipio no clasificado solo significa que esta capa no lo marca como Zona I o II. La geología local, el edificio y la ventilación pueden cambiar la exposición real.',
-                  'A not-classified municipality only means this layer does not mark it as Zone I or II. Local geology, the building, and ventilation can change real exposure.',
+                  'Un municipio «no clasificado» solo significa que esta herramienta no lo ha encontrado como Zona I o II; no demuestra que no figure en la lista oficial. Además, la geología local, el edificio y la ventilación pueden cambiar la exposición real.',
+                  'A “not classified” municipality only means this tool did not find it as Zone I or II; it does not establish that it is absent from the official list. Local geology, the building, and ventilation can also change real exposure.',
                 )}
               </p>
             </article>
@@ -774,15 +808,15 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Si una provincia está pendiente, su bloque se ha retenido deliberadamente por dudas de extracción o reconciliación. Es una señal de cautela, no una lectura tranquilizadora.',
-                  'If a province is pending, its block has deliberately been withheld because of extraction or reconciliation concerns. It is a caution signal, not a reassuring result.',
+                  'Si una provincia está pendiente, no damos respuesta para sus municipios sin clasificación verificada, porque nuestra extracción de esa provincia no es fiable. En octubre de 2026 una revisión independiente encontró 607 municipios que la lista oficial clasifica como Zona I o II y que esta herramienta mostraba como «no clasificados»; esas provincias están ahora retenidas. Las zonas I y II que sí mostramos coincidieron con la lista oficial. Es una señal de cautela, no una lectura tranquilizadora.',
+                  'If a province is pending, we give no answer for its municipalities without a verified classification, because our extraction for that province is not reliable. In October 2026 an independent review found 607 municipalities that the official list classifies as Zone I or II, which this tool was showing as “not classified”; those provinces are now withheld. The Zone I and II results we do show matched the official list. It is a caution signal, not a reassuring result.',
                 )}
               </p>
               <p>
                 {tcopy(
                   language,
-                  'Provincias actualmente retenidas: Granada, Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló y Vizcaya / Bizkaia.',
-                  'Currently withheld provinces: Granada, Huelva, Sevilla, Huesca, Palencia, Salamanca, Tarragona, Castellón / Castelló, and Vizcaya / Bizkaia.',
+                  `Provincias actualmente retenidas (${pendingProvinces.length}): ${pendingProvinces.join(', ')}.`,
+                  `Currently withheld provinces (${pendingProvinces.length}): ${pendingProvinces.join(', ')}.`,
                 )}
               </p>
               <p>
@@ -861,8 +895,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-'Última revisión de datos y validación: junio de 2026. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
-                  'Last data review and validation: June 2026. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+'Última revisión de datos y validación: junio de 2026; en octubre de 2026 se retuvieron 28 provincias más tras encontrar clasificaciones omitidas. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review and validation: June 2026; in October 2026 a further 28 provinces were withheld after missing classifications were found. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
               </p>
               <p>

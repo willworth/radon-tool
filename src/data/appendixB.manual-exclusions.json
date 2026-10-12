@@ -4,12 +4,204 @@
     "province": "Granada",
     "note": "Granada withheld 2026-06-10: Appendix B extraction bleed — Huelva municipalities found in Granada block; pending spot-check against source PDF."
   },
-  { "autonomousCommunity": "Andalucía", "province": "Huelva" },
-  { "autonomousCommunity": "Andalucía", "province": "Sevilla" },
-  { "autonomousCommunity": "Aragón", "province": "Huesca" },
-  { "autonomousCommunity": "Castilla y León", "province": "Palencia" },
-  { "autonomousCommunity": "Castilla y León", "province": "Salamanca" },
-  { "autonomousCommunity": "Cataluña", "province": "Tarragona" },
-  { "autonomousCommunity": "Comunidad Valenciana", "province": "Castellón / Castelló" },
-  { "autonomousCommunity": "País Vasco", "province": "Vizcaya / Bizkaia" }
+  {
+    "autonomousCommunity": "Andalucía",
+    "province": "Huelva"
+  },
+  {
+    "autonomousCommunity": "Andalucía",
+    "province": "Sevilla"
+  },
+  {
+    "autonomousCommunity": "Aragón",
+    "province": "Huesca"
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Palencia"
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Salamanca"
+  },
+  {
+    "autonomousCommunity": "Cataluña",
+    "province": "Tarragona"
+  },
+  {
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Castellón / Castelló"
+  },
+  {
+    "autonomousCommunity": "País Vasco",
+    "province": "Vizcaya / Bizkaia"
+  },
+  {
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Albacete",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 3 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Ávila",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 27 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Extremadura",
+    "province": "Badajoz",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 12 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Cataluña",
+    "province": "Barcelona",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 11 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Burgos",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Extremadura",
+    "province": "Cáceres",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 18 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Ciudad Real",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 54 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Andalucía",
+    "province": "Córdoba",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 1 municipality listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Cuenca",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 21 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Cataluña",
+    "province": "Gerona / Girona",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 11 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Guadalajara",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 111 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "País Vasco",
+    "province": "Guipúzcoa / Gipuzkoa",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Galicia",
+    "province": "La Coruña / A Coruña",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "La Rioja",
+    "province": "La Rioja",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "León",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Cataluña",
+    "province": "Lérida / Lleida",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 17 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Comunidad Foral de Navarra",
+    "province": "Navarra",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Galicia",
+    "province": "Orense / Ourense",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Galicia",
+    "province": "Pontevedra",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Segovia",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 18 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Soria",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Aragón",
+    "province": "Teruel",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Toledo",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 151 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Valladolid",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Castilla y León",
+    "province": "Zamora",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 27 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Aragón",
+    "province": "Zaragoza",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 8 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  }
 ]

@@ -82,8 +82,18 @@ const manualOverlay = new Map([
 const ine = JSON.parse(await fs.readFile(inePath, 'utf8'))
 const appendix = JSON.parse(await fs.readFile(appendixPath, 'utf8'))
 const exclusions = JSON.parse(await fs.readFile(exclusionsPath, 'utf8'))
+// scope 'full' (default): the province's Appendix B block is dropped and every municipality is pending.
+// scope 'unmatched_only': matched Zone I/II rows stay visible; every unmatched municipality is pending
+// instead of 'not classified', because absence from this extraction is not trusted for that province.
 const excludedProvinceKeys = new Set(
-  exclusions.map((row) => `${row.autonomousCommunity}|${row.province}`),
+  exclusions
+    .filter((row) => (row.scope ?? 'full') === 'full')
+    .map((row) => `${row.autonomousCommunity}|${row.province}`),
+)
+const unmatchedOnlyProvinceKeys = new Set(
+  exclusions
+    .filter((row) => row.scope === 'unmatched_only')
+    .map((row) => `${row.autonomousCommunity}|${row.province}`),
 )
 
 const filteredAppendix = appendix.filter(
@@ -109,7 +119,9 @@ const base = ine
     const provinceKey = `${autonomousCommunity}|${row.province}`
     const hasManualOverride = manualOverlay.has(key)
     const overlayZone = overlayByIneCode.get(row.code) ?? overlay.get(key)
-    const isPendingValidation = excludedProvinceKeys.has(provinceKey)
+    const isPendingValidation =
+      excludedProvinceKeys.has(provinceKey) ||
+      (unmatchedOnlyProvinceKeys.has(provinceKey) && !hasManualOverride && !overlayZone)
 
     const zone = isPendingValidation
       ? 'not_classified'
