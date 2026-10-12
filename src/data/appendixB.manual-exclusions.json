@@ -203,5 +203,17 @@
     "province": "Zaragoza",
     "scope": "unmatched_only",
     "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 8 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired."
+  },
+  {
+    "autonomousCommunity": "Islas Baleares",
+    "province": "Islas Baleares / Illes Balears",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): Es Migjorn Gran and Ses Salines are Zone I in Appendix B but failed to match their INE names (\"Migjorn Gran, Es\", \"Salines, Ses\"), so they showed as not classified."
+  },
+  {
+    "autonomousCommunity": "Galicia",
+    "province": "Lugo",
+    "scope": "unmatched_only",
+    "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): 11 Appendix B Zone I/II municipalities with Galician articles (A Fonsagrada, O Corgo…) failed to match their INE names (\"Fonsagrada, A\") and showed as not classified."
   }
 ]

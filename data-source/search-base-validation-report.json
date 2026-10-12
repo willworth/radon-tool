@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T16:32:55.793Z",
+  "generatedAt": "2026-10-12T16:39:16.261Z",
   "summary": {
     "totalMunicipalities": 8131,
     "byZone": {
@@ -8,13 +8,13 @@
       "not_classified": 5449
     },
     "bySourceStatus": {
-      "not_classified": 896,
+      "not_classified": 841,
       "appendix_overlay": 2682,
-      "pending_validation": 4552,
+      "pending_validation": 4607,
       "manual_override": 1
     },
     "manualOverrideCount": 1,
-    "pendingValidationCount": 4552
+    "pendingValidationCount": 4607
   },
   "extractionDiagnostics": {
     "officialAppendixRows": 3678,
@@ -281,6 +281,20 @@
       "scope": "unmatched_only",
       "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 8 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
       "pendingValidationMunicipalities": 193
+    },
+    {
+      "autonomousCommunity": "Islas Baleares",
+      "province": "Islas Baleares / Illes Balears",
+      "scope": "unmatched_only",
+      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): Es Migjorn Gran and Ses Salines are Zone I in Appendix B but failed to match their INE names (\"Migjorn Gran, Es\", \"Salines, Ses\"), so they showed as not classified.",
+      "pendingValidationMunicipalities": 44
+    },
+    {
+      "autonomousCommunity": "Galicia",
+      "province": "Lugo",
+      "scope": "unmatched_only",
+      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): 11 Appendix B Zone I/II municipalities with Galician articles (A Fonsagrada, O Corgo…) failed to match their INE names (\"Fonsagrada, A\") and showed as not classified.",
+      "pendingValidationMunicipalities": 11
     }
   ],
   "reviewedLowCoverageProvinces": [
@@ -524,8 +538,8 @@
       "autonomousCommunity": "Islas Baleares",
       "totalMunicipalities": 67,
       "classifiedMunicipalities": 23,
-      "notClassifiedMunicipalities": 44,
-      "pendingValidationMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 44,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -587,8 +601,8 @@
       "autonomousCommunity": "Galicia",
       "totalMunicipalities": 67,
       "classifiedMunicipalities": 56,
-      "notClassifiedMunicipalities": 11,
-      "pendingValidationMunicipalities": 0,
+      "notClassifiedMunicipalities": 0,
+      "pendingValidationMunicipalities": 11,
       "manualOverrideMunicipalities": 0
     },
     {

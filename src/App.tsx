@@ -895,8 +895,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-'Última revisión de datos y validación: junio de 2026; en octubre de 2026 se retuvieron 28 provincias más tras encontrar clasificaciones omitidas. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
-                  'Last data review and validation: June 2026; in October 2026 a further 28 provinces were withheld after missing classifications were found. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+'Última revisión de datos y validación: junio de 2026; en octubre de 2026 se retuvieron 30 provincias más tras encontrar clasificaciones omitidas. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review and validation: June 2026; in October 2026 a further 30 provinces were withheld after missing classifications were found. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
               </p>
               <p>
