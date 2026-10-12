@@ -57,10 +57,16 @@ In particular, the next cleanup should:
 After the latest search-base rebuild:
 
 - total municipalities in search base: `8,131`
-- classified via overlay: `2,682`
-- explicitly `not classified`: `3,902`
+- classified via overlay: `3,352`
+- explicitly `not classified`: `3,232`
 - `pending validation`: `1,546`
 - manual overrides: `1`
+
+October 2026 (KAL-1708): an independent review found 607 municipalities listed in Appendix B as Zone I/II
+that the tool showed as `not classified`, mostly because Castilla-La Mancha rows were attributed to Zamora and
+page-top rows were cut off. The extractor and name reconciliation were repaired (3,678 → 4,049 rows; 5 unmatched,
+all shared territories without an INE code), and `scripts/validate-search-base.mjs` now checks the search base
+against `data-source/appendixB.independent-check.json` and exits non-zero on any contradiction.
 
 Currently withheld provinces:
 

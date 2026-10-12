@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T16:43:00.735Z",
+  "generatedAt": "2026-10-12T16:43:22.366Z",
   "summary": {
     "totalMunicipalities": 8131,
     "byZone": {
@@ -8,13 +8,13 @@
       "not_classified": 4779
     },
     "bySourceStatus": {
-      "not_classified": 841,
+      "not_classified": 3232,
       "appendix_overlay": 3352,
-      "pending_validation": 3937,
+      "pending_validation": 1546,
       "manual_override": 1
     },
     "manualOverrideCount": 1,
-    "pendingValidationCount": 3937
+    "pendingValidationCount": 1546
   },
   "extractionDiagnostics": {
     "officialAppendixRows": 4049,
@@ -88,216 +88,6 @@
       "autonomousCommunity": "País Vasco",
       "province": "Vizcaya / Bizkaia",
       "pendingValidationMunicipalities": 112
-    },
-    {
-      "autonomousCommunity": "Castilla-La Mancha",
-      "province": "Albacete",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 3 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 84
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Ávila",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 27 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 6
-    },
-    {
-      "autonomousCommunity": "Extremadura",
-      "province": "Badajoz",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 12 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 22
-    },
-    {
-      "autonomousCommunity": "Cataluña",
-      "province": "Barcelona",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 11 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 149
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Burgos",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 271
-    },
-    {
-      "autonomousCommunity": "Extremadura",
-      "province": "Cáceres",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 18 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 15
-    },
-    {
-      "autonomousCommunity": "Castilla-La Mancha",
-      "province": "Ciudad Real",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 54 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 48
-    },
-    {
-      "autonomousCommunity": "Andalucía",
-      "province": "Córdoba",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 1 municipality listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 44
-    },
-    {
-      "autonomousCommunity": "Castilla-La Mancha",
-      "province": "Cuenca",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 21 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 217
-    },
-    {
-      "autonomousCommunity": "Cataluña",
-      "province": "Gerona / Girona",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 11 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 39
-    },
-    {
-      "autonomousCommunity": "Castilla-La Mancha",
-      "province": "Guadalajara",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 111 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 177
-    },
-    {
-      "autonomousCommunity": "País Vasco",
-      "province": "Guipúzcoa / Gipuzkoa",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 18
-    },
-    {
-      "autonomousCommunity": "Galicia",
-      "province": "La Coruña / A Coruña",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 3
-    },
-    {
-      "autonomousCommunity": "La Rioja",
-      "province": "La Rioja",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 104
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "León",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 95
-    },
-    {
-      "autonomousCommunity": "Cataluña",
-      "province": "Lérida / Lleida",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 118
-    },
-    {
-      "autonomousCommunity": "Comunidad de Madrid",
-      "province": "Madrid",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 17 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 35
-    },
-    {
-      "autonomousCommunity": "Comunidad Foral de Navarra",
-      "province": "Navarra",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 195
-    },
-    {
-      "autonomousCommunity": "Galicia",
-      "province": "Orense / Ourense",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 0
-    },
-    {
-      "autonomousCommunity": "Galicia",
-      "province": "Pontevedra",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 1
-    },
-    {
-      "autonomousCommunity": "Canarias",
-      "province": "Santa Cruz de Tenerife",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 25
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Segovia",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 18 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 46
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Soria",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 111
-    },
-    {
-      "autonomousCommunity": "Aragón",
-      "province": "Teruel",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 146
-    },
-    {
-      "autonomousCommunity": "Castilla-La Mancha",
-      "province": "Toledo",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 151 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 52
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Valladolid",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 9 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 123
-    },
-    {
-      "autonomousCommunity": "Castilla y León",
-      "province": "Zamora",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 27 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 21
-    },
-    {
-      "autonomousCommunity": "Aragón",
-      "province": "Zaragoza",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): an independent comparison found 8 municipalities listed in Appendix B as Zone I/II that this tool showed as not classified. Matched Zone I/II rows (all verified correct) stay visible; every other municipality in the province is pending until the extraction is repaired.",
-      "pendingValidationMunicipalities": 184
-    },
-    {
-      "autonomousCommunity": "Islas Baleares",
-      "province": "Islas Baleares / Illes Balears",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): Es Migjorn Gran and Ses Salines are Zone I in Appendix B but failed to match their INE names (\"Migjorn Gran, Es\", \"Salines, Ses\"), so they showed as not classified.",
-      "pendingValidationMunicipalities": 42
-    },
-    {
-      "autonomousCommunity": "Galicia",
-      "province": "Lugo",
-      "scope": "unmatched_only",
-      "note": "Unmatched municipalities withheld 2026-10-12 (KAL-1708): 11 Appendix B Zone I/II municipalities with Galician articles (A Fonsagrada, O Corgo…) failed to match their INE names (\"Fonsagrada, A\") and showed as not classified.",
-      "pendingValidationMunicipalities": 0
     }
   ],
   "reviewedLowCoverageProvinces": [
@@ -343,8 +133,8 @@
       "autonomousCommunity": "Castilla-La Mancha",
       "totalMunicipalities": 87,
       "classifiedMunicipalities": 3,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 84,
+      "notClassifiedMunicipalities": 84,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -379,8 +169,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 248,
       "classifiedMunicipalities": 242,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 6,
+      "notClassifiedMunicipalities": 6,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -388,8 +178,8 @@
       "autonomousCommunity": "Extremadura",
       "totalMunicipalities": 165,
       "classifiedMunicipalities": 143,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 22,
+      "notClassifiedMunicipalities": 22,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -397,8 +187,8 @@
       "autonomousCommunity": "Cataluña",
       "totalMunicipalities": 311,
       "classifiedMunicipalities": 162,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 149,
+      "notClassifiedMunicipalities": 149,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -406,8 +196,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 371,
       "classifiedMunicipalities": 100,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 271,
+      "notClassifiedMunicipalities": 271,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -415,8 +205,8 @@
       "autonomousCommunity": "Extremadura",
       "totalMunicipalities": 223,
       "classifiedMunicipalities": 208,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 15,
+      "notClassifiedMunicipalities": 15,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -460,8 +250,8 @@
       "autonomousCommunity": "Castilla-La Mancha",
       "totalMunicipalities": 102,
       "classifiedMunicipalities": 54,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 48,
+      "notClassifiedMunicipalities": 48,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -469,8 +259,8 @@
       "autonomousCommunity": "Andalucía",
       "totalMunicipalities": 77,
       "classifiedMunicipalities": 33,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 44,
+      "notClassifiedMunicipalities": 44,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -478,8 +268,8 @@
       "autonomousCommunity": "Castilla-La Mancha",
       "totalMunicipalities": 238,
       "classifiedMunicipalities": 21,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 217,
+      "notClassifiedMunicipalities": 217,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -487,8 +277,8 @@
       "autonomousCommunity": "Cataluña",
       "totalMunicipalities": 221,
       "classifiedMunicipalities": 182,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 39,
+      "notClassifiedMunicipalities": 39,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -505,8 +295,8 @@
       "autonomousCommunity": "Castilla-La Mancha",
       "totalMunicipalities": 288,
       "classifiedMunicipalities": 111,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 177,
+      "notClassifiedMunicipalities": 177,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -514,8 +304,8 @@
       "autonomousCommunity": "País Vasco",
       "totalMunicipalities": 88,
       "classifiedMunicipalities": 70,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 18,
+      "notClassifiedMunicipalities": 18,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -541,8 +331,8 @@
       "autonomousCommunity": "Islas Baleares",
       "totalMunicipalities": 67,
       "classifiedMunicipalities": 25,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 42,
+      "notClassifiedMunicipalities": 42,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -559,8 +349,8 @@
       "autonomousCommunity": "Galicia",
       "totalMunicipalities": 93,
       "classifiedMunicipalities": 90,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 3,
+      "notClassifiedMunicipalities": 3,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -568,8 +358,8 @@
       "autonomousCommunity": "La Rioja",
       "totalMunicipalities": 174,
       "classifiedMunicipalities": 70,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 104,
+      "notClassifiedMunicipalities": 104,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -586,8 +376,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 211,
       "classifiedMunicipalities": 116,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 95,
+      "notClassifiedMunicipalities": 95,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -595,8 +385,8 @@
       "autonomousCommunity": "Cataluña",
       "totalMunicipalities": 231,
       "classifiedMunicipalities": 113,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 118,
+      "notClassifiedMunicipalities": 118,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -613,8 +403,8 @@
       "autonomousCommunity": "Comunidad de Madrid",
       "totalMunicipalities": 179,
       "classifiedMunicipalities": 144,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 35,
+      "notClassifiedMunicipalities": 35,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -649,8 +439,8 @@
       "autonomousCommunity": "Comunidad Foral de Navarra",
       "totalMunicipalities": 272,
       "classifiedMunicipalities": 77,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 195,
+      "notClassifiedMunicipalities": 195,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -676,8 +466,8 @@
       "autonomousCommunity": "Galicia",
       "totalMunicipalities": 61,
       "classifiedMunicipalities": 60,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 1,
+      "notClassifiedMunicipalities": 1,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -694,8 +484,8 @@
       "autonomousCommunity": "Canarias",
       "totalMunicipalities": 54,
       "classifiedMunicipalities": 29,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 25,
+      "notClassifiedMunicipalities": 25,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -703,8 +493,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 209,
       "classifiedMunicipalities": 163,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 46,
+      "notClassifiedMunicipalities": 46,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -721,8 +511,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 183,
       "classifiedMunicipalities": 72,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 111,
+      "notClassifiedMunicipalities": 111,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -739,8 +529,8 @@
       "autonomousCommunity": "Aragón",
       "totalMunicipalities": 236,
       "classifiedMunicipalities": 90,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 146,
+      "notClassifiedMunicipalities": 146,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -748,8 +538,8 @@
       "autonomousCommunity": "Castilla-La Mancha",
       "totalMunicipalities": 204,
       "classifiedMunicipalities": 152,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 52,
+      "notClassifiedMunicipalities": 52,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -766,8 +556,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 225,
       "classifiedMunicipalities": 102,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 123,
+      "notClassifiedMunicipalities": 123,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -784,8 +574,8 @@
       "autonomousCommunity": "Castilla y León",
       "totalMunicipalities": 248,
       "classifiedMunicipalities": 227,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 21,
+      "notClassifiedMunicipalities": 21,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     },
     {
@@ -793,8 +583,8 @@
       "autonomousCommunity": "Aragón",
       "totalMunicipalities": 293,
       "classifiedMunicipalities": 109,
-      "notClassifiedMunicipalities": 0,
-      "pendingValidationMunicipalities": 184,
+      "notClassifiedMunicipalities": 184,
+      "pendingValidationMunicipalities": 0,
       "manualOverrideMunicipalities": 0
     }
   ]

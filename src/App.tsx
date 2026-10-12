@@ -808,8 +808,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-                  'Si una provincia está pendiente, no damos respuesta para sus municipios sin clasificación verificada, porque nuestra extracción de esa provincia no es fiable. En octubre de 2026 una revisión independiente encontró 607 municipios que la lista oficial clasifica como Zona I o II y que esta herramienta mostraba como «no clasificados»; esas provincias están ahora retenidas. Las zonas I y II que sí mostramos coincidieron con la lista oficial. Es una señal de cautela, no una lectura tranquilizadora.',
-                  'If a province is pending, we give no answer for its municipalities without a verified classification, because our extraction for that province is not reliable. In October 2026 an independent review found 607 municipalities that the official list classifies as Zone I or II, which this tool was showing as “not classified”; those provinces are now withheld. The Zone I and II results we do show matched the official list. It is a caution signal, not a reassuring result.',
+                  'Si una provincia está pendiente, no damos respuesta para sus municipios sin clasificación verificada, porque nuestra extracción de esa provincia no es fiable. En octubre de 2026 una revisión independiente encontró 607 municipios que la lista oficial clasifica como Zona I o II y que esta herramienta mostraba como «no clasificados». La extracción se ha corregido y ahora se comprueba contra esa lectura independiente antes de publicar. Es una señal de cautela, no una lectura tranquilizadora.',
+                  'If a province is pending, we give no answer for its municipalities without a verified classification, because our extraction for that province is not reliable. In October 2026 an independent review found 607 municipalities that the official list classifies as Zone I or II, which this tool was showing as “not classified”. The extraction has been corrected and is now checked against that independent reading before publication. It is a caution signal, not a reassuring result.',
                 )}
               </p>
               <p>
@@ -895,8 +895,8 @@ export default function App() {
               <p>
                 {tcopy(
                   language,
-'Última revisión de datos y validación: junio de 2026; en octubre de 2026 se retuvieron 30 provincias más tras encontrar clasificaciones omitidas. Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
-                  'Last data review and validation: June 2026; in October 2026 a further 30 provinces were withheld after missing classifications were found. Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
+'Última revisión de datos y validación: octubre de 2026 (extracción corregida tras encontrar clasificaciones omitidas). Próxima revisión planificada: diciembre de 2026. La herramienta sigue siendo un prototipo público: útil para orientación inicial, no para decisiones inmobiliarias, sanitarias o legales.',
+                  'Last data review and validation: October 2026 (extraction corrected after missing classifications were found). Next planned review: December 2026. This remains a public prototype: useful for initial orientation, not for property, health, or legal decisions.',
                 )}
               </p>
               <p>
